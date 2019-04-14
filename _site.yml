@@ -1,7 +1,7 @@
-name: "Emily C. Zabor"
+name: "Joseph Broad"
 output_dir: "."
 navbar:
-  title: "Emily C. Zabor"
+  title: "Joseph Broad"
   left:
     - text: "Writing"
       href: research.html
@@ -15,11 +15,11 @@ navbar:
     - icon: fa-envelope fa-lg
       href: contact.html
     - icon: fa-github fa-lg
-      href: http://github.com/zabore
+      href: http://github.com/jbroad
     - icon: fa-twitter fa-lg
-      href: https://twitter.com/zabormetrics
+      href: https://twitter.com/therealjoebroad
     - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/emily-zabor-59b902b7/
+      href: https://www.linkedin.com/in/https://www.linkedin.com/in/joseph-broad-557071a9/
 output:
   html_document:
     theme: paper
