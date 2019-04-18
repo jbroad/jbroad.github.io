@@ -1,5 +1,26 @@
 ---
 title: "Teaching"
+output: html_document
+runtime: shiny
 ---
 
-Under Construction.
+```{r, echo = FALSE}
+
+library(ggplot2)
+library(ggridges)
+library(foreign)
+library(tidyr)
+library(plyr)
+setwd("~/Documents/Data/professional")
+
+evals <- read.dta("evaldata.dta")
+drops <- c("pol","year","quarter","overall","gpa","expect","interest")
+evals <- evals[ , !(names(evals) %in% drops)]
+
+evals_long <- na.omit(gather(evals, scale, measurement, effective:appreciate, factor_key=TRUE))
+
+myorder <- c("explains", "responsive", "command", "effective", "respect", "prepared", "participate", "defines", "appreciate", "helpful")
+
+ggplot(evals_long, aes(x = measurement, y = factor(scale, levels = rev(myorder)), height=..density..)) + 
+  geom_density_ridges(stat= "binline", bins = 5, scale = 1, alpha = 0.5, draw_baseline=FALSE)
+```
