@@ -1,7 +1,6 @@
 ---
 title: "Teaching"
 output: html_document
-runtime: shiny
 ---
 
 ```{r, echo = FALSE}
@@ -11,6 +10,7 @@ library(ggridges)
 library(foreign)
 library(tidyr)
 library(plyr)
+
 setwd("~/Documents/Data/professional")
 
 evals <- read.dta("evaldata.dta")
