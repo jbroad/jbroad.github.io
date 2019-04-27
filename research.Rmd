@@ -1,5 +1,32 @@
 ---
 title: "Research"
+output: flexdashboard::flex_dashboard
 ---
 
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+## Column 1
+
+### Chart A
+
+```{r}
+```
 Under Construction.
+
+## Column 2
+
+### Chart B
+
+```{r}
+```
+Tab1 - Government Data (Lobbying, Legislature, Budget)
+Tab2 - Elections Data
+Tab3 - Media Data
+Tab4 - Opinion Data
+
+### Chart C
+
+```{r}
+```

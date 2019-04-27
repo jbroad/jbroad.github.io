@@ -7,6 +7,8 @@ navbar:
       href: research.html
     - text: "Teaching"
       href: teaching.html
+    - text: "test"
+      href: test.html
   right:
     - icon: fa-envelope fa-lg
       href: contact.html
@@ -19,4 +21,4 @@ navbar:
 output:
   html_document:
     theme: paper
-    css: 'styles.css'
+    css: 'style.css'

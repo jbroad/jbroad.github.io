@@ -1,15 +1,23 @@
 ---
 title: "Teaching"
-output: html_document
+output: flexdashboard::flex_dashboard
 ---
 
-```{r, echo = FALSE}
-
+```{r setup, include=FALSE}
 library(ggplot2)
 library(ggridges)
 library(foreign)
 library(tidyr)
 library(plyr)
+library(flexdashboard)
+```
+
+Column 1 {data-width=100}
+--------------------------------------------------
+
+### Placeholder
+
+```{r message=FALSE, echo = FALSE, fig.width=3}
 
 setwd("~/Documents/Data/professional")
 
@@ -19,8 +27,56 @@ evals <- evals[ , !(names(evals) %in% drops)]
 
 evals_long <- na.omit(gather(evals, scale, measurement, effective:appreciate, factor_key=TRUE))
 
-myorder <- c("explains", "responsive", "command", "effective", "respect", "prepared", "participate", "defines", "appreciate", "helpful")
+myorder <- c("Explains", "responsive", "command", "effective", "respect", "prepared", "participate", "defines", "appreciate", "helpful")
+#cols <- c("#2C4C19", "#233319", "#3C4C33", "black", "black", "black", "black", "black", "black", "black")
+cols <- c("#A9CC99", "#C2E5B2", "#769966", "#5C7F4C", "#8FB27F", "#DCFFCC", "#DCFFCC", "#436633", "#103300", "#2C4C19")
 
-ggplot(evals_long, aes(x = measurement, y = factor(scale, levels = rev(myorder)), height=..density..)) + 
-  geom_density_ridges(stat= "binline", bins = 5, scale = 1, alpha = 0.5, draw_baseline=FALSE)
+plot <- ggplot(evals_long, aes(x = measurement, y = factor(scale, levels = rev(myorder)), fill = scale, group = scale, height=..density.., linetype = NA)) + 
+  geom_density_ridges(stat= "binline", bins = 5, binwidth = 1, scale = .9, draw_baseline=FALSE, alpha = 1) +
+  scale_fill_cyclical(values = cols) +
+  scale_y_discrete(
+    expand = c(0.01, 0), name = "Evaluation Criterion",
+    labels = rev(myorder)
+  ) +
+  scale_x_continuous(
+    breaks = c(1:5), 
+    expand = c(-0.1,0), name = "Evaluation Score"
+  ) +
+  theme_ridges(center_axis_labels = TRUE)
+plot #+ theme(text = element_text(family = "Courier"))
+```
+
+
+Column 2 {data-width=200}
+--------------------------------------------------
+
+### Placeholder
+
+```{r message=FALSE, echo = FALSE, fig.width=3}
+
+setwd("~/Documents/Data/professional")
+
+evals <- read.dta("evaldata.dta")
+drops <- c("pol","year","quarter","overall","gpa","expect","interest")
+evals <- evals[ , !(names(evals) %in% drops)]
+
+evals_long <- na.omit(gather(evals, scale, measurement, effective:appreciate, factor_key=TRUE))
+
+myorder <- c("Explains", "responsive", "command", "effective", "respect", "prepared", "participate", "defines", "appreciate", "helpful")
+#cols <- c("#2C4C19", "#233319", "#3C4C33", "black", "black", "black", "black", "black", "black", "black")
+cols <- c("#A9CC99", "#C2E5B2", "#769966", "#5C7F4C", "#8FB27F", "#DCFFCC", "#DCFFCC", "#436633", "#103300", "#2C4C19")
+
+plot <- ggplot(evals_long, aes(x = measurement, y = factor(scale, levels = rev(myorder)), fill = scale, group = scale, height=..density.., linetype = NA)) + 
+  geom_density_ridges(stat= "binline", bins = 5, binwidth = 1, scale = .9, draw_baseline=FALSE, alpha = 1) +
+  scale_fill_cyclical(values = cols) +
+  scale_y_discrete(
+    expand = c(0.01, 0), name = "Evaluation Criterion",
+    labels = rev(myorder)
+  ) +
+  scale_x_continuous(
+    breaks = c(1:5), 
+    expand = c(-0.1,0), name = "Evaluation Score"
+  ) +
+  theme_ridges(center_axis_labels = TRUE)
+plot #+ theme(text = element_text(family = "Courier"))
 ```
