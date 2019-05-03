@@ -1,0 +1,13 @@
+name: shiny
+title: shiny
+username:
+account: josephbroad
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 907881
+bundleId: 2058104
+url: https://josephbroad.shinyapps.io/shiny/
+when: 1556903530.60034
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Untitled.Rmd
