@@ -1,29 +1,102 @@
 ---
-title: "NBA Scoring (2008)"
-output: 
-  flexdashboard::flex_dashboard:
-    orientation: rows
-    social: menu
-    source_code: embed
+output: html_document
+runtime: shiny
 ---
 
-```{r setup, include=FALSE}
-library(knitr)
-library(d3heatmap)
-library(flexdashboard)
+```{r include = F, out.width='100%', message = F, echo = F}
+library(tigris)
+library(shiny)
+library(acs)
+library(stringr) # to pad fips codes
+library(leaflet)
+library(sp)
+library(htmlwidgets)
 
-url <- "http://datasets.flowingdata.com/ppg2008.csv"
-nba_players <- read.csv(url, row.names = 1)
+# Load polygon data
+states <- states(cb = T)
+leg <- state_legislative_districts("Arizona", "lower")
+
+# Load registration data
+legreg2018 <- read.csv("~/Documents/Data/azele/legreg2018.csv")
+
+# Pad the GEOID to match the polygon data
+legreg2018$GEOID <- str_pad(as.character(legreg2018$GEOID), 5, side="left", pad="0")
+
+# Manipulate data to be proportions of parties rather than raw numbers
+legreg2018$perdem <- (legreg2018$democratic/legreg2018$total)*100
+legreg2018$pergre <- (legreg2018$green/legreg2018$total)*100
+legreg2018$perlib <- (legreg2018$libertarian/legreg2018$total)*100
+legreg2018$pergop <- (legreg2018$republican/legreg2018$total)*100
+legreg2018$peroth <- (legreg2018$other/legreg2018$total)*100
+legreg2018$twopar <- (legreg2018$democratic/(legreg2018$democratic + legreg2018$republican))*100
+
+# Merge the manipulated data with the polygon data
+leg_merged<- geo_join(leg, legreg2018, "GEOID", "GEOID")
+
+# Pop-up
+popup <- paste0("GEOID: ", leg_merged$GEOID, "<br>", "Percent of Voters Registered as Democrats: ", round(leg_merged$perdem,2), "<br>", "Percent Registered Green: ", round(leg_merged$pergre,2), "<br>", "Percent Registered Libertarian: ", round(leg_merged$perlib,2), "<br>", "Percent Registered Republicans: ", round(leg_merged$pergop,2))
+
+# Color info
+pal <- colorNumeric(
+  palette = c("#D60000","#FFFFFF", "#0078D6"),
+  domain = leg_merged$twopar
+)
+
+# Map
+map <- leaflet() %>%
+  addPolygons(data = states,
+              fillColor = "#DCDCDC",
+              color = "#FFFFFF",
+              fillOpacity = 1,
+              weight = 1,
+              smoothFactor = 0.2) %>%
+  addPolygons(data = leg_merged, 
+              fillColor = ~pal(twopar), 
+              color = "#FFFFFF", 
+              fillOpacity = 1, 
+              weight = 1, 
+              smoothFactor = .2,
+              popup = popup) %>%
+  setView(-109,34,zoom=5.5)
 ```
 
-### Stats by Player {data-width=650}
 
-```{r}
-d3heatmap(nba_players, scale = "column")
-```
 
-### Top Scorers {data-width=350}
 
-```{r}
-knitr::kable(nba_players[1:20,c("G", "MIN", "PTS")])
+
+
+
+
+
+
+
+```{r, echo=T}
+ui <- navbarPage("Research", id="nav",
+  tabPanel("Interactive map",
+    div(class="outer",
+        tags$head(
+        includeCSS("styles.css"),
+        includeScript("gomap.js")
+        ),
+        leafletOutput("map"),
+        absolutePanel(id = "controls", class = "panel panel-default", fixed = T, draggable = T,
+                    bottom = "auto", left = "auto", right = 20, top = 60, width = 330, height = "auto",
+                    h4("District Details"),
+                    checkboxInput("legend", "Show legend", TRUE))
+)))
+  
+server <- function(input, output, session) {
+  output$map <- renderLeaflet(map)
+
+  observeEvent(input$map1_marker_click, {
+    leafletProxy("map", session) %>%
+      removeMarker(input$map1_marker_click$id)
+  })
+}
+
+app <- shinyApp(ui, server)
+# }
+# NOT RUN {
+if (interactive()) app
+shinyApp(ui, server)
 ```
