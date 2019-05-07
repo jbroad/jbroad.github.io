@@ -1,4 +1,5 @@
 library(tigris)
+options(tigris_use_cache = TRUE)
 library(rsconnect)
 library(shiny)
 library(acs)
@@ -8,6 +9,9 @@ library(sp)
 library(sf)
 library(htmlwidgets)
 library(maps)
+library(stringr)
+library(XML)
+library(ggplot2)
 
 ###### Setup
 
