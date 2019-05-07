@@ -4,6 +4,8 @@ runtime: shiny
 ---
 
 ```{r, echo = FALSE}
+library(shiny)
+library(rmarkdown)
 shinyAppDir("~/Documents/GitHub/jbroad.github.io/shiny/",
   options = list(width = "100%", height = 700)
 )
