@@ -12,6 +12,7 @@ library(maps)
 library(stringr)
 library(XML)
 library(ggplot2)
+library(rgeos)
 
 ###### Setup
 
@@ -20,65 +21,62 @@ states <- states(cb = T) # Load data from tigris package
 leg <- state_legislative_districts("Arizona", "lower") #Also from tigris
 wrld <- st_as_sf(maps::map("world", fill = TRUE, plot = FALSE)) # from maps package
 
-# Load registration data
-legreg2018 <- read.csv("legreg2018.csv") # District level data, 2018
-
-# Pad the GEOID to match the polygon data
-legreg2018$GEOID <- str_pad(as.character(legreg2018$GEOID), 5, side="left", pad="0")
-
-# Merge the manipulated data with the polygon data
-leg_merged<- geo_join(leg, legreg2018, "GEOID", "GEOID")
-
-# Pop-up
-popup <- paste0("State Legislative District ", leg_merged$district, "<br>", "Percent of Voters Registered as Democrats: ", leg_merged$perdem, "<br>", "Percent Registered Republican: ", leg_merged$pergop)
-
-# Color info
-# E7E7E7 - dark gray under selected tab
-# F8F8F8 - light gray under unselected tab
-colors <- c("#919191", "#DE0000", "#00A1DE")
-pal <- colorNumeric(
-  palette = c("#DE0000","#EFE4FF", "#00A1DE"),
-  domain = leg_merged$twopar
-)
-
-# Map
-map <- leaflet(options = leafletOptions(zoomControl = FALSE,
-                                        minZoom = 6, maxZoom = 10)) %>%
-  addPolygons(data = wrld,
-              fillColor = "#E7E7E7",
-              color = "#FFFFFF",
-              fillOpacity = 1,
-              weight = 1.5,
-              opacity = 1,
-              smoothFactor = .6) %>%  
-  addPolygons(data = states,
-              fillColor = "#E7E7E7",
-              color = "#FFFFFF",
-              fillOpacity = 1,
-              weight = 1.5,
-              opacity = 1,
-              smoothFactor = .6) %>%
-  addPolygons(data = leg_merged, 
-              fillColor = ~pal(twopar), 
-              color = "#FFFFFF", 
-              fillOpacity = .6, 
-              opacity = 1,
-              weight = 1.5, 
-              highlightOptions = highlightOptions(color = "#FFFFFF", 
-                                                  weight = 3,
-                                                  opacity = 1,
-                                                  fillOpacity = 1,
-                                                  bringToFront = T),
-              smoothFactor = .6,
-              #popup = popup
-              layerId = ~district
-              ) %>%
-  setView(-110.6,34.25,zoom=7)
-
 ###### Server
 
 server <- function(input, output, session) {
+  # Load registration data
+  legreg2018 <- read.csv("./rsconnect/legreg2018.csv") # District level data, 2018
+  
+  # Pad the GEOID to match the polygon data
+  legreg2018$GEOID <- str_pad(as.character(legreg2018$GEOID), 5, side="left", pad="0")
+  
+  # Merge the manipulated data with the polygon data
+  leg_merged<- geo_join(leg, legreg2018, "GEOID", "GEOID")
+  
+  # Color info
+  # E7E7E7 - dark gray under selected tab
+  # F8F8F8 - light gray under unselected tab
+  colors <- c("#919191", "#DE0000", "#00A1DE")
+  pal <- colorNumeric(
+    palette = c("#DE0000","#EFE4FF", "#00A1DE"),
+    domain = leg_merged$twopar
+  )
+  
+  # Map
+  map <- leaflet(options = leafletOptions(zoomControl = FALSE,
+                                          minZoom = 6, maxZoom = 10)) %>%
+    addPolygons(data = wrld,
+                fillColor = "#E7E7E7",
+                color = "#FFFFFF",
+                fillOpacity = 1,
+                weight = 1.5,
+                opacity = 1,
+                smoothFactor = .6) %>%  
+    addPolygons(data = states,
+                fillColor = "#E7E7E7",
+                color = "#FFFFFF",
+                fillOpacity = 1,
+                weight = 1.5,
+                opacity = 1,
+                smoothFactor = .6) %>%
+    addPolygons(data = leg_merged, 
+                fillColor = ~pal(twopar), 
+                color = "#FFFFFF", 
+                fillOpacity = .6, 
+                opacity = 1,
+                weight = 1.5, 
+                highlightOptions = highlightOptions(color = "#FFFFFF", 
+                                                    weight = 3,
+                                                    opacity = 1,
+                                                    fillOpacity = 1,
+                                                    bringToFront = T),
+                smoothFactor = .6,
+                #popup = popup
+                layerId = ~district
+    ) %>%
+    setView(-110.6,34.25,zoom=7)
   output$map <- renderLeaflet(map)
+  legreg2018 <- legreg2018
 
   observe({
     event <- input$map_shape_click
