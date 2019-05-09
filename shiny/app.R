@@ -25,7 +25,7 @@ wrld <- st_as_sf(maps::map("world", fill = TRUE, plot = FALSE)) # from maps pack
 
 server <- function(input, output, session) {
   # Load registration data
-  legreg2018 <- read.csv("./rsconnect/legreg2018.csv") # District level data, 2018
+  legreg2018 <- read.csv("legreg2018.csv") # District level data, 2018
   
   # Pad the GEOID to match the polygon data
   legreg2018$GEOID <- str_pad(as.character(legreg2018$GEOID), 5, side="left", pad="0")
@@ -72,15 +72,14 @@ server <- function(input, output, session) {
                                                     bringToFront = T),
                 smoothFactor = .6,
                 #popup = popup
-                layerId = ~district
+                layerId = ~leg_merged$district
     ) %>%
     setView(-110.6,34.25,zoom=7)
   output$map <- renderLeaflet(map)
   legreg2018 <- legreg2018
 
-  observe({
-    event <- input$map_shape_click
-    #updateSelectInput(session, inputId = "district", selected = event$id)
+  observeEvent(input$map_shape_click, {
+    district <- input$map_shape_click
   })
   output$sld <- renderText({
     if (is.null(input$map_shape_click)) return("")
