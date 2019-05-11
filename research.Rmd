@@ -1,5 +1,12 @@
 ---
 output: html_document
+runtime: shiny
 ---
 
-Under Construction.
+```{r, echo = FALSE}
+shiny::shinyAppDir("shiny/", 
+            options=list(
+              width="100%", height=550
+            )
+) 
+```

@@ -13,6 +13,7 @@ library(stringr)
 library(XML)
 library(ggplot2)
 library(rgeos)
+library(devtools)
 
 ###### Setup
 
@@ -77,7 +78,7 @@ server <- function(input, output, session) {
     setView(-110.6,34.25,zoom=7)
   output$map <- renderLeaflet(map)
   legreg2018 <- legreg2018
-
+  
   observeEvent(input$map_shape_click, {
     district <- input$map_shape_click
   })
@@ -95,7 +96,7 @@ server <- function(input, output, session) {
                                    nrow=3,
                                    ncol=2,
                                    byrow=F),
-                                   stringsAsFactors = FALSE)
+                            stringsAsFactors = FALSE)
       name$V2 <- as.numeric(name$V2)
       ggplot(name, aes(x=V1, y=V2, fill=V1)) + 
         geom_col() + 
@@ -112,7 +113,7 @@ server <- function(input, output, session) {
               panel.grid.major.y = element_blank(),
               panel.grid.minor.x = element_blank(),
               plot.margin=unit(c(t=0,r=-.25,b=0,l=-.45),"cm"))
-      }
+    }
   })
 }
 
@@ -121,12 +122,11 @@ server <- function(input, output, session) {
 ui <- navbarPage("Joseph Broad", 
                  id="nav",
                  tabPanel("Research",
-                          div(class="outer",
-                              tags$head(
+                          #div(class="outer",
+                              #tags$head(
                                 # Include our custom CSS
-                                includeCSS("styles.css"),
-                                includeScript("gomap.js"))
-                          ),
+                                #includeCSS("styles.css"))
+                          #),
                           tags$style(type = "text/css", 
                                      "#map {height: calc(100vh - 52px) !important;}"),
                           leafletOutput("map", width="100%", height="100%"),
@@ -144,3 +144,7 @@ ui <- navbarPage("Joseph Broad",
                  tabPanel("Teaching"))
 
 shinyApp(ui, server)
+
+
+
+
