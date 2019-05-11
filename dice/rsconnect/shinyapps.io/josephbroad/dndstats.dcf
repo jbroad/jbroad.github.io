@@ -1,0 +1,12 @@
+name: dndstats
+title: dndstats
+username:
+account: josephbroad
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 924265
+bundleId: 2077463
+url: https://josephbroad.shinyapps.io/dndstats/
+when: 1557603620.15751
+asMultiple: FALSE
+asStatic: FALSE
