@@ -119,14 +119,7 @@ server <- function(input, output, session) {
 
 ###### UI
 
-ui <- navbarPage("Joseph Broad", 
-                 id="nav",
-                 tabPanel("Research",
-                          #div(class="outer",
-                              #tags$head(
-                                # Include our custom CSS
-                                #includeCSS("styles.css"))
-                          #),
+ui <- fluidPage(
                           tags$style(type = "text/css", 
                                      "#map {height: calc(100vh - 52px) !important;}"),
                           leafletOutput("map", width="100%", height="100%"),
@@ -138,10 +131,7 @@ ui <- navbarPage("Joseph Broad",
                           ),
                           tags$style(type = "text/css", ".container-fluid {padding-right:0px; padding-left:0px; padding-bottom:0px;}"),
                           tags$style(type = "text/css", ".container-fluid .navbar-header .navbar-brand {margin-left: 0px;}")
-                 ),
-                 tabPanel("Home",
-                          "Under Construction"),
-                 tabPanel("Teaching"))
+)
 
 shinyApp(ui, server)
 
