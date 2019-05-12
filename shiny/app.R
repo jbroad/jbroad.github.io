@@ -75,7 +75,7 @@ server <- function(input, output, session) {
                 #popup = popup
                 layerId = ~leg_merged$district
     ) %>%
-    setView(-110.6,34.25,zoom=7)
+    setView(-110.6,34.25,zoom=6)
   output$map <- renderLeaflet(map)
   legreg2018 <- legreg2018
   
@@ -120,17 +120,16 @@ server <- function(input, output, session) {
 ###### UI
 
 ui <- fluidPage(
-                          tags$style(type = "text/css", 
-                                     "#map {height: calc(100vh - 52px) !important;}"),
-                          leafletOutput("map", width="100%", height="100%"),
-                          absolutePanel(id = "controls", class = "panel panel-default", fixed = T, draggable = T,
-                                        bottom = "auto", left = "auto", right = 20, top = 60, width = 300, height = "auto",
-                                        h4("District Details"),
-                                        textOutput("sld"),
-                                        plotOutput("district", height="80px")
-                          ),
-                          tags$style(type = "text/css", ".container-fluid {padding-right:0px; padding-left:0px; padding-bottom:0px;}"),
-                          tags$style(type = "text/css", ".container-fluid .navbar-header .navbar-brand {margin-left: 0px;}")
+      tags$style(type = "text/css", 
+                  "#map {height: calc(100vh - 52px) !important;}"),
+      leafletOutput("map", width="100%", height="100%"),
+      absolutePanel(id = "controls", class = "panel panel-default", fixed = T, draggable = T,
+                  bottom = "auto", left = "auto", right = 0, top = 20, width = 300, height = "auto",
+                  h4("District Details"),
+                  textOutput("sld"),
+                  plotOutput("district", height="80px")
+      ),
+      tags$style(type = "text/css", ".container-fluid {padding-right:0px; padding-left:0px; padding-bottom:0px;}")
 )
 
 shinyApp(ui, server)
