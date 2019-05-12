@@ -2,6 +2,14 @@
 output: html_document
 ---
 
+knitr:
+
+```{r}
+knitr::include_app("https://josephbroad.shinyapps.io/shiny/")
+```
+
+iframe:
+
 <iframe src ="https://josephbroad.shinyapps.io/shiny/"
   style="border: none; width: 100%; height: 500px;"/>
 </iframe>
