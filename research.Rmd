@@ -3,5 +3,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::include_app("https://josephbroad.shinyapps.io/shiny/")
+knitr::include_app("https://josephbroad.shinyapps.io/dndstats/")
 ```
+
+<iframe src ="https://josephbroad.shinyapps.io/dndstats/" height=1000px width=1000px />
