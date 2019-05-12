@@ -3,5 +3,5 @@ output: html_document
 ---
 
 ```{r}
-knitr::include_app("https://josephbroad.shinyapps.io/shiny/", height = "600px")
+knitr::include_url("https://josephbroad.shinyapps.io/shiny/", height = "600px")
 ```
