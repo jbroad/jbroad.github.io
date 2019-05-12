@@ -18,5 +18,3 @@ navbar:
       href: https://www.linkedin.com/in/https://www.linkedin.com/in/joseph-broad-557071a9/
 output:
   html_document:
-    theme: paper
-    css: 'style.css'

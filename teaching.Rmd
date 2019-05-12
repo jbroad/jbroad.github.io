@@ -1,11 +1,5 @@
 ---
 output: html_document
-runtime: shiny
 ---
 
 Under Construction
-
-``` {r}
-knitr::include_app("https://josephbroad.shinyapps.io/dndstats/", 
-  height = "600px")
-``` 

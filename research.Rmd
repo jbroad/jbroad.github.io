@@ -2,4 +2,12 @@
 output: html_document
 ---
 
-Under Construction
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<iframe src ="https://gallery.shinyapps.io/087-crandash/" height=1000px width=1000px />
+
+###App small
+
+<iframe src ="https://gallery.shinyapps.io/087-crandash/" height=500px width=500px />
