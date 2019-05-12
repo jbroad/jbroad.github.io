@@ -3,11 +3,5 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::include_app("https://josephbroad.shinyapps.io/dndstats/")
 ```
-
-<iframe src ="https://gallery.shinyapps.io/087-crandash/" height=1000px width=1000px />
-
-###App small
-
-<iframe src ="https://gallery.shinyapps.io/087-crandash/" height=500px width=500px />
