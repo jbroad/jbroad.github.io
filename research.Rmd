@@ -3,7 +3,7 @@ output: html_document
 ---
 
 ```{r}
-knitr::include_app("https://josephbroad.shinyapps.io/dndstats/")
+knitr::include_app("https://josephbroad.shinyapps.io/shiny/", height = "600px")
 ```
 
-<iframe src ="https://josephbroad.shinyapps.io/dndstats/" height=1000px width=1000px />
+<iframe src ="https://josephbroad.shinyapps.io/shiny/" height=1000px width=1000px />
