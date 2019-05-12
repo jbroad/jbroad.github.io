@@ -3,5 +3,5 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::include_app("https://josephbroad.shinyapps.io/dndstats/")
+knitr::include_app("https://josephbroad.shinyapps.io/shiny/")
 ```
