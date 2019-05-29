@@ -1,5 +1,5 @@
 ---
-name:"Joseph Broad"
+output: html_document
 ---
 
 <link rel="stylesheet" href="style.css" type="text/css">
