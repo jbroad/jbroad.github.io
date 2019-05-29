@@ -2,7 +2,9 @@
 output: html_document
 ---
 
-<title>HTML Reference</title>
+<head>
+  <title>HTML Reference</title>
+</head>
 
 <link rel="stylesheet" href="style.css" type="text/css">
 
