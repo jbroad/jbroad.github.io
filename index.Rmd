@@ -5,6 +5,8 @@
 
 <img src="images/bear.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
-I am proficient in multiple programming languages, including R, Stata, Python. I am a PhD candidate at the [University of California, Davis](https://ps.ucdavis.edu/), specializing in American Politics. Substantive focus on American politics (ideology, parties, interest groups, media), political theory, and research methodology (machine learning, causal inference).
+I am a Political Science PhD candidate at the [University of California, Davis](https://ps.ucdavis.edu/), specializing in American Politics. My substantive research interests include public opinion, political communication, and elections, as well as inferential and causal methodology (ideal point estimation, machine learning). 
+
+I have training in multiple statistical software programs to conduct my research, including R, Stata and Python. Additionally, I have a background in studying political theory with an emphasis on the Ancient Greek thinkers (Plato, Aristotle) as well as Enlightenment and Modern Liberal thinkers (Kant, Rawls).
 
 My full CV is available [here](files/jbroadcv0419).

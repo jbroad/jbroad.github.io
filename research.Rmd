@@ -5,7 +5,7 @@ output: html_document
 knitr:
 
 ```{r}
-knitr::include_app("https://josephbroad.shinyapps.io/shiny/")
+knitr::include_app("https://josephbroad.shinyapps.io/shiny/", height = "400px")
 ```
 
 iframe:
