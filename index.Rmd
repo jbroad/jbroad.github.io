@@ -2,6 +2,8 @@
 output: html_document
 ---
 
+<title>HTML Reference</title>
+
 <link rel="stylesheet" href="style.css" type="text/css">
 
 <img src="images/bear.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
