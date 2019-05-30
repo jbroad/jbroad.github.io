@@ -13,7 +13,7 @@ title: "`r params$set_title`"
 <style>
 body {
   width:100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/banner.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
