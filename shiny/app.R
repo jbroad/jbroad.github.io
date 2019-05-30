@@ -54,13 +54,13 @@ server <- function(input, output, session) {
     #            weight = 1.5,
      #           opacity = 1,
       #          smoothFactor = .6) %>%  
-    addPolygons(data = states,
-                fillColor = "#E7E7E7",
-                color = "#FFFFFF",
-                fillOpacity = 1,
-                weight = 1.5,
-                opacity = 1,
-                smoothFactor = .6) %>%
+#    addPolygons(data = states,
+ #               fillColor = "#E7E7E7",
+  #              color = "#FFFFFF",
+   #             fillOpacity = 1,
+    #            weight = 1.5,
+     #           opacity = 1,
+      #          smoothFactor = .6) %>%
     addPolygons(data = leg_merged, 
                 fillColor = ~pal(twopar), 
                 color = "#FFFFFF", 
@@ -76,7 +76,7 @@ server <- function(input, output, session) {
                 #popup = popup
                 layerId = ~leg_merged$district
     ) %>%
-    setView(-110.6,34.25,zoom=6)
+    setView(-110.6,34.25,zoom=7)
   output$map <- renderLeaflet(map)
   legreg2018 <- legreg2018
   
@@ -122,15 +122,15 @@ server <- function(input, output, session) {
 
 ui <- fluidPage(
       tags$style(type = "text/css", 
-                  "#map {height: calc(100vh - 52px) !important;}"),
+                  "#map {height: 100vh !important;}"),
       leafletOutput("map", width="100%", height="100%"),
       absolutePanel(id = "controls", class = "panel panel-default", fixed = T, draggable = T,
-                  bottom = "auto", left = "auto", right = 0, top = 20, width = 300, height = "auto",
+                  bottom = "auto", left = "auto", right = 5, top = 80, width = 300, height = "auto",
                   h4("District Details"),
                   textOutput("sld"),
                   plotOutput("district", height="80px")
       ),
-      tags$style(type = "text/css", ".container-fluid {padding-right:0px; padding-left:0px; padding-bottom:0px;}")
+      tags$style(type = "text/css", ".container-fluid {padding:0;}")
 )
 
 shinyApp(ui, server)
