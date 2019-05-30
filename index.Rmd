@@ -6,6 +6,7 @@ title: "`r params$set_title`"
 ---
 <!-- set favicon -->
 <link rel="shortcut icon" type="image/png" href="images/faviconup.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="images/faviconup.png">
 <!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css">
 <!-- header style -->
