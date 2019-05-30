@@ -47,13 +47,13 @@ server <- function(input, output, session) {
   # Map
   map <- leaflet(options = leafletOptions(zoomControl = FALSE,
                                           minZoom = 6, maxZoom = 10)) %>%
-    addPolygons(data = wrld,
-                fillColor = "#E7E7E7",
-                color = "#FFFFFF",
-                fillOpacity = 1,
-                weight = 1.5,
-                opacity = 1,
-                smoothFactor = .6) %>%  
+#    addPolygons(data = wrld,
+ #               fillColor = "#E7E7E7",
+  #              color = "#FFFFFF",
+   #             fillOpacity = 1,
+    #            weight = 1.5,
+     #           opacity = 1,
+      #          smoothFactor = .6) %>%  
     addPolygons(data = states,
                 fillColor = "#E7E7E7",
                 color = "#FFFFFF",
