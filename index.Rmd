@@ -1,15 +1,38 @@
 ---
 output: html_document
+params: 
+    set_title: "Joseph Broad Home"
+title: "`r params$set_title`"
 ---
 
-<head>
-  <title>HTML Reference</title>
-</head>
+<!-- set favicon -->
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 
+<!-- header style -->
+<style>
+header {
+  width:100%;
+  background-image: url("https://i.redd.it/o109s7sdv7131.jpg");
+  <!-- bear image link = https://jbroad.github.io/images/bear.jpg -->
+  background-color: #666;
+  padding: 200px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+</style>
+
+<header>
+  <h2> <br> </h2>
+</header>
+
+<!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css">
 
+<!-- image -->
 <img src="images/bear.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
+<!-- image -->
 I am a Political Science PhD candidate at the [University of California, Davis](https://ps.ucdavis.edu/), specializing in American Politics. My substantive research interests include public opinion, political communication, and elections, as well as inferential and causal methodology (ideal point estimation, machine learning). 
 
 I have training in multiple statistical software programs to conduct my research, including R, Stata and Python. Additionally, I have a background in studying political theory with an emphasis on the Ancient Greek thinkers (Plato, Aristotle) as well as Enlightenment and Modern Liberal thinkers (Kant, Rawls).
