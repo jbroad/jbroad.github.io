@@ -1,5 +1,7 @@
 ---
 output: html_document
+params: 
+    set_title: "Teaching"
+title: "`r params$set_title`"
 ---
-
-Under Construction
+<link rel="stylesheet" href="style.css" type="text/css">

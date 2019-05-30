@@ -332,33 +332,50 @@ $(document).ready(function () {
 
 
 <!-- set favicon -->
-<p><link rel="shortcut icon" type="image/png" href="/favicon.png"/></p>
-<!-- header style -->
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/> <!-- style --> <link rel="stylesheet" href="style.css" type="text/css"> <!-- header style -->
 <style>
-header {
+body {
   width:100%;
-  background-image: url("https://i.redd.it/o109s7sdv7131.jpg");
-  <!-- bear image link = https://jbroad.github.io/images/bear.jpg -->
-  background-color: #666;
-  padding: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://i.redd.it/o109s7sdv7131.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #f1f1f1;
+  width: 100vw;
+  margin-left: -50vw;
+  position: relative;
+  left: 50%;
+}
+.flex-container .box {
+  background-color: #f1f1f1;
+  position: relative;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-size: 35px;
-  color: white;
+  line-height: auto;
+  font-size: 16px;
+  padding: 10px;
 }
 </style>
-<header>
-<h2>
-<br>
-</h2>
-</header>
-<!-- style -->
-<p><link rel="stylesheet" href="style.css" type="text/css"></p>
-<!-- image -->
-<p><img src="images/bear.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left"></p>
-<!-- image -->
+<p><br><br><br><br><br><br><br></p>
+<div class="flex-container">
+<div class="box">
+<img src="images/bear.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
+<p>
 <p>I am a Political Science PhD candidate at the <a href="https://ps.ucdavis.edu/">University of California, Davis</a>, specializing in American Politics. My substantive research interests include public opinion, political communication, and elections, as well as inferential and causal methodology (ideal point estimation, machine learning).</p>
 <p>I have training in multiple statistical software programs to conduct my research, including R, Stata and Python. Additionally, I have a background in studying political theory with an emphasis on the Ancient Greek thinkers (Plato, Aristotle) as well as Enlightenment and Modern Liberal thinkers (Kant, Rawls).</p>
-<p>My full CV is available <a href="files/jbroadcv0419">here</a>.</p>
+My full CV is available <a href="files/jbroadcv0419">here</a>.
+</p>
+</div>
+</div>
+</div>
 
 
 
