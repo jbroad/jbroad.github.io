@@ -5,17 +5,10 @@ params:
 title: "`r params$set_title`"
 ---
 <link rel="stylesheet" href="style.css" type="text/css">
-
-knitr:
-
-```{r}
-knitr::include_app("https://josephbroad.shinyapps.io/shiny/", height = "400px")
-```
-
-iframe:
-
 <iframe src ="https://josephbroad.shinyapps.io/shiny/"
   style="border: none; 
   width: 100vw; 
-  height: 500px;"/>
+  margin-left: -50vw;
+  height: 500px;
+  margin-top: 0;"/>
 </iframe>
