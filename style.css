@@ -6,4 +6,31 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: courier;
+}
+
+#p {
+  font-family: monospace;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #f1f1f1;
+  width: 100vw;
+  margin-left: -50vw;
+  position: absolute;
+  top: 700px;
+  left: 50%;
+}
+.flex-container .box {
+  background-color: #f1f1f1;
+  position: relative;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: auto;
+  font-size: 16px;
+  padding: 10px;
 }

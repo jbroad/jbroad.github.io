@@ -20,38 +20,47 @@ body {
   background-size: cover;
   position: relative;
 }
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #f1f1f1;
-  width: 100vw;
-  margin-left: -50vw;
-  position: absolute;
-  top: 700px;
-  left: 50%;
-}
-.flex-container .box {
-  background-color: #f1f1f1;
-  position: relative;
-  width: 80vw;
+
+.center {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  line-height: auto;
-  font-size: 16px;
-  padding: 10px;
+  width: 30%;
 }
 </style>
 
+<h2 
+  align = "center"
+  style = "margin-top: 150px;
+           color:white;
+           font-family: courier;
+           font-size: 300%;">
+  Joseph Broad
+</h2>
+
+<img src="images/greenhex.png" 
+  style = "margin-top: 20px;"
+  class = "center">
+  
+<div class="flex-container">
+<div class="box" style = "margin-top:-100px; color:white; background-color: rgba(255, 255, 255, 0);"></div>
+<div class="box" style = "margin-top:-100px; color:white; background-color: rgba(255, 255, 255, 0);"> RESEARCH</div>
+<div class="box" style = "margin-top:-100px; color:white; background-color: rgba(255, 255, 255, 0);"> TEACHING</div>
+<div class="box" style = "margin-top:-100px; color:white; background-color: rgba(255, 255, 255, 0);"> DATA & VISUALIZATION</div>
+<div class="box" style = "margin-top:-100px; color:white; background-color: rgba(255, 255, 255, 0);"> CV</div>
+<div class="box" style = "margin-top:-100px; color:white; background-color: rgba(255, 255, 255, 0);"></div>
+</div>
+
+
 <div class="flex-container">
   <div class="box">
-  <img src="images/bear.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
-  <p>
+  <p><font face = "courier">
   I am a Political Science PhD candidate at the [University of California, Davis](https://ps.ucdavis.edu/), specializing in American Politics. My substantive research interests include public opinion, political communication, and elections, as well as inferential and causal methodology (ideal point estimation, machine learning).
   
-  I have training in multiple statistical software programs to conduct my research, including R, Stata and Python. Additionally, I have a background in studying political theory with an emphasis on the Ancient Greek thinkers (Plato, Aristotle) as well as Enlightenment and Modern Liberal thinkers (Kant, Rawls).
+  I have training in multiple statistical software programs to conduct my research, including R, Stata and Python. Additionally, I have a background in studying political theory with an emphasis on the Ancient Greek thinkers (Plato, Aristotle) as well as  Enlightenment and Modern Liberal thinkers (Kant, Rawls).
   
   My full CV is available [here](files/jbroadcv0419).
+  </font>
   </p>
   </div>
   </div>
