@@ -20,7 +20,7 @@
   width: 100vw;
   margin-left: -50vw;
   position: absolute;
-  top: 700px;
+  top: 900px;
   left: 50%;
 }
 .flex-container .box {
@@ -34,3 +34,5 @@
   font-size: 16px;
   padding: 10px;
 }
+
+#controls{margin: auto;}
