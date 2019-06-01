@@ -1,20 +1,4 @@
 name: "Joseph Broad"
 output_dir: "."
-navbar:
-  title: "Joseph Broad"
-  left:
-    - text: "Research"
-      href: research.html
-    - text: "Teaching"
-      href: teaching.html
-  right:
-    - icon: fa-envelope fa-lg
-      href: contact.html
-    - icon: fa-github fa-lg
-      href: http://github.com/jbroad
-    - icon: fa-twitter fa-lg
-      href: https://twitter.com/therealjoebroad
-    - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/https://www.linkedin.com/in/joseph-broad-557071a9/
 output:
   html_document:

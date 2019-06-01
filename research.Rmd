@@ -5,6 +5,18 @@ params:
 title: "`r params$set_title`"
 ---
 <link rel="stylesheet" href="style.css" type="text/css">
+<div class="flex-container">
+<div class="topnav"><a href="index.html"><i class="fa fa-lg fa-exclamation-circle"></i> joseph broad</a>
+  <a href="research.html">research</a>
+  <a href="teaching.html">teaching</a>
+  <div class="topnav-right"><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a>
+    <a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a>
+    <a href="https://github.com/jbroad"><i class="fa fa-lg fa-github"></i></a>
+    <a href="mailto:jbroad@ucdavis.edu"><i class="fa fa-lg fa-envelope"></i></a>
+    </div>
+</div>
+</div>
+
 <iframe src ="https://josephbroad.shinyapps.io/shiny/"
   style="border: 0; 
   position:absolute;top:0px;left:0px;

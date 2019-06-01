@@ -16,24 +16,11 @@ library(ggplot2)
 library(rgeos)
 library(devtools)
 
-###### Setup
-
-# Load polygon data
-#states <- states(cb = T) # Load data from tigris package
-#leg <- state_legislative_districts("Arizona", "lower") #Also from tigris
-#wrld <- st_as_sf(maps::map("world", fill = TRUE, plot = FALSE)) # from maps package
-
 ###### Server
 
 server <- function(input, output, session) {
   # Load registration data
   legreg2018 <- read.csv("legreg2018_2.csv") # District level data, 2018
-  
-  # Pad the GEOID to match the polygon data
-  #legreg2018$GEOID <- str_pad(as.character(legreg2018$GEOID), 5, side="left", pad="0")
-  
-  # Merge the manipulated data with tfhe polygon data
-  #leg_merged<- geo_join(leg, legreg2018, "GEOID", "GEOID")
   
   # Color info
   # E7E7E7 - dark gray under selected tab

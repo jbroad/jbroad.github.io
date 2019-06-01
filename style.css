@@ -10,29 +10,70 @@
 }
 
 #p {
-  font-family: monospace;
+  font-family: courier;
+  font-weight: normal;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   width: 100vw;
   margin-left: -50vw;
   position: absolute;
-  top: 900px;
+  top: 0;
   left: 50%;
 }
 .flex-container .box {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   position: relative;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   line-height: auto;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px;
 }
 
 #controls{margin: auto;}
+
+.topnav {
+  font-family: courier;
+  font-size: 32px;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display:inline-block;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #006D00;
+  text-decoration: underline;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav-right a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
