@@ -16,8 +16,8 @@ knitr::opts_chunk$set(fig.pos = 'H')
 <div class="flex-container">
 <div class="topnav"><a href="index.html"><i class="fa fa-lg fa-exclamation-circle"></i> joseph broad</a>
   <a href="teaching.html">teaching</a>
-  <a href="teaching.html">data</a>
-  <a href="http://127.0.0.1:24408/rmd_output/2/files/jbroadcv0419">cv</a>
+  <a href="data.html">data</a>
+  <a href="https://www.dropbox.com/s/kyw2nyk7o27fwwy/jbroadcv0419.pdf?dl=0">cv</a>
   <div class="topnav-right"><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a>
     <a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a>
     <a href="https://github.com/jbroad"><i class="fa fa-lg fa-github"></i></a>
@@ -84,7 +84,7 @@ cat <- qplot(x = reorder(scale, avgs),
 <div class="flex-container" style = "margin-top: 700px;">
   <div class="box">
   <p><font face = "courier">
-  Teaching brings me alive, and the passion I bring to the front of the classroom is reflected in students' evaluations of my performance at the end of each quarter. Figure 1 below shows students' average perceptions of my performance as a Teaching Assistant in response to multiple stimuli. The grand mean of my overall effectiveness score (4.37) has been consistently higher than the department average (4.07).</p>
+  I love teaching, and I believe the passion I bring to the front of the classroom is reflected in students' evaluations of my performance at the end of each quarter. Figure 1 below shows students' average perceptions of my performance as a Teaching Assistant in response to multiple stimuli. The grand mean of my overall effectiveness score (4.37) has been consistently higher than the department average (4.07).</p>
   ***
   <p style="text-decoration: underline;"> Fig 1: Students' TA Evaluations (2016-2019)</p>
 ``` {r echo=F, fig.align='center', fig.width = 8, fig.asp = .42, fig.fullwidth=TRUE}
@@ -110,12 +110,10 @@ cat
   </div>
   </div>
 
-<hr>
-
 <div class="flex-container" style = "margin-top: 2500px;">
   <div class="box">
   <p><font face = "courier">
-  <p>Among the most important skills I design exercises to develop is public speaking. This skill is applicable to every field of work, and is frequently underemphasized in courseroom settings. While some students expect a lecture setting (e.g. Anonymous Student 3), I believe I would be doing students a disservice by merely creating a passive -- rather than active -- learning environment. Students often choose not to participate in discussion due to social anxiety or feelings of inadequacy (e.g. Anonymous Student 4) so I strive to create an environment in which students feel comfortable speaking.</p>
+  <p>Among the most important skills I design exercises to develop is public speaking. This skill is applicable to every field of work, and is too frequently underemphasized in courseroom settings. While some students expect a lecture setting (e.g. Anonymous Student 3), I believe I would be doing students a disservice by merely creating a passive -- rather than active -- learning environment. Students often choose not to participate in discussion due to social anxiety or feelings of inadequacy (e.g. Anonymous Student 4) so I strive to create an environment in which students feel comfortable speaking.</p>
   ***
 <p style="font-size:90%; font-style:italic; color:gray; text-align:right;">"I think the TA relies to much on student participation to make his lessons go smoothly"<br>
 - Anonymous Student 3 (Fall, 2018)</p>
