@@ -14,8 +14,9 @@ title: "`r params$set_title`"
 <!-- header -->
 <div class="flex-container">
 <div class="topnav"><a href="index.html"><i class="fa fa-lg fa-exclamation-circle"></i> joseph broad</a>
-  <a href="research.html">research</a>
   <a href="teaching.html">teaching</a>
+  <a href="teaching.html">data</a>
+  <a href="http://127.0.0.1:24408/rmd_output/2/files/jbroadcv0419">cv</a>
   <div class="topnav-right"><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a>
     <a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a>
     <a href="https://github.com/jbroad"><i class="fa fa-lg fa-github"></i></a>
@@ -59,13 +60,13 @@ body {
   class = "center">
 
 <!-- About Me -->
-<div class="flex-container" style = "margin-top: 800px;">
+<div class="flex-container" style = "margin-top: 700px;">
   <div class="box">
   <p><font face = "courier">
   I am a Political Science PhD candidate at the [University of California, Davis](https://ps.ucdavis.edu/), specializing in American Politics. My substantive research interests include public opinion, political communication, and elections, as well as inferential and causal methodology (ideal point estimation, machine learning).</p></div></div>
   
 <!-- Training Background -->  
-<div class="flex-container" style="margin-top: 1200px;">
+<div class="flex-container" style="margin-top: 900px;">
   <div class="box">
   I have training in multiple statistical software programs to conduct my research, including R, Stata and Python. Additionally, I have a background in studying political theory with an emphasis on the Ancient Greek thinkers (Plato, Aristotle) as well as  Enlightenment and Modern Liberal thinkers (Kant, Rawls).
   

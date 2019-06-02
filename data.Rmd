@@ -1,14 +1,20 @@
 ---
 output: html_document
 params: 
-    set_title: "Research"
+    set_title: "Data Visualization"
 title: "`r params$set_title`"
 ---
+
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css">
+<!-- header -->
 <div class="flex-container">
 <div class="topnav"><a href="index.html"><i class="fa fa-lg fa-exclamation-circle"></i> joseph broad</a>
-  <a href="research.html">research</a>
   <a href="teaching.html">teaching</a>
+  <a href="teaching.html">data</a>
+  <a href="http://127.0.0.1:24408/rmd_output/2/files/jbroadcv0419">cv</a>
   <div class="topnav-right"><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a>
     <a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a>
     <a href="https://github.com/jbroad"><i class="fa fa-lg fa-github"></i></a>
@@ -25,5 +31,4 @@ title: "`r params$set_title`"
   width: 100vw; 
   height: 800px;"/>
 </iframe>
-
 
