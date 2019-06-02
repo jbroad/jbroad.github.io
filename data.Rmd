@@ -25,10 +25,10 @@ title: "`r params$set_title`"
 
 <div class="flex-container" style = "margin-top: 80px;">
   <div class="box">
-  <p><font face = "courier">I know how to use these programs.
+  <p><font face = "courier">I know how to use these programs.<br>
   </p>
 ***
-<p>images</p>
+  <div class="box"></div><div class="box"></div><div class="box"></div>
 ***
 </div>
 </div>
@@ -43,7 +43,6 @@ title: "`r params$set_title`"
   position:absolute;top:0px;left:0px;
   margin-top:100px;
   overflow:hidden;
-  width: 100vw; 
   height: 500px;"/>
 </iframe>
 ***
