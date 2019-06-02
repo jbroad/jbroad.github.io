@@ -28,7 +28,7 @@ title: "`r params$set_title`"
   <p><font face = "courier">I know how to use these programs.<br>
   </p>
 ***
-  <div class="box"></div><div class="box"></div><div class="box"></div>
+  <div class="box"><img src="files/python.png" style="width:25%; border:10px solid;"></div><div class="box"></div><div class="box"></div>
 ***
 </div>
 </div>
@@ -43,6 +43,7 @@ title: "`r params$set_title`"
   position:absolute;top:0px;left:0px;
   margin-top:100px;
   overflow:hidden;
+  width: 80vw; 
   height: 500px;"/>
 </iframe>
 ***
@@ -60,7 +61,7 @@ title: "`r params$set_title`"
   position:absolute;top:0px;left:0px;
   margin-top:100px;
   overflow:hidden;
-  width: 100vw; 
+  width: 70vw; 
   height: 500px;"/>
 </iframe>
 ***
@@ -78,7 +79,7 @@ title: "`r params$set_title`"
   position:absolute;top:0px;left:0px;
   margin-top:100px;
   overflow:hidden;
-  width: 100vw; 
+  width: 60vw; 
   height: 500px;"/>
 </iframe>
 ***
@@ -96,7 +97,7 @@ title: "`r params$set_title`"
   position:absolute;top:0px;left:0px;
   margin-top:100px;
   overflow:hidden;
-  width: 100vw; 
+  width: 50vw; 
   height: 500px;"/>
 </iframe>
 ***
