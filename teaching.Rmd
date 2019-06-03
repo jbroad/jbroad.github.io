@@ -6,9 +6,6 @@ title: "`r params$set_title`"
 header-includes:
  \usepackage{float}
 ---
-``` {r global_options}
-knitr::opts_chunk$set(fig.pos = 'H')
-```
 
 <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +78,7 @@ cat <- qplot(x = reorder(scale, avgs),
 ```
 
 <!-- Teaching Statement -->
-<div class="flex-container" style = "margin-top: 700px;">
+<div class="flex-container" style = "margin-top:60px;">
   <div class="box">
   <p><font face = "courier">
   I love teaching, and I believe the passion I bring to the front of the classroom is reflected in students' evaluations of my performance at the end of each quarter. Figure 1 below shows students' average perceptions of my performance as a Teaching Assistant in response to multiple stimuli. The grand mean of my overall effectiveness score (4.37) has been consistently higher than the department average (4.07).</p>
@@ -95,7 +92,7 @@ cat
   </div>
   </div>
 
-<div class="flex-container" style = "margin-top: 1500px;">
+<div class="flex-container" style = "margin-top:60px;">
   <div class="box">
   <p>As an educator, I prioritize the development of skills above the memorization of course material. I set high standards for my students to encourage growth and do all that I can to help students meet those standards. In setting high standards for students, I run the risk of incurring their wrath come end-of-quarter evaluations (e.g. Anonymous Student 1); however, most students appear to acknowledge their personal growth and appreciate the challenge set before them (e.g. Anonymous Student 2). </p>
   ***
@@ -110,7 +107,7 @@ cat
   </div>
   </div>
 
-<div class="flex-container" style = "margin-top: 2500px;">
+<div class="flex-container" style = "margin-top: 60px;">
   <div class="box">
   <p><font face = "courier">
   <p>Among the most important skills I design exercises to develop is public speaking. This skill is applicable to every field of work, and is too frequently underemphasized in courseroom settings. While some students expect a lecture setting (e.g. Anonymous Student 3), I believe I would be doing students a disservice by merely creating a passive -- rather than active -- learning environment. Students often choose not to participate in discussion due to social anxiety or feelings of inadequacy (e.g. Anonymous Student 4) so I strive to create an environment in which students feel comfortable speaking.</p>
@@ -125,12 +122,12 @@ cat
   </div>
   
   
-<div class="flex-container" style = "margin-top: 3500px;">
+<div class="flex-container" style = "margin-top: 60px;">
   <div class="box">
   <p><font face = "courier">
   Below is a list of courses for which I have served as a Teaching Assistant. Those marked in
   <span style="font-weight: bold; color: #006D00;"> bold </span>
-  indicate courses I am able and prepared to lead as an instructor.<br><br></p>
+  indicate courses I am able and prepared to lead as an instructor.<br></p>
   ***
   <p><span style="font-weight: bold; color: #006D00;">Introduction to American Politics<br>
   The Scientific Study of Politics<br>
