@@ -6,7 +6,7 @@ title: "`r params$set_title`"
 ---
 <!-- tab icon -->
 <link rel="shortcut icon" 
-      href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+      href="https://previews.dropbox.com/p/orig/AAdStvVZtL6x0Zaj5rk817nIXV4DOcdBQi-eP6FGZ22qJw_M24g39mRS7eKRmeNu3h32Drx41Htj5Y0-RcOgWuJXo6xlr3UY3tjY9hJEPU1DpanrZg-iSvzsyrXU0kz0vZkXh7dCYA7J8eZBccbVNTRwF02Yrt9WZBCMGJXcCXTLNYWQEj9Pl0-XgUaGhpB7hYjOLMhWvksAhGYaY-U4uqePDRmmqgBP4X3LdDRr7T8Lili6aRiFWckTrzBrxtCHSz1kga2gt7e-FoGAzNVbssYQohkJRZrkeGnWozVzYaY2joGLyXGqRIGVY0fs0o37164/p.svg?fv_content=true&size_mode=5">
 <!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css">
 <!-- header -->
