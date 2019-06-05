@@ -26,7 +26,7 @@ header-includes:
 <style>
 body {
   width:100%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("images/banner.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("https://i.redd.it/fm5hqsgohov21.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,7 +78,7 @@ cat <- qplot(x = reorder(scale, avgs),
 ```
 
 <!-- Teaching Statement -->
-<div class="flex-container" style = "margin-top:60px;">
+<div class="flex-container" style = "margin-top:350px;">
   <div class="box">
   <p><font face = "courier">
   I love teaching, and I believe the passion I bring to the front of the classroom is reflected in students' evaluations of my performance at the end of each quarter. Figure 1 below shows students' average perceptions of my performance as a Teaching Assistant in response to multiple stimuli. The grand mean of my overall effectiveness score (4.37) has been consistently higher than the department average (4.07).</p>
