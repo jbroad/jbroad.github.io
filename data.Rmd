@@ -87,11 +87,11 @@ Graphic Coming Soon
 ***
 <iframe src ="https://josephbroad.shinyapps.io/stats/"
   style="border: 1px; 
-  position:absolute;top:0px;left:0px;
+  position:absolute;top:0px;left:100px;
   margin-top:100px;
   margin-left: auto;
   overflow:hidden;
-  width: 70vw; 
+  width: 60vw; 
   height: 800px;"/>
 </iframe>
 ***
@@ -107,7 +107,7 @@ Graphic Coming Soon
 ***
 <iframe src ="https://josephbroad.shinyapps.io/dndstats/"
   style="border: 1px; 
-  position:absolute;top:0px;
+  position:absolute;top:0px;left:auto; right:auto;
   margin-top:100px;
   overflow:hidden;
   width: 70vw; 
