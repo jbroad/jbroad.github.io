@@ -15,6 +15,7 @@ library(ggplot2)
 library(rgeos)
 library(devtools)
 library(reshape2)
+library(ggrepel)
 
 ###### Server
 
@@ -27,12 +28,17 @@ server <- function(input, output, session) {
   leg_merged<- geo_join(leg, legreg2018, "GEOID", "GEOID")
   sendf <- legreg2018[c(25,37,36,35)]
   sendf <- melt(sendf, id.vars="district")
+  houdf <- legreg2018[c(25,46,45,47,44,43)]
+  houdf <- melt(houdf, id.vars="district")
+  houdf2 <- subset(legreg2018[c(25,49,48)])
+  houdf2 <- melt(houdf2, id.vars="district")
   
   # Color info
   # E7E7E7 - dark gray under selected tab
   # F8F8F8 - light gray under unselected tab
   colors <- c("#919191", "#DE0000", "#00A1DE")
   colors2 <- c("#DE0000", "#919191", "#00A1DE")
+  colors5 <- c("#DE0000", "#DE0000", "#919191", "#00A1DE", "#00A1DE")
   
   pal <- colorNumeric(
     palette = c("#DE0000","#EFE4FF", "#00A1DE"),
@@ -106,24 +112,20 @@ server <- function(input, output, session) {
     if (is.null(input$map_shape_click)) {
       h1mem <- legreg2018[27,28]
       h1party <- legreg2018[27,29]
-      paste0(h1mem, " (", h1party, ")")
+      h2mem <- legreg2018[27,30]
+      h2party <- legreg2018[27,31]
+      percenth1 <- round((legreg2018[27,48]), 2)
+      percenth2 <- round((legreg2018[27,49]), 2)
+      paste0(h1mem, " (", h1party, ") and ", h2mem, " (", h2party, ") won in 2018 with ", percenth1, "% and ", percenth2, "% of the vote, respectively")
     }
     else {
       h1mem <- legreg2018[input$map_shape_click$id,28]
       h1party <- legreg2018[input$map_shape_click$id,29]
-      paste0(h1mem, " (", h1party, ")")
-    }
-  })
-  output$h2m <- renderText({
-    if (is.null(input$map_shape_click)) {
-      h2mem <- legreg2018[27,30]
-      h2party <- legreg2018[27,31]
-      paste0(h2mem, " (", h2party, ")")
-    }
-    else {
       h2mem <- legreg2018[input$map_shape_click$id,30]
       h2party <- legreg2018[input$map_shape_click$id,31]
-      paste0(h2mem, " (", h2party, ")")
+      percenth1 <- round((legreg2018[input$map_shape_click$id,48]), 2)
+      percenth2 <- round((legreg2018[input$map_shape_click$id,49]), 2)
+      paste0(h1mem, " (", h1party, ") and ", h2mem, " (", h2party, ") won in 2018 with ", percenth1, "% and ", percenth2, "% of the vote, respectively")
     }
   })
   output$district <- renderPlot({
@@ -234,11 +236,47 @@ server <- function(input, output, session) {
                   fontface = "bold", 
                   family = "mono") +
         geom_text(data = tempdf, aes(x = district, y = value[variable=="senprodem"],
-                                                       label = paste0(value[variable=="senprorep"],"%")),
+                                        label = paste0(value[variable=="senprorep"],"%")),
                   nudge_y = 10, 
                   color = "white",
                   fontface = "bold", 
                   family = "mono") + 
+        coord_flip() + 
+        theme_minimal() +
+        theme(legend.position="none", 
+              axis.title.y = element_blank(),
+              axis.title.x = element_blank(),
+              axis.text.y = element_blank(),
+              axis.text.x = element_text(family="mono"),
+              panel.grid.major.y = element_blank(),
+              panel.grid.minor.x = element_blank(),
+              plot.margin=unit(c(t=0,r=-.25,b=0,l=-.45),"cm"))
+    }
+  })
+  output$houbar <- renderPlot({
+    if (is.null(input$map_shape_click)) {
+      tempdf2 <- subset(houdf, district==27)
+      ggplot() + 
+        geom_bar(aes(y = value, x = district, fill = variable), data = tempdf2, color="white",
+                 stat="identity") +
+        scale_fill_manual(values=colors5) +
+        coord_flip() + 
+        theme_minimal() +
+        theme(legend.position="none", 
+              axis.title.y = element_blank(),
+              axis.title.x = element_blank(),
+              axis.text.y = element_blank(),
+              axis.text.x = element_text(family="mono"),
+              panel.grid.major.y = element_blank(),
+              panel.grid.minor.x = element_blank(),
+              plot.margin=unit(c(t=0,r=-.25,b=0,l=-.45),"cm"))
+    }
+    else {
+      tempdf2 <- subset(houdf, district==paste(input$map_shape_click$id))
+      ggplot() + 
+        geom_bar(aes(y = value, x = district, fill = variable), data = tempdf2, color="white",
+                 stat="identity") +
+        scale_fill_manual(values=colors5) +
         coord_flip() + 
         theme_minimal() +
         theme(legend.position="none", 
@@ -279,7 +317,7 @@ ui <- fluidPage(
                   plotOutput("senbar", height="35px"),
                   h4("House Representation"),
                   textOutput("h1m"),
-                  textOutput("h2m")
+                  plotOutput("houbar", height="35px")
       ),
       tags$style(type = "text/css", ".container-fluid {padding:0;}")
 )
