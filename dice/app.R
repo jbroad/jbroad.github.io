@@ -16,6 +16,8 @@ f <- function(x) {
 m <- 10000
 
 ui <- fluidPage(theme = shinytheme("lumen"),
+                tags$style(HTML(".js-irs-0 .irs-single, .js-irs-0 .irs-bar-edge, .js-irs-0 .irs-bar {background: #006D00}")),
+                tags$style(HTML(".js-irs-1 .irs-single, .js-irs-1 .irs-bar-edge, .js-irs-1 .irs-bar {background: #006D00}")),
                 titlePanel("Dungeons and Data"),
   sidebarPanel(
         fluidRow(
@@ -40,7 +42,7 @@ ui <- fluidPage(theme = shinytheme("lumen"),
             textOutput("count"),
             textOutput("outcome"),
             textOutput("text1"),
-            tags$head(tags$style("#text1{color: #FC9040;
+            tags$head(tags$style("#text1{color: #006D00;
                                         font-size: 40px;
                                   }"
                           )))),
@@ -52,10 +54,10 @@ ui <- fluidPage(theme = shinytheme("lumen"),
         ),
   mainPanel(
     fluidRow(
-        plotOutput("hi")
+        plotOutput("hi", height="300px")
         ),
     fluidRow(
-           plotOutput("prob")
+           plotOutput("prob", height="300px")
          )
   )
 )
@@ -155,8 +157,8 @@ server <- function(input, output, session) {
       t$z[e==t$x] <- 2
       ggplot(t, aes(x=t$x, y=t$Freq, fill=as.factor(t$z))) +
         geom_bar(position = "dodge", stat="identity") +
-        theme_classic() +
-        scale_fill_manual(name="Var2", values = c("#FC9040", "#180B55", "#2B879C")) + # higher, lower, mid
+        theme_minimal() +
+        scale_fill_manual(name="Var2", values = c("#7AA67A", "#063706", "#006D00")) + # higher, lower, mid
         xlab(element_blank()) +#2B879C
         ylab(element_blank()) +#180B55
         labs(title = paste0("Your roll of ", e, " was higher than roughly ", p, "% of all possible rolls")) +
@@ -200,11 +202,20 @@ server <- function(input, output, session) {
     ggplot(data=plotters,
            aes(x=Var1, y=value, colour=as.factor(Var2))) +
       geom_line(size=1) +
-      scale_color_manual(name="Var2", values = c("#2B879C", "#FC9040", "#180B55")) +
-      geom_vline(xintercept = input$ac, size=1, linetype="dotted") +
-      theme_classic() + 
-      labs(title = paste0("You Have the Following Probability of Hitting Baddie"), x="Baddie's Armor Class", y="Probability of Successful Hit") +
-      theme(legend.position = "none")
+      scale_color_manual(name="Var2", values = c("#006D00", "#7AA67A", "#063706")) + # mid, high, low
+      geom_vline(xintercept = input$ac, size=.5, linetype="dashed") +
+      theme_minimal() + 
+      labs(title = paste0("You Have the Following Probabilities of Hitting Baddie (not including critical rolls)"), x="Baddie's Armor Class", y="Probability of Successful Hit") +
+      theme(legend.position = "none") +
+      geom_point(x = input$ac, y = probadv[input$ac]) + 
+      geom_point(x = input$ac, y = probhit[input$ac]) +
+      geom_point(x = input$ac, y = probdis[input$ac]) +
+      annotate("text", x = 25, y = 1, label = paste(round(probadv[input$ac],2), "with advantage"), color = "#7AA67A") + 
+      annotate("text", x = 25, y = .9, label = paste(round(probhit[input$ac],2), "with a normal ATK"), color = "#006D00") + 
+      annotate("text", x = 25, y = .8, label = paste(round(probdis[input$ac],2), "with disadvantage"), color = "#063706")
+      #geom_text_repel(x = input$ac, y = probadv[input$ac], aes(label = paste(round(probadv[input$ac],2), "with advantage"))) 
+      #geom_label(x = input$ac, y = probhit[input$ac], aes(label = paste(round(probhit[input$ac],2), "with normal attack"))) +
+      #geom_label(x = input$ac, y = probdis[input$ac], aes(label = paste(round(probdis[input$ac],2), "with disadvantage")))
   })
 }
 
