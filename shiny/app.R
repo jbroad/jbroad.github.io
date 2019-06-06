@@ -14,17 +14,26 @@ library(XML)
 library(ggplot2)
 library(rgeos)
 library(devtools)
+library(reshape2)
 
 ###### Server
 
 server <- function(input, output, session) {
   # Load registration data
+  leg <- state_legislative_districts("Arizona", "lower")
   legreg2018 <- read.csv("legreg2018_2.csv") # District level data, 2018
+  # Pad the GEOID to match the polygon data
+  legreg2018$GEOID <- str_pad(as.character(legreg2018$GEOID), 5, side="left", pad="0")
+  leg_merged<- geo_join(leg, legreg2018, "GEOID", "GEOID")
+  sendf <- legreg2018[c(25,37,36,35)]
+  sendf <- melt(sendf, id.vars="district")
   
   # Color info
   # E7E7E7 - dark gray under selected tab
   # F8F8F8 - light gray under unselected tab
   colors <- c("#919191", "#DE0000", "#00A1DE")
+  colors2 <- c("#DE0000", "#919191", "#00A1DE")
+  
   pal <- colorNumeric(
     palette = c("#DE0000","#EFE4FF", "#00A1DE"),
     domain = leg_merged$twopar
@@ -83,12 +92,14 @@ server <- function(input, output, session) {
     if (is.null(input$map_shape_click)) {
       senmem <- legreg2018[27,26]
       party <- legreg2018[27,27]
-      paste0(senmem, " (", party, ")")
+      percent <- (legreg2018[27,32]/(legreg2018[27,32] + legreg2018[27,33] + legreg2018[27,34]))*100
+      paste0(senmem, " (", party, ") won in 2018 with ", percent, "% of the vote.")
     }
     else {
       senmem <- legreg2018[input$map_shape_click$id,26]
       party <- legreg2018[input$map_shape_click$id,27]
-      paste0(senmem, " (", party, ")")
+      percent <- round((legreg2018[input$map_shape_click$id,32]/(legreg2018[input$map_shape_click$id,32] + legreg2018[input$map_shape_click$id,33] + legreg2018[input$map_shape_click$id,34]))*100, 2)
+      paste0(senmem, " (", party, ") won in 2018 with ", percent, "% of the vote.")
     }
   })
   output$h1m <- renderText({
@@ -125,7 +136,7 @@ server <- function(input, output, session) {
       name$V2 <- as.numeric(name$V2)
       ggplot(name, aes(x=V1, y=V2, fill=V1)) + 
         geom_col() + 
-        geom_text(label = name$V2, nudge_y = -5, fontface = "bold", family = "mono", color="white") +
+        geom_text(label = paste0(name$V2,"%"), nudge_y = -5, fontface = "bold", family = "mono", color="white") +
         coord_flip() + 
         ylim(0,60) +
         scale_fill_manual(values=colors) +
@@ -148,10 +159,87 @@ server <- function(input, output, session) {
       name$V2 <- as.numeric(name$V2)
       ggplot(name, aes(x=V1, y=V2, fill=V1)) + 
         geom_col() + 
-        geom_text(label = name$V2, nudge_y = -5, fontface = "bold", family = "mono", color="white") +
+        geom_text(label = paste0(name$V2,"%"), nudge_y = -5, fontface = "bold", family = "mono", color="white") +
         coord_flip() + 
         ylim(0,60) +
         scale_fill_manual(values=colors) +
+        theme_minimal() +
+        theme(legend.position="none", 
+              axis.title.y = element_blank(),
+              axis.title.x = element_blank(),
+              axis.text.y = element_blank(),
+              axis.text.x = element_text(family="mono"),
+              panel.grid.major.y = element_blank(),
+              panel.grid.minor.x = element_blank(),
+              plot.margin=unit(c(t=0,r=-.25,b=0,l=-.45),"cm"))
+    }
+  })
+  output$senbar <- renderPlot({
+    if (is.null(input$map_shape_click)) {
+      tempdf <- subset(sendf, district==27)
+      ggplot() + 
+        geom_bar(aes(y = value, x = district, fill = variable), data = tempdf, color="white",
+                 stat="identity") +
+        scale_fill_manual(values=colors2) +
+        geom_text(data = tempdf, aes(x = district, y = value[variable=="senprodem"],
+                                     label = paste0(value[variable=="senprodem"],"%")), 
+                  nudge_y = -10, 
+                  color = "white",
+                  fontface = "bold", 
+                  family = "mono") +
+        coord_flip() + 
+        theme_minimal() +
+        theme(legend.position="none", 
+              axis.title.y = element_blank(),
+              axis.title.x = element_blank(),
+              axis.text.y = element_blank(),
+              axis.text.x = element_text(family="mono"),
+              panel.grid.major.y = element_blank(),
+              panel.grid.minor.x = element_blank(),
+              plot.margin=unit(c(t=0,r=-.25,b=0,l=-.45),"cm"))
+    }
+    else if (input$map_shape_click$id==3 | input$map_shape_click$id==27 | input$map_shape_click$id==4 | input$map_shape_click$id==19 | input$map_shape_click$id==30) {
+      tempdf <- subset(sendf, district==paste(input$map_shape_click$id))
+      ggplot() + 
+        geom_bar(aes(y = value, x = district, fill = variable), data = tempdf, color="white",
+                 stat="identity") +
+        scale_fill_manual(values=colors2) +
+        geom_text(data = tempdf, aes(x = district, y = value[variable=="senprodem"],
+                                     label = paste0(value[variable=="senprodem"],"%")), 
+                  nudge_y = -10, 
+                  color = "white",
+                  fontface = "bold", 
+                  family = "mono") +
+        coord_flip() + 
+        theme_minimal() +
+        theme(legend.position="none", 
+              axis.title.y = element_blank(),
+              axis.title.x = element_blank(),
+              axis.text.y = element_blank(),
+              axis.text.x = element_text(family="mono"),
+              panel.grid.major.y = element_blank(),
+              panel.grid.minor.x = element_blank(),
+              plot.margin=unit(c(t=0,r=-.25,b=0,l=-.45),"cm"))
+    }
+    else {
+      tempdf <- subset(sendf, district==paste(input$map_shape_click$id))
+      ggplot() + 
+        geom_bar(aes(y = value, x = district, fill = variable), data = tempdf, color="white",
+                 stat="identity") +
+        scale_fill_manual(values=colors2) +
+        geom_text(data = tempdf, aes(x = district, y = value[variable=="senprodem"],
+                                        label = paste0(value[variable=="senprodem"],"%")), 
+                  nudge_y = -10, 
+                  color = "white",
+                  fontface = "bold", 
+                  family = "mono") +
+        geom_text(data = tempdf, aes(x = district, y = value[variable=="senprodem"],
+                                                       label = paste0(value[variable=="senprorep"],"%")),
+                  nudge_y = 10, 
+                  color = "white",
+                  fontface = "bold", 
+                  family = "mono") + 
+        coord_flip() + 
         theme_minimal() +
         theme(legend.position="none", 
               axis.title.y = element_blank(),
@@ -177,6 +265,9 @@ ui <- fluidPage(
                       padding-bottom:20px;
                       font-family: courier;}")
                       ),
+      tags$style(
+                  HTML("h4 {text-decoration: underline;}")
+        ),
       leafletOutput("map", width="100%", height="100%"),
       absolutePanel(id = "controls", class = "panel panel-default", fixed = T, draggable = T,
                   bottom = "auto", left = "auto", right = 5, top = 80, width = 300, height = "auto",
@@ -185,6 +276,7 @@ ui <- fluidPage(
                   plotOutput("district", height="80px"),
                   h4("Senate Representation"),
                   textOutput("sen"),
+                  plotOutput("senbar", height="35px"),
                   h4("House Representation"),
                   textOutput("h1m"),
                   textOutput("h2m")

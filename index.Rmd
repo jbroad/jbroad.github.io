@@ -55,9 +55,10 @@ body {
   (joseph broad)
 </h2>
 
-<img src="images/greenhex.png" 
-  style = "margin-top: 65px;"
-  class = "center">
+<img src="images/cover.jpg" 
+  style = "border:25px solid white; margin-top: 65px;"
+  class = "rounded-corners"
+  width = 350px>
 
 <!-- About Me -->
 <div class="flex-container" style = "margin-top: 60px;">
