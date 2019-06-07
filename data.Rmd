@@ -92,7 +92,7 @@ Graphic Coming Soon
   margin-left: auto;
   overflow:hidden;
   width: 60vw; 
-  height: 800px;"/>
+  height: 650px;"/>
 </iframe>
 ***
 </div>
@@ -111,7 +111,7 @@ Graphic Coming Soon
   position:absolute;top:0px;left:10vw;right:10vw;
   margin-top:100px;
   overflow:hidden;
-  <!--height: 800px;-->
+  height: 700px;
   width: 60vw;"/>
 </iframe>
 
