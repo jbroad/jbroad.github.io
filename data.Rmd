@@ -107,12 +107,12 @@ Graphic Coming Soon
 ***
 
 <iframe src ="https://josephbroad.shinyapps.io/dndstats/"
-  style="border: 1px; 
-  position:absolute;top:0px;left:20vw;right:20vw;
+  style="border: 0; 
+  position:absolute;top:0px;left:10vw;right:10vw;
   margin-top:100px;
   overflow:hidden;
-  width: 60vw; 
-  height: 800px;"/>
+  <!--height: 800px;-->
+  width: 60vw;"/>
 </iframe>
 
 ***
