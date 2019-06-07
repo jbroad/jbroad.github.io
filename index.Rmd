@@ -48,7 +48,7 @@ body {
 <!-- Content --> 
 <h2 
   align = "center"
-  style = "margin-top: 230px;
+  style = "margin-top: 200px;
            color:black;
            font-family: courier;
            font-size: 400%;">
