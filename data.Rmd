@@ -87,15 +87,15 @@ Graphic Coming Soon
 ***
 <iframe src ="https://josephbroad.shinyapps.io/stats/"
   style="border: 1px; 
-  position:absolute;top:0px;left:100px;
+  position:absolute;top:0px;left:10vw;right:10vw;
   margin-top:100px;
   margin-left: auto;
   overflow:hidden;
   width: 60vw; 
   height: 650px;"/>
 </iframe>
-***
 </div>
+***
 </div>
 
 <!-- Dungeons and Dragons Calc -->
@@ -105,7 +105,6 @@ Graphic Coming Soon
   I also try to make abstract statistical concepts more approachable by putting them into the more familiar context of dice rolls in Dungeons and Dragons battle mechanics:
   </p>
 ***
-
 <iframe src ="https://josephbroad.shinyapps.io/dndstats/"
   style="border: 0; 
   position:absolute;top:0px;left:10vw;right:10vw;
@@ -114,9 +113,6 @@ Graphic Coming Soon
   height: 700px;
   width: 60vw;"/>
 </iframe>
-
-***
 </div>
 </div>
-
 
