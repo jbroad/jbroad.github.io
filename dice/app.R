@@ -18,6 +18,8 @@ m <- 10000
 ui <- fluidPage(theme = shinytheme("lumen"),
                 tags$style(HTML(".js-irs-0 .irs-single, .js-irs-0 .irs-bar-edge, .js-irs-0 .irs-bar {background: #006D00}")),
                 tags$style(HTML(".js-irs-1 .irs-single, .js-irs-1 .irs-bar-edge, .js-irs-1 .irs-bar {background: #006D00}")),
+                tags$style(HTML("h2 {font-family: Courier}
+                                 div {font-family: Courier}")),
                 titlePanel("Dungeons and Data"),
   sidebarPanel(
         fluidRow(

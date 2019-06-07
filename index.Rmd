@@ -1,7 +1,7 @@
 ---
 output: html_document
 params: 
-    set_title: "Under Construction"
+    set_title: "Joseph Broad: Home"
 title: "`r params$set_title`"
 ---
 <!-- tab icon -->
@@ -52,7 +52,7 @@ body {
            color:black;
            font-family: courier;
            font-size: 400%;">
-  (joseph broad)
+  joseph broad
 </h2>
 
 <img src="images/cover2_Fotor.jpg" 
