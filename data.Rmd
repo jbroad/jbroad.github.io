@@ -51,7 +51,7 @@ title: "`r params$set_title`"
   <p><font face = "courier">To supplement my formal methodological training, I have devoted much of my (limited) free time in graduate school to developing programming skills in creating visually attractive and interactive graphics. Since I am currently based in Phoenix, AZ, let's take a brief look at some political geographical data regarding Arizona's state legislative districts.
   
   Click a district on the map below to see additional information about that district's voter registration and representation.
-  </p>
+  </p><br>
 ***
 <iframe src ="https://josephbroad.shinyapps.io/shiny/"
   style="border: 1px; 
