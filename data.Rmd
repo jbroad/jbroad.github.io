@@ -24,17 +24,8 @@ title: "`r params$set_title`"
 </div>
 
 <!-- Programs I know -->
-<div class="flex-container" style = "margin-top: 45px;">
-  <div class="box">
-  <img src = "images/meme.jpg" width="500"><br>
-  <!-- intentionally left blank -->
   
-  ***
-  <p><font face = "courier">I consider myself an expert in googling how to use the following programs and packages:</p>
-  ***
-</div>
-</div>
-<div class="flex-container" style = "margin-top: 2px; padding-left:300px; padding-right:300px;">
+<div class="flex-container" style = "margin-top: 200px; padding-left:300px; padding-right:300px;">
   <div class="box"><img src="images/stata15.png" width="120"></div>
   <div class="box"><img src="images/rtest.png" width="120"></div>
   <div class="box"><img src="images/python.png" width="120"></div>

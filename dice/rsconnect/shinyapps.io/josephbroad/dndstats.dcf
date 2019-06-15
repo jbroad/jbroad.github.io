@@ -5,8 +5,8 @@ account: josephbroad
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 924265
-bundleId: 2136400
+bundleId: 2146813
 url: https://josephbroad.shinyapps.io/dndstats/
-when: 1559853360.79744
+when: 1560293151.01532
 asMultiple: FALSE
 asStatic: FALSE

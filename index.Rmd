@@ -48,7 +48,7 @@ body {
 <!-- Content --> 
 <h2 
   align = "center"
-  style = "margin-top: 200px;
+  style = "margin-top: 140px;
            color:black;
            font-family: courier;
            font-size: 400%;">
@@ -56,9 +56,9 @@ body {
 </h2>
 
 <img src="images/cover2_Fotor.jpg" 
-  style = "border:25px solid white; margin-top: 65px;"
+  style = "border:30px solid white; margin-top: 60px;"
   class = "rounded-corners"
-  width = 350px>
+  width = 400px>
 
 <!-- About Me -->
 <div class="flex-container" style = "margin-top: 60px;">
