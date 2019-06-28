@@ -2,6 +2,7 @@
 library(tigris)
 options(tigris_use_cache = TRUE)
 library(shiny)
+library(shinyWidgets)
 library(acs)
 library(stringr) # to pad fips codes
 library(leaflet)
@@ -41,7 +42,7 @@ server <- function(input, output, session) {
   colors5 <- c("#DE0000", "#DE0000", "#919191", "#00A1DE", "#00A1DE")
   
   pal <- colorNumeric(
-    palette = c("#DE0000","#EFE4FF", "#00A1DE"),
+    palette = c("#D4F3FF", "#00A1DE"),
     domain = leg_merged$twopar
   )
   
@@ -65,7 +66,7 @@ server <- function(input, output, session) {
     addPolygons(data = leg_merged, 
                 fillColor = ~pal(twopar), 
                 color = "#FFFFFF", 
-                fillOpacity = .6, 
+                fillOpacity = .8, 
                 opacity = 1,
                 weight = 1.5, 
                 highlightOptions = highlightOptions(color = "#FFFFFF", 
@@ -295,8 +296,9 @@ server <- function(input, output, session) {
 
 ui <- fluidPage(
       tags$style(type = "text/css", 
-                  "#map {height: 100vh !important;}"),
-      tags$style( 
+                  "#map {height: 100vh !important;
+                  background-color: #FFFFFF;}"),
+      tags$style(
                  HTML("#controls{padding-left:20px; 
                       padding-right:20px; 
                       padding-top:5px; 

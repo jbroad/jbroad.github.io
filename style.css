@@ -6,34 +6,89 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: courier;
+  font-family: helvetica;
 }
 
 #p {
-  font-family: courier;
-  font-weight: normal;
+  font-family: helvetica;
+  font-weight: 100;
+  text-align: left;
+}
+
+h2 {
+  color:black;
+  font-family: helvetica;
+  font-size: 220%;
+  font-weight: 500;
+  line-height: 30%;
+}
+
+h3 {
+  color:gray;
+  font-family: helvetica;
+  font-size: 120%;
+  font-weight: 100;
+  line-height: 26px;
+}
+
+.fa {
+  color: black;
+  text-align: center;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
   background-color: #ffffff;
+  padding: 10px;
+  padding-top: 40px;
   width: 100vw;
   margin-left: -50vw;
   position: relative;
   top: 0;
   left: 50%;
 }
-.flex-container .box {
-  background-color: #ffffff;
+.flex-container .boxed {
+  display: flex;
+  background-color: rgba(0,0,0,0);
   position: relative;
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  line-height: auto;
+  text-align: left;
+  line-height: inherit;
+  font-size: 16px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.flex-container .box {
+  background-color: rgba(0,0,0,0);
+  position: relative;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
   font-size: 16px;
   padding: 10px;
+}
+
+.flex-container .bigside {
+  background-color: rgba(0,0,0,0);
+  position: relative;
+  width: 70vw;
+  margin-left: 30px;
+  margin-right: 0;
+  text-align: left;
+  font-size: 16px;
+  padding: 0;
+}
+.flex-container .side {
+  background-color: rgba(0,0,0,0);
+  position: relative;
+  width: 40vw;
+  text-align: left;
+  font-size: 16px;
 }
 
 #controls{margin: auto;}
@@ -47,14 +102,18 @@
 
 .topnav {
   z-index:1;
-  font-family: courier;
+  font-family: helvetica;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 100;
   overflow: hidden;
   background-color: #ffffff;
-  width: 100%;
+  width: 101vw;
+  margin-left: -1vw;
+  margin-top: -50px;
   padding-left: 60px;
   padding-right: 60px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   display:inline-block;
   position:fixed;
 }
@@ -65,7 +124,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .topnav a:hover {
