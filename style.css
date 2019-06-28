@@ -1,12 +1,13 @@
 #header { 
   display: none;
+  margin: 0;
 }
 
-#body {
+* {box-sizing: border-box;
+}
+
+body {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-family: helvetica;
 }
 
 #p {
@@ -31,68 +32,6 @@ h3 {
   line-height: 26px;
 }
 
-.fa {
-  color: black;
-  text-align: center;
-}
-
-.flex-container {
-  display: flex;
-  overflow: hidden;
-  flex-wrap: nowrap;
-  background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  margin-left: -50vw;
-  width: 100vw;
-  position: relative;
-  top: 0;
-  left: 50%;
-}
-.flex-container .boxed {
-  display: flex;
-  background-color: rgba(0,0,0,0);
-  position: relative;
-  width: 70vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  text-align: left;
-  line-height: inherit;
-  font-size: 16px;
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
-
-.flex-container .box {
-  background-color: rgba(0,0,0,0);
-  position: relative;
-  width: 100vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  text-align: left;
-  font-size: 16px;
-}
-
-.flex-container .bigside {
-  background-color: rgba(0,0,0,0);
-  position: relative;
-  width: 70vw;
-  margin-left: 30px;
-  margin-right: 0;
-  text-align: left;
-  font-size: 16px;
-  padding: 0;
-}
-.flex-container .side {
-  background-color: rgba(0,0,0,0);
-  position: relative;
-  width: 40vw;
-  text-align: left;
-  font-size: 16px;
-}
-
-#controls{margin: auto;}
-
 .rounded-corners{
   border-radius: 50% 50% 50% 50%;
   display: block;
@@ -100,51 +39,135 @@ h3 {
   margin-right: auto;
 }
 
-.topnav {
-  z-index:1;
-  font-family: helvetica;
-  font-size: 32px;
-  font-weight: 100;
-  overflow: hidden;
-  background-color: #ffffff;
-  width: 101vw;
-  margin-top: -50px;
-  margin-left: -15px;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  display:inline-block;
-  position:fixed;
-  float: left;
-}
-
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 22px;
-}
-
-.topnav-right {
-  font-size: 32px;
-  float: right;
-}
-
-.topnav-right a {
-  float: right;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #006D00;
-  text-decoration: underline;
+.wideboi {
+  display: flex;
+  flex-direction: column;
+  width: 100vw; 
+  margin-left: calc(-50vw + 50%);
 }
 
 a {
   color: #006D00;
+}
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 25px 0;
+  height: 100px;
+  width: 100%;
+  z-index:1;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 40px 0;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+/* Left and right column */
+.side {
+  width: 40%;
+  padding-right:10px;
+  padding-top: 40px;
+}
+
+/* Middle column */
+.middle {
+  width: 60%;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.landing {
+  max-width: 800px;
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  margin-right: auto;
+  margin-left:  auto;
+  width: 800px;
+  max-width: 100%;
+  padding-right: 10px; 
+  padding-left:  10px; 
+  padding-top: 40px;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 2px solid green;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Style the footer */
+.footer {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+section { 
+  display: block;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .side, .middle {
+    width: 100%;
+  }
 }

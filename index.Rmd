@@ -6,19 +6,23 @@ title: "`r params$set_title`"
 ---
 <!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css">
-
-<div class="flex-container">
-<div class="topnav"><a href="index.html">Home</a>
-  <div class="topnav-right">
-  <a href="about.html">About</a>
-    </div>
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- header -->
+<div class="topnav"
+style = "width: 100vw; 
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2)">
+<div class="landing">
+  <a href="index.html">Home</a>
+  <a style = "float:right" href="about.html">About</a>
 </div>
 </div>
-
-<div class="flex-container" style = "background-color: #f5faf5; margin-top: -5vw; padding-top:80px">
-<div class = box>
-<p><br>
-Under Construction
-</p>
+<div class="wideboi" style = "z-index: 1; margin-top: 100px; background:#aaa">
+<div class="wrapper">
+<h2 style="padding-bottom: 40px">Under Construction</h2>
 </div>
 </div>

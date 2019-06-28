@@ -194,54 +194,56 @@ $(document).ready(function () {
 
 
 <!-- style -->
-<p><link rel="stylesheet" href="style.css" type="text/css"> <!-- Load an icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></p>
-<!-- header -->
-<div class="flex-container">
-<div class="topnav">
-<a href="index.html">Home</a>
-<div class="topnav-right">
-<a href="about.html">About</a>
-</div>
+<link rel="stylesheet" href="style.css" type="text/css"> <!-- Load an icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- header -->
+<div class="topnav" style="width: 100vw; 
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1)">
+<div class="landing">
+<p><a href="index.html">Home</a> <a style = "float:right" href="about.html">About</a></p>
 </div>
 </div>
 <!-- About Meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-<div class="flex-container" style="background-color: #f5faf5; margin-top: -5vw; padding-top:60px">
-<div class="boxed">
-<div class="side" style="margin-left:-30px;
-                padding:10px;">
-<p><img src="images/cover2_Fotor.jpg" 
+<div class="wideboi" style="margin-top:100px; background:#f0f0f0">
+<div class="wrapper">
+<div class="column side">
+<img src="images/cover2_Fotor.jpg" 
   class = "rounded-corners"
-  width = 210px></p>
+  width = 210px
+  style = "box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.4);
+  border: 2px solid black;">
 <h2 align="center" style="font-weight: 100; font-size: 30px; margin-top: 40px;">
 Joseph Broad
 </h2>
 <h3 align="center" style="margin-top: 40px;">
-<p>Political Scientist<br>University of California, Davis<br></p>
-<a href="mailto:jbroad@ucdavis.edu"><i class="fa fa-lg fa-envelope"></i></a> <a href="https://github.com/jbroad"><i class="fa fa-lg fa-github"></i></a> <a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a> <a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a>
+Political Scientist<br>University of California, Davis<br> <a href="mailto:jbroad@ucdavis.edu"><i class="fa fa-lg fa-envelope"></i></a> <a href="https://github.com/jbroad"><i class="fa fa-lg fa-github"></i></a> <a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a> <a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a>
 </h3>
 </div>
-<div class="bigside">
+<div class="column middle">
 <h2>
 About
 </h2>
 <p>
 <p><font size = "4"><br> I am a Political Science PhD candidate at the <a href="https://ps.ucdavis.edu/">University of California, Davis</a>, specializing in American Politics. My substantive research interests include public opinion, political communication, and elections, as well as inferential and causal methodology (ideal point estimation, machine learning).<br><br></p>
 <p>I have training in multiple statistical software programs to conduct my research, including R, Stata and Python. Additionally, I have a background in studying political theory with an emphasis on the Ancient Greek thinkers (Plato, Aristotle) as well as Enlightenment and Modern Liberal thinkers (Kant, Rawls).<br><br></p>
-My full CV is available <a href="https://www.dropbox.com/s/kyw2nyk7o27fwwy/jbroadcv0419.pdf?dl=">here</a>. </font>
+My full CV is available <a href="https://www.dropbox.com/s/63eurd7ux7sdqh4/jbroadcv0619.pdf?dl=0">here</a>. </font>
 </p>
 </div>
 </div>
 </div>
 <!-- Teachiiiiiiiiiiiiiiiiiiiiiiiiiiiing -->
-<div class="flex-container" style="background-color: #ffffff;">
-<div class="box">
+<div class="wideboi" style="background:#ffffff;">
+<div class="wrapper">
+<div class="column">
 <h2>
 Teaching
 </h2>
 <p>
 <font size = "4"><br> I love teaching, and I believe the passion I bring to the front of the classroom is reflected in students’ evaluations of my performance at the end of each quarter. Figure 1 below shows students’ average perceptions of my performance as a Teaching Assistant in response to multiple stimuli. The grand mean of my overall effectiveness score (4.37) has been consistently higher than the department average (4.07).
 </p>
-<p><img src="about_files/figure-html/unnamed-chunk-1-1.png" width="768" style="display: block; margin: auto;" /></p>
+<img src="about_files/figure-html/unnamed-chunk-1-1.png" width="768" style="display: block; margin: auto;" />
 <p>
 <font size = "4"><br> Below is a list of courses for which I have served as a Teaching Assistant. Those marked in <span style="font-weight: bold; color: #006D00;"> bold </span> indicate courses I am able and prepared to lead as an instructor.<br>
 </p>
@@ -249,26 +251,77 @@ Teaching
 <p align="center">
 <span style="font-weight: bold; color: #006D00;">Introduction to American Politics<br> The Scientific Study of Politics<br> Introduction to Political Theory</span><br> Local and State Politics<br> California Politics<br> Media and Politics<br> Policy and Agenda-Setting<br> Ethnic Conflict
 </p>
-<hr />
 </div>
 </div>
 </div>
 <!-- Data VizzzZZZzzZZZZzzzZZZZzzzzZzzzZZzzZzZzZzzz -->
-<div class="flex-container" style="background-color: #f5faf5; padding-bottom:60px">
-<div class="box">
-<h2>
+<div class="wideboi" style="background:#f0f0f0;">
+<div class="wrapper">
+<h2 style="padding-bottom: 20px;">
 Data Visualization
 </h2>
+</div>
+<div class="wrapper" style="padding-top:0;">
+<div class="column middle" style="padding: 10px 0;">
 <p>
-<br> Examples of Interactive Shiny Apps Coming Soon<br>
+To supplement my formal methodological training, I have devoted much of my (limited) free time in graduate school to developing programming skills in creating visually attractive and interactive graphics. On the right is an interactive map illustrating the results of the 2018 election in Arizona’s state legislature, as well as registration numbers prior to the election.
 </p>
 </div>
+<div class="column side" style="padding: 5px 0;">
+<p><a href="https://josephbroad.shinyapps.io/shiny/"> <img src="images/map_a.png" 
+    class = "rounded-corners"
+    width = 180px
+    style = "box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.10);
+    border: 2px solid black;"></a></p>
 </div>
-<div class="flex-container" style="background-color: #ffffff;">
-<div class="box">
+</div>
+<div class="wrapper" style="padding-bottom: 40px;">
+<div class="column middle" style="padding:4px 0;">
+<p>
+The skills I have developed in creating interactive graphics and applications have proved a useful means toward the end of educating my students. I have created simple applications in order to help my students learn complex statistical concepts, such as Central Limit Theorem, Standard Deviation, Standard Error of the Mean, and others (right). Additional examples forthcoming.
+</p>
+</div>
+<div class="column side" style="padding: 5px 0;">
+<p><a href="https://josephbroad.shinyapps.io/stats/"> <img src="images/learn_int.png" 
+    class = "rounded-corners"
+    width = 180px
+    style = "box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.10);
+    border: 2px solid black;"></a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<h3>
+<a href="mailto:jbroad@ucdavis.edu"><i class="fa fa-lg fa-envelope"></i></a> <a href="https://github.com/jbroad"><i class="fa fa-lg fa-github"></i></a> <a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a> <a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a>
+</h3>
+</div>
+<!-- Data VizzzZZZzzZZZZzzzZZZZzzzzZzzzZZzzZzZzZzzz 
+<div class = "content">
+<h2 style = "color: white">Data Visualization</h2><br>
+<p style = "color: white">To supplement my formal methodological training, I have devoted much of my (limited) free time in graduate school to developing programming skills in creating visually attractive and interactive graphics. On the left is a geographical represetation of 2018 election results in Arizona's state legislature. The skills I have developed in creating interactive graphics and applications have proved a useful means toward the end of educating my students. I have created simple applications in order to help my students learn complex statistical concepts, such as Central Limit Theorem, Standard Deviation, Standard Error of the Mean, and others (right). Additional examples forthcoming.
+</p>
 
-</div>
-</div>
+
+<h2 align = "center" style = "color: white; font-weight: 100; font-size: 30px;">Interactive Maps</h2><br>
+<a href="https://josephbroad.shinyapps.io/shiny/">
+<img src="images/map_a.png" 
+    class = "rounded-corners"
+    width = 210px
+    style = "box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.10)"></a>
+
+
+<h2 align = "center" style = "color: white; font-weight: 100; font-size: 30px;">Interactive Learning</h2><br>
+<a href="https://josephbroad.shinyapps.io/stats/">
+<img src="images/learn_int.png" 
+    class = "rounded-corners"
+    width = 210px
+    style = "box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.10)"></a>
+
+<p><br>
+Additional Examples Forthcoming<br>
+</p>
+
+</div> -->
 
 
 

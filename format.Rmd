@@ -1,0 +1,44 @@
+---
+output: html_document
+params: 
+    set_title: "Formatting"
+title: "`r params$set_title`"
+---
+<!-- style -->
+<link rel="stylesheet" href="style.css" type="text/css">
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- header -->
+<div class="topnav"
+style = "width: 100vw; 
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2)">
+<div class="wrapper">
+  <a href="#">Left</a>
+  <a style = "float:right" href="#">Right</a>
+</div>
+</div>
+<div class="wideboi" style = "z-index: -1; margin-top:100px; border:2px solid blue; background:#aaa">
+<div class="wrapper" style = "border:2px solid red;">
+<div class="column side" style = "border:2px solid yellow;">
+<h2>Col Small</h2>
+</div>
+<div class="column middle" style="border:2px solid white;">
+<h2>Col Big</h2>
+</div>
+</div>
+<div class="wrapper" style = "border:2px solid black;">
+<h2>Row</h2>
+</div>
+</div>
+<div class="wideboi" style = "z-index: 1; border:2px solid blue; background:#aaa">
+<div class="wrapper" style = "border:2px solid red;">
+<h2>Row</h2>
+</div>
+<div class="wrapper" style = "border:2px solid black;">
+<h2>Row</h2>
+</div>
+</div>
