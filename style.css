@@ -40,8 +40,8 @@ h3 {
   display: flex;
   flex-wrap: nowrap;
   background-color: #ffffff;
-  padding: 0;
   padding-top: 40px;
+  padding-bottom: 20px;
   margin-left: -50vw;
   width: 100vw;
   position: relative;
@@ -127,11 +127,6 @@ h3 {
   font-size: 22px;
 }
 
-.topnav a:hover {
-  color: #006D00;
-  text-decoration: underline;
-}
-
 .topnav-right {
   font-size: 32px;
   float: right;
@@ -142,4 +137,13 @@ h3 {
   color: black;
   text-align: center;
   text-decoration: none;
+}
+
+a:hover {
+  color: #006D00;
+  text-decoration: underline;
+}
+
+a {
+  color: #006D00;
 }
