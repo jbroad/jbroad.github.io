@@ -19,9 +19,9 @@ body {
 h2 {
   color:black;
   font-family: helvetica;
-  font-size: 220%;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: 500;
-  line-height: 30%;
 }
 
 h3 {
@@ -166,7 +166,7 @@ section {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .side, .middle {
     width: 100%;
   }
