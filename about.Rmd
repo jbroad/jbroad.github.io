@@ -24,7 +24,7 @@ style = "width: 100vw;
 <!-- About Meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
 <div class="wideboi" style = "margin-top:100px; background:#f0f0f0">
 <div class="wrapper">
-<div class="column side">
+<div class="side">
 <img src="images/cover2_Fotor.jpg" 
   class = "rounded-corners"
   width = 210px
@@ -37,7 +37,7 @@ style = "width: 100vw;
 <a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a>
 <a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a></h3>
 </div>
-<div class="column middle">
+<div class="middle" style = "padding-bottom: 40px;">
 <h2>About</h2>
 <p><font size = "4"><br>
 I am a Political Science PhD candidate at the [University of California, Davis](https://ps.ucdavis.edu/), specializing in American Politics. My substantive research interests include public opinion, political communication, and elections, as well as inferential and causal methodology (ideal point estimation, machine learning).<br><br>

@@ -42,6 +42,7 @@ h3 {
 .wideboi {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100vw; 
   margin-left: calc(-50vw + 50%);
 }
@@ -134,7 +135,9 @@ a {
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
+  justify-content: center;
   margin-right: auto;
   margin-left:  auto;
   width: 800px;
@@ -166,7 +169,7 @@ section {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 800px) {
+@media only screen and (max-width: 400px) {
   .side, .middle {
     width: 100%;
   }
