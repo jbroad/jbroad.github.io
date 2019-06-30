@@ -1,5 +1,5 @@
 name: "Joseph Broad"
-favicon: images/edit.png
+favicon: images/tumble.png
 output_dir: "."
 output:
   html_document:
