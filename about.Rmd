@@ -1,11 +1,15 @@
 ---
-output: html_document
+output: 
+html_document:
+  includes:
+    in_header: "favicon.html" 
 params: 
     set_title: "Deserterata: About"
 title: "`r params$set_title`"
 ---
 <!-- style --><link rel="stylesheet" href="style.css" type="text/css">
-<link rel="icon" type="image/png" href="images/tumble.png" sizes="16x16">
+<head><link rel="shortcut icon" type="image/png" href="images/tumble.png" sizes="16x16"></head>
+<head><link rel="icon" type="image/png" href="images/tumble.png" sizes="16x16"></head>
 <!-- Load an icon library --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- header --><div class="topnav"
 style = "width: 100vw; 
