@@ -1,7 +1,7 @@
 ---
 output: html_document
 params: 
-    set_title: "Desert Politics & Analysis"
+    set_title: "Desertarata"
 title: "`r params$set_title`"
 ---
 <!-- style -->
