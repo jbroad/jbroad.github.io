@@ -1,4 +1,5 @@
 name: "Joseph Broad"
+favicon: images/edit.png
 output_dir: "."
 output:
   html_document:
