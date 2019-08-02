@@ -5,9 +5,9 @@ account: josephbroad
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 907881
-bundleId: 2135785
+bundleId: 2287237
 url: https://josephbroad.shinyapps.io/shiny/
-when: 1559837420.56397
+when: 1564774066.61479
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: Untitled.Rmd

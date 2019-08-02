@@ -23,8 +23,35 @@ style = "width: 100vw;
   <a style = "float:right; font-size: 28px" href="about.html">About</a>
 </div>
 </div>
-<div class="wideboi" style = "z-index: 1; margin-top: 100px; background:#aaa">
+
+<div class="wideboi" style = "margin-top:100px; background:#f0f0f0">>
 <div class="wrapper">
-<h2 style="padding-bottom: 40px">Under Construction</h2>
-</div>
-</div>
+<div class="leftcolumn">
+<div class="card">
+<h2>TITLE HEADING</h2>
+<h5>Title description, Sep 2, 2017</h5>
+<div class="fakeimg" style="height:200px;">Image</div>
+<p>Some text..</p></div>
+<div class="card">
+<h2>TITLE HEADING</h2>
+<h5>Title description, Sep 2, 2017</h5>
+<div class="fakeimg" style="height:200px;">Image</div>
+<p>Some text..</p></div></div>
+<div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+    </div>
+    </div>
