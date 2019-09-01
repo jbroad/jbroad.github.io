@@ -11,14 +11,14 @@ body {
 }
 
 #p {
-  font-family: helvetica;
+  font-family: verdana;
   font-weight: 100;
   text-align: left;
 }
 
 h2 {
   color:black;
-  font-family: helvetica;
+  font-family: verdana;
   font-size: 36px;
   line-height: 36px;
   font-weight: 500;
@@ -26,7 +26,7 @@ h2 {
 
 h3 {
   color:gray;
-  font-family: helvetica;
+  font-family: verdana;
   font-size: 120%;
   font-weight: 100;
   line-height: 26px;
@@ -47,10 +47,6 @@ h3 {
   margin: 0;
   padding: 0;
   margin-left: calc(-50vw + 50%);
-}
-
-a {
-  color: #006D00;
 }
 
 .topnav {
@@ -157,10 +153,10 @@ a {
 
 /* Style the footer */
 .footer {
-  position: fixed;
+  position: relative;
+  bottom: 0;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  background-color: #000;
   padding: 20px;
   text-align: center;
   z-index: 2;
@@ -232,16 +228,22 @@ ul {
 }
 
 li {
+  padding: 0;
+  text-align: center;
   display: inline;
   letter-spacing: 0.2em;
 }
 
 li a {
+  font-family: 'verdana';
   display: inline-block;
   color: #fff;
   text-align: center;
-  padding: 7px 16px;
+  padding-top: 7px;
+  padding-left: 16px;
+  padding-right: 7px;
   text-decoration: none;
+  margin: 0;
   margin-top: 5px;
 }
 
