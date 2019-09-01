@@ -120,9 +120,8 @@ h3 {
   text-align: center;
   display: inline-block;
   vertical-align: central;
-  max-width: 800px;
   position: absolute;
-	top:0;
+	top:3vh;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -214,6 +213,7 @@ section {
 
 /* Navbar */
 ul {
+  font-weight: 100;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -228,6 +228,7 @@ ul {
 }
 
 li {
+  font-weight: 100;
   padding: 0;
   text-align: center;
   display: inline;
@@ -236,6 +237,7 @@ li {
 
 li a {
   font-family: 'verdana';
+  font-weight: 100;
   display: inline-block;
   color: #fff;
   text-align: center;
@@ -249,8 +251,26 @@ li a {
 
 /* Change the link on hover */
 li a:hover {
+  font-weight: 100;
   margin-top: 0;
   border-top: 5px solid #fff;
   color: #fff;
   text-decoration: none;
+}
+
+
+lib {
+  padding: 0;
+  text-align: center;
+  display: inline;
+  background-color: white;
+  padding: 8px;
+}
+
+lib a {
+  display: inline-block;
+  color: #B7521E;
+  background-color: white;
+  text-align: center;
+  margin: 0;
 }
