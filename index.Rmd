@@ -1,7 +1,7 @@
 ---
 output: html_document
 params: 
-    set_title: "Desertarata"
+    set_title: "Joseph Broad"
 header-includes:
    - \usepackage{montserrat}
 title: "`r params$set_title`"
