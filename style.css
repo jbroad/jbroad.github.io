@@ -33,9 +33,9 @@ h3 {
 }
 
 h4 {
-  font-family: verdana;
+  font-family: georgia;
   z-index: 1; 
-  color: white; 
+  color: #C76322; 
   font-size: 16px; 
   font-weight: 600;
   position: absolute;
@@ -156,7 +156,7 @@ h5 {
 }
 
 .wrapper a {
-  color: #B7521E;
+  color: #C76322;
 }
 
 .content {
@@ -243,8 +243,8 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: white;
-  border-bottom: 1px none #B7521E;
-  z-index:2;
+  border-bottom: 1px none #C76322;
+  z-index:1;
 }
 
 li {
@@ -260,7 +260,7 @@ li a {
   font-family: 'verdana';
   font-weight: 100;
   display: inline-block;
-  color: #B7521E;
+  color: #C76322;
   text-align: center;
   padding-bottom: 10px;
   padding-left: 16px;
@@ -268,7 +268,7 @@ li a {
   text-decoration: none;
   margin: 0;
   margin-bottom: -1px;
-  border-bottom: 1px none #B7521E;
+  border-bottom: 1px none #C76322;
   transition: .2s;
 }
 
@@ -278,8 +278,8 @@ li a:hover {
   margin: 0;
   margin-bottom: -1px;
   padding-bottom: 5px;
-  border-bottom: 5px solid #B7521E;
-  color: #B7521E;
+  border-bottom: 5px solid #C76322;
+  color: #C76322;
   text-decoration: none;
 }
 
@@ -311,7 +311,7 @@ lib {
 
 lib a {
   display: inline-block;
-  color: #B7521E;
+  color: #C76322;
   background-color: white;
   text-align: center;
   margin: 0;
