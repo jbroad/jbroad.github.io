@@ -16,15 +16,14 @@ mainfont: Verdana
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- header -->
 <div class="topnav">
-<div class="landing" style = "margin-top: -10px; padding-left: 20px; padding-right: 20px">
+<div class="landing" style = "padding-left: 20px; padding-right: 20px">
   <a href="index.html" style = "font-size: 28px; color: #B7521E;">Joseph Broad</a>
 </div>
 </div>
-
 <ul>
-  <li><a href="#home">HOME</a></li>
-  <li style="border-left: 1px solid white;"><a href="#news">BLOG</a></li>
-  <li style="border-left: 1px solid white;"><a href="about.html">ABOUT</a></li>
+  <li><a href="index.html">HOME</a></li>
+  <li style="border-left: 1px solid #B7521E;"><a href="blog.html">BLOG</a></li>
+  <li style="border-left: 1px solid #B7521E;"><a href="about.html">ABOUT</a></li>
 </ul>
 
   <div class="wideboi" style = "margin-top:100px; background:#f0f0f0">>
