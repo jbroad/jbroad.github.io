@@ -32,6 +32,29 @@ h3 {
   line-height: 26px;
 }
 
+h4 {
+  font-family: verdana;
+  z-index: 1; 
+  color: white; 
+  font-size: 16px; 
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 2vw;
+}
+
+h5 {
+  text-align: right;
+  font-family: verdana;
+  z-index: 1; 
+  color: #B2BDBD; 
+  font-size: 14px; 
+  font-weight: 400;
+  position: absolute;
+  top: 24px;
+  right: 2vw;
+}
+
 .rounded-corners{
   border-radius: 50% 50% 50% 50%;
   display: block;
@@ -47,6 +70,7 @@ h3 {
   margin: 0;
   padding: 0;
   margin-left: calc(-50vw + 50%);
+  z-index:0;
 }
 
 .topnav {
@@ -56,8 +80,7 @@ h3 {
   display: inline-block;
   background-color: #ffffff;
   margin: 0;
-  padding: 25px;
-  height: 20vh;
+  height: 15vh;
   width: 100vw;
   z-index:1;
   left: 50%;
@@ -69,18 +92,8 @@ h3 {
 /* Style the topnav links */
 .topnav a {
   display: inline-block;
-  color: #000000;
-  text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   text-decoration: none;
-}
-
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
 }
 
 /* Create three unequal columns that floats next to each other */
@@ -140,6 +153,10 @@ h3 {
   padding-right: 10px; 
   padding-left:  10px; 
   padding-top: 40px;
+}
+
+.wrapper a {
+  color: #B7521E;
 }
 
 .content {
@@ -214,20 +231,24 @@ section {
 /* Navbar */
 ul {
   font-weight: 100;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left:0;
   display: inline-block;
   text-align: center;
-  margin-top: 20vh;
-  margin-left: calc(-50vw + 50%);
+  margin-top: 15vh;
   width: 100vw;
+  margin-left: calc(-50vw + 50%);
   list-style: none;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(0,0,0,0);
+  background-color: white;
+  border-bottom: 1px none #B7521E;
   z-index:2;
 }
 
 li {
+  font-size: 12px;
   font-weight: 100;
   padding: 0;
   text-align: center;
@@ -239,23 +260,44 @@ li a {
   font-family: 'verdana';
   font-weight: 100;
   display: inline-block;
-  color: #fff;
+  color: #B7521E;
   text-align: center;
-  padding-top: 7px;
+  padding-bottom: 10px;
   padding-left: 16px;
   padding-right: 7px;
   text-decoration: none;
   margin: 0;
-  margin-top: 5px;
+  margin-bottom: -1px;
+  border-bottom: 1px none #B7521E;
+  transition: .2s;
 }
 
 /* Change the link on hover */
 li a:hover {
   font-weight: 100;
-  margin-top: 0;
-  border-top: 5px solid #fff;
-  color: #fff;
+  margin: 0;
+  margin-bottom: -1px;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #B7521E;
+  color: #B7521E;
   text-decoration: none;
+}
+
+ulb {
+  font-weight: 100;
+  position: absolute;
+  bottom: 8vh;
+  left: 0;
+  display: inline-block;
+  text-align: center;
+  margin-top: 25vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0);
+  z-index:2;
 }
 
 
