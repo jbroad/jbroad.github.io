@@ -25,7 +25,6 @@ title: "`r params$set_title`"
   <li style="border-left: 1px solid white;"><a href="#news">BLOG</a></li>
   <li style="border-left: 1px solid white;"><a href="about.html">ABOUT</a></li>
 </ul>
-
 <!-- About Meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
 <div class="wideboi" style = "margin-top:100px; background:#f0f0f0">
 <div class="wrapper">

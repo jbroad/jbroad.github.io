@@ -2,8 +2,6 @@
 output: html_document
 params: 
     set_title: "Joseph Broad"
-header-includes:
-   - \usepackage{montserrat}
 title: "`r params$set_title`"
 mainfont: Verdana
 ---
@@ -21,8 +19,8 @@ mainfont: Verdana
 </div>
 
 <ul>
-  <li><a href="#home">HOME</a></li>
-  <li style="border-left: 1px solid white;"><a href="#news">BLOG</a></li>
+  <li><a href="index.html">HOME</a></li>
+  <li style="border-left: 1px solid white;"><a href="blog.html">BLOG</a></li>
   <li style="border-left: 1px solid white;"><a href="about.html">ABOUT</a></li>
 </ul>
 
