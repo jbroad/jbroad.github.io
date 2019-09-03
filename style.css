@@ -33,9 +33,9 @@ h3 {
 }
 
 h4 {
+  text-align: center;
   color: white;
   font-family: verdana;
-  position: absolute;
   padding: 0;
   margin: 0;
   margin-top: 2vh;
@@ -72,6 +72,10 @@ h6 a {
 h6 a:hover {
   color: white;
   text-decoration: none;
+}
+
+.logo {
+  width: 20vw;
 }
 
 .rounded-corners{
@@ -174,16 +178,17 @@ h6 a:hover {
 .title {
   position: fixed;
   display: inline-block;
-  margin-left: 25vw;
-  width: 50vw;
+  text-align: center;
+  margin-left: 0;
+  width: 100vw;
 }
 
 .caption {
   position: fixed;
   display: inline-block;
-  margin-left: 25vw;
+  margin-left: 0;
   margin-top: 12vh;
-  width: 50vw;
+  width: 100vw;
 }
 
 .wrapper a {
@@ -325,7 +330,7 @@ ulb {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   list-style: none;
-  padding: 0;
+  padding: 20px 0 0 0;
   overflow: hidden;
   background-color: rgba(0,0,0,0);
   z-index:2;
@@ -334,8 +339,8 @@ ulb {
 
 lib {
   padding: 0;
-  text-align: center;
   display: inline;
+  text-align: center;
   background-color: white;
   padding: 8px;
 }
@@ -383,4 +388,99 @@ a:hover.blackbox {
   mix-blend-mode: color-burn;
   opacity: .5;
   z-index: 2;
+}
+
+i:hover {
+  font-size: 140%;
+  transition: 0.2s;
+}
+@media screen and (max-width: 1600px) {
+  h4 {
+    font-size: 72px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1460px) {
+  h4 {
+    font-size: 62px;
+  }
+  h5 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logo {
+    width: 30vw;
+  }
+  h4 {
+    font-size: 48px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 40vw;
+  }
+  h4 {
+    font-size: 36px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 60vw;
+  }
+  hr {
+    display: none;
+  }
+  .title {
+    margin-left: 0;
+  }  
+  .readmore {
+    width: 100vw;
+    margin-left: 0;
+  }  
+  .blackbox {
+    width: 100vw;
+    margin-left: 0;
+  }
+  a:hover.blackbox {
+    width: 100vw;
+    margin-left: 0;
+    height: 35vh;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  h5 {
+    margin-top: -3vh;
+    font-size: 24px;
+  }
+  li {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 80vw;
+  }
+  h4 {
+    font-size: 28px;
+    transition: 0.2s;
+  }
+  h5 {
+    margin-top: -3vh;
+    font-size: 20px;
+  }
+  global {
+    float: none;
+    width: 100 !important;
+  }
 }
