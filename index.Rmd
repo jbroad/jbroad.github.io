@@ -34,7 +34,7 @@ mainfont: Verdana
 <h4>DESERTARATA</h4></div>
 <div class="caption" style="border: 1px none red; margin-top: 20vh;">
 <h5>western politics &middot; tax policy &middot; public opinion</h5></div>
-<a href="blog.html" class="readmore" style="border: 1px none red; margin-top: 30vh;"><h6>READ MORE HERE</h6></div></a>
+<a href="blog.html" class="readmore" id="a" style="border: 1px none red; margin-top: 30vh;"><h6>READ MORE HERE</h6></a>
 <div class="blackbox" style="border: 1px none red;"></div>
 </div>
 </div>

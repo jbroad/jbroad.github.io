@@ -50,7 +50,7 @@ h5 {
   color: white;
   font-family: verdana;
   z-index: 1; 
-  font-size: 24px; 
+  font-size: 28px; 
   font-weight: 100;
   letter-spacing: 0.2em;
 }
@@ -120,7 +120,7 @@ h6 a:hover {
   text-decoration: none;
 }
 
-/* Create three unequal columns that floats next to each other */
+/* Create three unequal columns that float next to each other */
 .column {
   float: left;
   margin: 0;
@@ -187,9 +187,8 @@ h6 a:hover {
 .caption {
   position: fixed;
   display: inline-block;
-  margin-left: 0;
-  margin-top: 12vh;
-  width: 100vw;
+  margin-left: 25vw;
+  width: 50vw;
 }
 
 .wrapper a {
@@ -377,7 +376,7 @@ lib a:hover {
   background-color: #000;
   mix-blend-mode: multiply;
   opacity: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .readmore:hover {
@@ -385,19 +384,20 @@ lib a:hover {
   cursor: pointer;
   text-decoration: none;
   transition: .8s;
-  background-color: blue;
+  background-color: #a3350d;
 }
 
 .readmore:hover + .blackbox {
-  height: calc(30vh - 40px);
-  background-color: black;
-  transition: .8s;
-  opacity: 1;
+    background: #000;
+    height: calc(30vh - 40px);
+    opacity: .5;
+    transition: .8s;
 }
 
 i:hover {
   font-size: 140%;
   transition: 0.2s;
+  color: #a3350d;
 }
 @media screen and (max-width: 1600px) {
   h4 {
