@@ -38,8 +38,6 @@ mainfont: Verdana
 <a href="blog.html" class="blackbox" style="border: 1px none red; margin-top: 30vh;">
 </div></a>
 <div class="readmore" style="border: 1px none red; margin-top: 30vh; z-index: 3"><h6>READ MORE HERE</h6></div>
-
-
 </div>
 </div>
 

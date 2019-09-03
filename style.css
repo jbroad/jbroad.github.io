@@ -380,7 +380,7 @@ a:hover.blackbox {
   text-decoration: none;
   transition: .8s;
   background-color: #333;
-  mix-blend-mode: overlay;
+  mix-blend-mode: color-burn;
   opacity: .5;
   z-index: 2;
 }
