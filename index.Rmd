@@ -26,10 +26,21 @@ mainfont: Verdana
 </ul>
 
 <!-- Content -->
-<div class="wideboi" style="margin-top: 19vh; z-index:0; height: 65vh">
+<div class="wideboi" style="margin-top: 19vh; z-index:-1; height: 65vh">
   <img
-    style="object-fit: cover; width: 100%; height: 65vh"
+    style="object-fit: cover; width: 100%; height: 65vh;"
     src="images/desertarata_blur.jpg">
+<div class="title" style="border: 1px none red; margin-top: 6vh;">
+<h4 style="margin-left:-2px;">DESERTARATA</h4></div>
+<div class="caption" style="border: 1px none red; margin-top: 20vh;">
+<h5>western politics &middot; tax policy &middot; public opinion</h5></div>
+<div class="readmore" style="border: 1px none red; margin-top: 30vh;"><h6>READ MORE HERE</h6></div>
+<a href="blog.html" class="blackbox" style="border: 1px none red; margin-top: 30vh;">
+</div></a>
+<div class="readmore" style="border: 1px none red; margin-top: 30vh; z-index: 3"><h6>READ MORE HERE</h6></div>
+
+
+</div>
 </div>
 
 

@@ -31,7 +31,7 @@ mainfont: Verdana
 <div class="wideboi" style="margin-top: 19vh; z-index:0; height: 65vh; background-color: #B8C1C5;">
 <ul style="position: absolute; margin-top: 20vh;">
   <li><a href="index.html"><i class="fa fa-lg fa-user"></i></a></li>
-  <li><a href="index.html"><i class="fas fa-chalkboard-teacher"></i></a></li>
+  <li><a href="index.html"><i class="fa fa-lg fa-chalkboard-teacher"></i></a></li>
   <li><a href="index.html"><i class="fa fa-lg fa-user"></i></a></li>
 </ul>
 </div>

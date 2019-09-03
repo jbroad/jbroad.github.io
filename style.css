@@ -33,26 +33,45 @@ h3 {
 }
 
 h4 {
-  font-family: georgia;
-  z-index: 1; 
-  color: #C76322; 
-  font-size: 16px; 
-  font-weight: 600;
+  color: white;
+  font-family: verdana;
   position: absolute;
+  padding: 0;
+  margin: 0;
+  margin-top: 2vh;
+  z-index: 1; 
+  font-size: 72px; 
+  font-weight: 600;
   top: 0;
-  right: 2vw;
 }
 
 h5 {
-  text-align: right;
+  text-align: center;
+  color: white;
   font-family: verdana;
   z-index: 1; 
-  color: #B2BDBD; 
+  font-size: 24px; 
+  font-weight: 100;
+}
+
+h6 {
+  text-align: center;
+  font-family: verdana;
+  z-index: 1; 
+  color: #ffffff; 
   font-size: 14px; 
-  font-weight: 400;
-  position: absolute;
-  top: 24px;
-  right: 2vw;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-top: 12px;
+}
+
+h6 a {
+  color: white;
+}
+
+h6 a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .rounded-corners{
@@ -142,17 +161,29 @@ h5 {
 }
 
 .wrapper {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
-  margin-right: auto;
-  margin-left:  auto;
-  width: 800px;
-  max-width: 100%;
-  padding-right: 10px; 
-  padding-left:  10px; 
-  padding-top: 40px;
+  margin-left: 25vw;
+  width: 50vw;
+  height: 65vh;
+}
+
+.title {
+  position: fixed;
+  display: inline-block;
+  margin-left: 25vw;
+  width: 50vw;
+}
+
+.caption {
+  position: fixed;
+  display: inline-block;
+  margin-left: 25vw;
+  margin-top: 12vh;
+  width: 50vw;
 }
 
 .wrapper a {
@@ -315,4 +346,41 @@ lib a {
   background-color: white;
   text-align: center;
   margin: 0;
+}
+
+lib a:hover {
+  color: #0D5280;
+}
+
+.readmore {
+  position: fixed;
+  display: inline-block;
+  margin-left: 25vw;
+  height: 40px;
+  width: 50vw;
+  background-color: #C76322;
+}
+
+.blackbox {
+  position: fixed;
+  display: inline-block;
+  margin-left: 25vw;
+  height: 40px;
+  width: 50vw;
+  background-color: #000;
+  opacity: 0;
+  z-index: 2;
+}
+
+a:hover.blackbox {
+  cursor: hand;
+  cursor: pointer;
+  height: 30vh;
+  width: 50vw;
+  text-decoration: none;
+  transition: .8s;
+  background-color: #333;
+  mix-blend-mode: overlay;
+  opacity: .5;
+  z-index: 2;
 }
