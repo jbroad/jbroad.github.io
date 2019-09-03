@@ -10,7 +10,7 @@ mainfont: Verdana
 <link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
 <link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
 <!-- Load an icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 <!-- header -->
 <div class="topnav" style="background-color: rgba(0,0,0,0)">
 <hr style="position: fixed; top: 3vh; margin-top: 40px; left: 25vw; width: 50%; border-color: #C76322;"></hr>
@@ -34,10 +34,8 @@ mainfont: Verdana
 <h4>DESERTARATA</h4></div>
 <div class="caption" style="border: 1px none red; margin-top: 20vh;">
 <h5>western politics &middot; tax policy &middot; public opinion</h5></div>
-<div class="readmore" style="border: 1px none red; margin-top: 30vh;"><h6>READ MORE HERE</h6></div>
-<a href="blog.html" class="blackbox" style="border: 1px none red; margin-top: 30vh;">
-</div></a>
-<div class="readmore" style="border: 1px none red; margin-top: 30vh; z-index: 3"><h6>READ MORE HERE</h6></div>
+<a href="blog.html" class="readmore" style="border: 1px none red; margin-top: 30vh;"><h6>READ MORE HERE</h6></div></a>
+<div class="blackbox" style="border: 1px none red;"></div>
 </div>
 </div>
 
@@ -45,10 +43,10 @@ mainfont: Verdana
 <!-- Footer -->
 <ulb>
   <lib style="padding-left: 15px; padding-right: 15px;">
-  <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fa fa-lg fa-envelope"></i></a></lib>
-  <lib><a href="https://github.com/jbroad"><i class="fa fa-lg fa-github"></i></a></lib>
-  <lib><a href="https://twitter.com/therealjoebroad"><i class="fa fa-lg fa-twitter"></i></a></lib>
-  <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fa fa-lg fa-linkedin"></i></a></lib>
+  <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib>
+  <lib><a href="https://github.com/jbroad"><i class="fab fa-lg fa-github"></i></a></lib>
+  <lib><a href="https://twitter.com/therealjoebroad"><i class="fab fa-lg fa-twitter"></i></a></lib>
+  <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib>
   </lib>
 </ulb>
 <hr style="position: absolute; bottom: 8vh; margin-bottom: 10px; left: 25vw; width: 50%; border-color: #C76322;"></hr>

@@ -52,6 +52,7 @@ h5 {
   z-index: 1; 
   font-size: 24px; 
   font-weight: 100;
+  letter-spacing: 0.2em;
 }
 
 h6 {
@@ -369,25 +370,29 @@ lib a:hover {
 .blackbox {
   position: fixed;
   display: inline-block;
+  margin-top: calc(30vh + 40px);
   margin-left: 25vw;
-  height: 40px;
+  height: 1px;
   width: 50vw;
   background-color: #000;
+  mix-blend-mode: multiply;
   opacity: 0;
   z-index: 2;
 }
 
-a:hover.blackbox {
+.readmore:hover {
   cursor: hand;
   cursor: pointer;
-  height: 30vh;
-  width: 50vw;
   text-decoration: none;
   transition: .8s;
-  background-color: #333;
-  mix-blend-mode: color-burn;
-  opacity: .5;
-  z-index: 2;
+  background-color: blue;
+}
+
+.readmore:hover + .blackbox {
+  height: calc(30vh - 40px);
+  background-color: black;
+  transition: .8s;
+  opacity: 1;
 }
 
 i:hover {
