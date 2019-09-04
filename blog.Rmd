@@ -1,5 +1,8 @@
 ---
 output: 
+  xaringan::moon_reader:
+    nature: 
+      beforeInit: "https://platform.twitter.com/widgets.js"
 html_document:
   includes:
     in_header: "favicon.html" 
@@ -8,15 +11,31 @@ params:
 title: "`r params$set_title`"
 mainfont: Verdana
 ---
-<!-- style -->
+<!-- Setup & Style -->
 <link rel="stylesheet" href="style.css" type="text/css">
 <link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
 <link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
 <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+<script>
+$(window).scroll(function() {
+    if ( $(window).scrollTop() >= 100 ) {
+        $('.logo').css('opacity', '0');
+        $('.logo').css('transition', '.3s');
+        $('.topnav, .footer').css('height', '8vh');
+        $('.topnav, .footer').css('transition-timing-function', 'ease');
+        $('.topnav, .footer').css('transition-duration', '.4s');
+        $('.topnav, .footer').css('transition-delay', '.1s');
+        $('hr').css('top', '5%');
+        $('hr').css('transition', '.4s');
+    } else {
+        $('.logo, .topnav, .footer, hr').attr('style', '');
+
+    }
+});
+</script>
 <!-- header -->
 <div class="topnav">
-<hr style="position: absolute; top: 3vh; margin-top: 40px; left: 25vw; width: 50%; border-color: #A3350D;"></hr>
 <div class="landing">
   <a href="index.html"><img class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a></div>
 <ul style="margin-left: -1.5vw">
@@ -26,8 +45,8 @@ mainfont: Verdana
 </ul>
 </div>
 
-  <div class="wideboi" style = "margin-top:100px; background:#f0f0f0">>
-  <div class="wrapper">
+<div class="wideboi" style="height: 25vh; background-color: #f1f1f1;"></div>
+<div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: -2vh; border: 1px solid red; background-color: none;">  
   <div class="leftcolumn">
   <div class="card">
   <h2>TITLE HEADING</h2>
@@ -40,10 +59,19 @@ mainfont: Verdana
   <div class="fakeimg" style="height:200px;">Image</div>
   <p>Some text..</p></div></div>
   <div class="rightcolumn">
-  <div class="card">
-  <h2>About Me</h2>
-  <div class="fakeimg" style="height:100px;">Image</div>
-  <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+  <div class="card" style="height: 60vh">
+  <a class="twitter-timeline"
+  href="https://twitter.com/therealjoebroad"></a>
+<script>
+twttr.widgets.createTimeline(
+  {
+    sourceType: "profile",
+    screenName: "TwitterDev"
+  },
+  document.getElementById("container")
+);
+</script>
+<script src="https://platform.twitter.com/widgets.js" async></script>
   </div>
   <div class="card">
   <h3>Popular Post</h3>
