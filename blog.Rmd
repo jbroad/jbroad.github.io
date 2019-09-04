@@ -62,15 +62,15 @@ $(window).scroll(function() {
 <div class="card" style="height: 60vh">
 <a class="twitter-timeline"
   href="https://twitter.com/therealjoebroad"></a>
-<script>
-twttr.widgets.createTimeline(
-  {
-    sourceType: "profile",
-    screenName: "TwitterDev"
-  },
-  document.getElementById("container")
-);
-</script>
+<!-- <script> -->
+<!-- twttr.widgets.createTimeline( -->
+<!--   { -->
+<!--     sourceType: "profile", -->
+<!--     screenName: "TwitterDev" -->
+<!--   }, -->
+<!--   document.getElementById("container") -->
+<!-- ); -->
+<!-- </script> -->
 </div>
 
 <script src="https://platform.twitter.com/widgets.js" async></script>
