@@ -46,7 +46,7 @@ $(window).scroll(function() {
 </div>
 
 <div class="wideboi" style="height: 25vh; background-color: #f1f1f1;"></div>
-<div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: -2vh; border: 1px solid red; background-color: none;">  
+<div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
 <div class="leftcolumn">
 <div class="card">
 <h2>TITLE HEADING</h2>
@@ -58,8 +58,10 @@ $(window).scroll(function() {
 <h5>Title description, Sep 2, 2017</h5>
 <div class="fakeimg" style="height:200px;">Image</div>
 <p>Some text..</p></div></div>
+
+
 <div class="rightcolumn">
-<div class="tcard" style="height: 60vh">
+<div class="tcard" style="height: 84vh">
 <a class="twitter-timeline"
   href="https://twitter.com/therealjoebroad"></a>
 <!-- <script> -->
