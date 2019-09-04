@@ -310,6 +310,13 @@ section {
   margin-top: 20px;
 }
 
+.tcard {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
 .leftcolumn { 
   float: left;
   width: 65%;

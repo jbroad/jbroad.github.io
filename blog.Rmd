@@ -59,7 +59,7 @@ $(window).scroll(function() {
 <div class="fakeimg" style="height:200px;">Image</div>
 <p>Some text..</p></div></div>
 <div class="rightcolumn">
-<div class="card" style="height: 60vh">
+<div class="tcard" style="height: 60vh">
 <a class="twitter-timeline"
   href="https://twitter.com/therealjoebroad"></a>
 <!-- <script> -->
