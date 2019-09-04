@@ -1,3 +1,9 @@
+/* Colors
+Orange: #C76322
+Red:    #A3350D
+Blue:   #3C5A8F */
+
+
 #header { 
   display: none;
   margin: 0;
@@ -14,6 +20,16 @@ body {
   font-family: verdana;
   font-weight: 100;
   text-align: left;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: verdana;
+  z-index: 1; 
+  font-size: 102px; 
+  font-weight: 900;
+  top: 0;
 }
 
 h2 {
@@ -59,7 +75,7 @@ h6 {
   text-align: center;
   font-family: verdana;
   z-index: 1; 
-  color: #ffffff; 
+  color: white; 
   font-size: 14px; 
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -75,8 +91,36 @@ h6 a:hover {
   text-decoration: none;
 }
 
-.logo {
-  width: 20vw;
+h7 {
+  padding-bottom: 4px;
+  border-bottom: 5px solid #fff;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h7:hover {
+  border-bottom: 5px solid #A3350D;
+  color: #A3350D;
+  transition: 0.4s;
+}
+
+h8 {
+  font-family: verdana;
+  color: #A3350D;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+p8 {
+  font-family: verdana;
+  color: black;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
 }
 
 .rounded-corners{
@@ -87,14 +131,24 @@ h6 a:hover {
 }
 
 .wideboi {
+  position: absolute;
+  left: 0;
+  top: 19vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
   width: 100vw; 
   margin: 0;
   padding: 0;
-  margin-left: calc(-50vw + 50%);
   z-index:0;
+}
+
+.logo {
+  position: relative;
+  margin: auto;
+  margin-top: 0;
+  width: 20vw;
 }
 
 .topnav {
@@ -102,15 +156,16 @@ h6 a:hover {
   position: fixed;
   text-align: center;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 0;
-  height: 15vh;
+  height: 19vh;
   width: 100vw;
   z-index:1;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  border: 2px none orange;
 }
 
 /* Style the topnav links */
@@ -122,9 +177,9 @@ h6 a:hover {
 
 /* Create three unequal columns that float next to each other */
 .column {
-  float: left;
-  margin: 0;
-  padding-bottom: 40px;
+  padding: 1.5vw;
+  text-align: center;
+  width: 33.33%;
 }
 
 /* Left and right column */
@@ -155,18 +210,15 @@ h6 a:hover {
 
 .landing {
   text-align: center;
-  display: inline-block;
   vertical-align: central;
-  position: absolute;
-	top:3vh;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	margin: auto;
+	margin-top: 3vh;
+	height: 19vh;
+	border: 1px none green;
 }
 
 .wrapper {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -192,26 +244,27 @@ h6 a:hover {
 }
 
 .wrapper a {
-  color: #C76322;
+  color: #A3350D;
 }
 
 .content {
   background-color: #ffffff;
   padding: 10px;
-  border: 2px solid green;
+  border: 2px none green;
   max-width: 500px;
   position: relative;
 }
 
 /* Style the footer */
 .footer {
-  position: relative;
-  bottom: 0;
+  position: fixed;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 20px;
+  bottom: 0;
+  left: 0;
+  height: 15vh;
   text-align: center;
-  z-index: 2;
+  background-color: #fff;
+  z-index:2;
 }
 
 section { 
@@ -266,27 +319,19 @@ section {
 
 /* Navbar */
 ul {
-  font-weight: 100;
-  position: fixed;
-  top: 0;
-  left:0;
-  display: inline-block;
-  text-align: center;
-  margin-top: 15vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 7px;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  list-style: none;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-  border-bottom: 1px none #C76322;
-  z-index:1;
+  border: 1px none red;
+  height: 40px;
 }
 
 li {
+  padding: 10px;
   font-size: 12px;
   font-weight: 100;
-  padding: 0;
   text-align: center;
   display: inline;
   letter-spacing: 0.2em;
@@ -296,44 +341,45 @@ li a {
   font-family: 'verdana';
   font-weight: 100;
   display: inline-block;
-  color: #C76322;
-  text-align: center;
-  padding-bottom: 10px;
+  color: #A3350D;
   padding-left: 16px;
-  padding-right: 7px;
+  padding-right: 16px;
   text-decoration: none;
   margin: 0;
-  margin-bottom: -1px;
-  border-bottom: 1px none #C76322;
-  transition: .2s;
 }
 
 /* Change the link on hover */
 li a:hover {
   font-weight: 100;
-  margin: 0;
-  margin-bottom: -1px;
-  padding-bottom: 5px;
-  border-bottom: 5px solid #C76322;
-  color: #C76322;
+  color: #A3350D;
   text-decoration: none;
 }
 
+.active {
+  border-bottom: 5px solid #A3350D;
+  color: #A3350D;
+  transition: .2s;
+}
+
+.active:hover {
+  border-bottom: 5px solid #3C5A8F;
+  color: #3C5A8F;
+  transition: .2s;
+}
+
+.desc {
+  content: '';
+}
+
 ulb {
-  font-weight: 100;
-  position: absolute;
-  bottom: 8vh;
-  left: 0;
   display: inline-block;
   text-align: center;
-  margin-top: 25vh;
+  position: absolute;
+  bottom: 40%;
+  left: 0;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  list-style: none;
-  padding: 20px 0 0 0;
-  overflow: hidden;
-  background-color: rgba(0,0,0,0);
   z-index:2;
+  border: 2px none green;
 }
 
 
@@ -347,7 +393,7 @@ lib {
 
 lib a {
   display: inline-block;
-  color: #C76322;
+  color: #A3350D;
   background-color: white;
   text-align: center;
   margin: 0;
@@ -363,7 +409,7 @@ lib a:hover {
   margin-left: 25vw;
   height: 40px;
   width: 50vw;
-  background-color: #C76322;
+  background-color: #A3350D;
 }
 
 .blackbox {
@@ -384,7 +430,7 @@ lib a:hover {
   cursor: pointer;
   text-decoration: none;
   transition: .8s;
-  background-color: #a3350d;
+  background-color: #3C5A8F;
 }
 
 .readmore:hover + .blackbox {
@@ -394,11 +440,31 @@ lib a:hover {
     transition: .8s;
 }
 
-i:hover {
-  font-size: 140%;
+h7:hover {
   transition: 0.2s;
-  color: #a3350d;
+  color: #3C5A8F;
 }
+
+li:hover ~ p8 {
+  color: red;
+}
+
+#circle {
+  color: #fff;
+  background-color: #A3350D;
+  transition: 0.2s;
+  border-radius: 50%; 
+  padding: 3vw; 
+  margin: 0;
+}
+
+#circle:hover {
+  margin-top: -.3vw;
+  padding: 3.3vw;
+  transition: .3s;
+  background-color: #3c5a8f;
+}
+
 @media screen and (max-width: 1600px) {
   h4 {
     font-size: 72px;
@@ -406,6 +472,9 @@ i:hover {
   h5 {
     font-size: 24px;
   }
+  #circle {
+    font-size: 500%;
+}
 }
 @media screen and (max-width: 1460px) {
   h4 {
@@ -440,6 +509,12 @@ i:hover {
 @media screen and (max-width: 480px) {
   .logo {
     width: 60vw;
+  }
+  .wideboi {
+    flex-direction: column;
+  }
+  .column {
+    width: 100vw;
   }
   hr {
     display: none;
