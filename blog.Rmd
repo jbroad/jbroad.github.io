@@ -47,20 +47,20 @@ $(window).scroll(function() {
 
 <div class="wideboi" style="height: 25vh; background-color: #f1f1f1;"></div>
 <div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: -2vh; border: 1px solid red; background-color: none;">  
-  <div class="leftcolumn">
-  <div class="card">
-  <h2>TITLE HEADING</h2>
-  <h5>Title description, Sep 2, 2017</h5>
-  <div class="fakeimg" style="height:200px;">Image</div>
-  <p>Some text..</p></div>
-  <div class="card">
-  <h2>TITLE HEADING</h2>
-  <h5>Title description, Sep 2, 2017</h5>
-  <div class="fakeimg" style="height:200px;">Image</div>
-  <p>Some text..</p></div></div>
-  <div class="rightcolumn">
-  <div class="card" style="height: 60vh">
-  <a class="twitter-timeline"
+<div class="leftcolumn">
+<div class="card">
+<h2>TITLE HEADING</h2>
+<h5>Title description, Sep 2, 2017</h5>
+<div class="fakeimg" style="height:200px;">Image</div>
+<p>Some text..</p></div>
+<div class="card">
+<h2>TITLE HEADING</h2>
+<h5>Title description, Sep 2, 2017</h5>
+<div class="fakeimg" style="height:200px;">Image</div>
+<p>Some text..</p></div></div>
+<div class="rightcolumn">
+<div class="card" style="height: 60vh">
+<a class="twitter-timeline"
   href="https://twitter.com/therealjoebroad"></a>
 <script>
 twttr.widgets.createTimeline(
@@ -71,20 +71,22 @@ twttr.widgets.createTimeline(
   document.getElementById("container")
 );
 </script>
-<script src="https://platform.twitter.com/widgets.js" async></script>
-  </div>
-  <div class="card">
-  <h3>Popular Post</h3>
-  <div class="fakeimg">Image</div><br>
-  <div class="fakeimg">Image</div><br>
-  <div class="fakeimg">Image</div>
-  </div>
-  <div class="card">
-  <h3>Follow Me</h3>
-  <p>Some text..</p>
-  </div>
-  </div>
-  </div>
+</div>
+
+<!-- <script src="https://platform.twitter.com/widgets.js" async></script> -->
+<!--   </div> -->
+<!--   <div class="card"> -->
+<!--   <h3>Popular Post</h3> -->
+<!--   <div class="fakeimg">Image</div><br> -->
+<!--   <div class="fakeimg">Image</div><br> -->
+<!--   <div class="fakeimg">Image</div> -->
+<!--   </div> -->
+<!--   <div class="card"> -->
+<!--   <h3>Follow Me</h3> -->
+<!--   <p>Some text..</p> -->
+<!--   </div> -->
+<!--   </div> -->
+<!--   </div> -->
 
 
 
