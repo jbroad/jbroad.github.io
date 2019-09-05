@@ -119,6 +119,15 @@ h8 {
   font-weight: 100;
 }
 
+p7 {
+  font-family: verdana;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+
 p8 {
   font-family: verdana;
   color: white;
@@ -209,6 +218,17 @@ p8 {
   width: 20vw;
   border: 1px none black;
   transition: .3s;
+}
+
+.srow {
+  margin-left: -5px;
+  display: block;
+  position: relative;
+}
+
+.srow:hover {
+  margin-left: -10px;
+  transition: .2s;
 }
 
 /* Clear floats after the columns */
@@ -384,8 +404,21 @@ li a:hover {
   transition: .2s;
 }
 
-.desc {
-  content: '';
+.sidebar {
+  position: fixed;
+  right: -50px;
+  margin-top: 25vh;
+  height: 50vh;
+  width: 40px;
+  z-index: 1;
+  background-color: #666666;
+  mix-blend-mode: hard-light;
+  opacity: .5;
+}
+
+.sidebar:hover {
+  opacity: 1;
+  transition: .2s;
 }
 
 ulb {
@@ -442,6 +475,15 @@ lib a:hover {
   z-index: 3;
 }
 
+.desc {
+  position: relative;
+  display: inline-block;
+  padding: 3vh;
+  width: 60vw;
+  margin-left: -1px;
+  background-color: rgba(0,0,0,0.5);
+}
+
 .readmore:hover {
   cursor: hand;
   cursor: pointer;
@@ -469,6 +511,14 @@ h7:hover {
   border-radius: 50%; 
   padding: 3vw; 
   margin: 0;
+  z-index: 2;
+}
+
+#smcircle {
+  color: white;
+  opacity: 1;
+  transition: 0.2s;
+  margin: 4vh 0 0 5px; 
 }
 
 .column:hover .row {

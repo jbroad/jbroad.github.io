@@ -21,12 +21,13 @@ $(window).scroll(function() {
         $('.logo').css('transition', '.3s');
         $('.topnav, .footer').css('height', '8vh');
         $('.topnav, .footer').css('transition-timing-function', 'ease');
-        $('.topnav, .footer').css('transition-duration', '.4s');
-        $('.topnav, .footer').css('transition-delay', '.1s');
+        $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
+        $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
         $('hr').css('top', '5%');
         $('hr').css('transition', '.4s');
+        $('.sidebar').css('right', '0');
     } else {
-        $('.logo, .topnav, .footer, hr').attr('style', '');
+        $('.logo, .topnav, .footer, hr, .sidebar').attr('style', '');
 
     }
 });
@@ -42,7 +43,16 @@ $(window).scroll(function() {
 </ul>
 </div>
 <!-- About -->
-<div class="wideboi" style="height: 25vh; background-color: #f1f1f1;"></div>
+<div class="sidebar">
+<div class="srow" style="margin-top: 12vh">
+<a href="#background_anchor"><li><i class="fas fa-lg fa-id-card" id="smcircle" style="opacity: 1"></i></li></a></div>
+<div class="srow">
+<a href="#teaching_anchor"><li><i class="fas fa-lg fa-hands-helping" id="smcircle"></i></li></a></div>
+<div class="srow">
+<a href="#coding_anchor"><li><i class="fas fa-lg fa-laptop-code" id="smcircle"></i></li></a></div>
+</div>
+
+<div class="wideboi" style="height: 20vh; background-color: #f1f1f1;"></div>
 <div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: 6vh; border: 1px none red; background-color: none;">
 
 <div class="column" style="border: 2px none blue;">
@@ -67,16 +77,53 @@ $(window).scroll(function() {
 </div>
 </div></div>
 
-# <!-- Background -->
-<a id="background_anchor"><div class="wideboi" style="background-color: #660000; height: 100vh; top: 100vh"></a>
+<!-- Background -->
+<a id="background_anchor"><div class="wideboi" style="background-color: #f1f1f1; height: 100vh; top: 100vh"></a>
+<div class="row" style="width: 60vw; height: 120vh; margin: -10vh 0 0 20vw; border: 1px solid #A3350D; background-color: none; text-align: center;">
+<img
+    id="circle"
+    style="object-fit: cover; width: 33vh; padding: 1px; margin-top: 20vh; background-color: white; border: 3vh solid #A3350D"
+    src="images/cover.jpg">
+    <h8 style="padding-bottom: 2.3vh; border-bottom: 5px solid #A3350D;"><br><br>BACKGROUND</h8><br><br>
+    <div class="desc" style="margin-top: 2.3vh;">
+<p7>I am a PhD candidate in the UC Davis political science graduate program. My research interests include the role and influence of interest groups in policy outcomes, public opinion, and rhetoric in American politics. When I'm not researching American Politics, I'm most likely studying statistics, political theory, or reading science fiction (Frank Herbert's Dune series at the moment).<br><br>
+Prior to graduate school, I was a senior staff member for Senator Harry Reid's Washington DC office. You may be wondering, "Who would give up a career in DC politics to go back to school?" Truth be told, owning a dog in DC is extremely difficult and expensive. Going to graduate school was all a front so I could afford a place with a yard for my dog without raising too many questions.</p7></div></div>
+<!-- Teaching Anchor -->
+<a id="teaching_anchor"><div class="wideboi" style="background-color: #3C5A8F; height: 120vh; top: 200vh"></a>
+<div class="row" style="width: 60vw; height: 140vh; margin: -10vh 0 0 20vw; border: 1px solid black; background-color: none; text-align: center;">
+<div class="desc" style="margin-top: 8vh; background-color: rgba(0,0,0,0)">
+<h8 style="color: white; padding-bottom: 2.3vh; border-bottom: 5px solid white;"><br><br>TEACHING</h8><br><br></div>
+<div class="desc">
+<p7>I try to bring joy and empowerment to the front end of the classroom, while maintaining rigorous and thorough learning objective behind the curtain. Every exercise in my classroom is aimed at a higher purpose, be it the attainment of knowledge, the expansion of critical thought, or the development of seemingly mundane - though crucial - professional skills like reading, writing, and speaking. Students are responsive to my approach, as my teaching evaluations are consistently positive (aside from the student who left what is undoubtedly my favorite evaluataion: "This man is a BS artist").</p7></div>
+<div style="width: 66vw; height: 20vh; margin-top: 5vh; margin-bottom: 5vh; margin-left: -3vw; background-color: #f1f1f1"><br>Figure: Teaching Evaluations</div>
+<div class="desc">
+<p7><span style="font-weight: bold;">Introduction to American Politics<br>
+  The Scientific Study of Politics<br>
+  Introduction to Political Theory</span><br>
+  Local and State Politics<br>
+  California Politics<br>
+  Media and Politics<br>
+  Policy and Agenda-Setting<br>
+  Ethnic Conflict
+  </p7>
 </div>
-# <!-- Teaching Anchor -->
-<a id="teaching_anchor"><div class="wideboi" style="background-color: #006600; height: 100vh; top: 200vh"></a>
 </div>
-# <!-- Coding Anchor -->
+<!-- Coding Anchor -->
 <a id="coding_anchor"><div class="wideboi" style="background-color: #000066; height: 100vh; top: 300vh"></a>
+***
+<iframe src ="https://josephbroad.shinyapps.io/shiny/"
+  style="border: 1px; 
+  margin-top: 200px;
+  position:absolute;top:0px;left:0px;
+  overflow:hidden;
+  width: 80vw; 
+  height: 800px;"/>
+</iframe>
+***
 </div>
-# <!-- Footer -->
+</div>
+</div>
+<!-- Footer -->
 <div class="footer">
 <ulb>
   <lib style="padding-left: 15px; padding-right: 15px;">
