@@ -139,9 +139,17 @@ cat
 <div class="row" style="width: 60vw; height: 170vh; margin: -10vh 0 0 20vw; border: 1px solid black; background-color: none; text-align: center;">
 <div class="desc" style="margin-top: 8vh; background-color: rgba(0,0,0,0)">
 <h8 style="color: white; padding-bottom: 2.3vh; border-bottom: 5px solid white;"><br><br>CODING</h8><br><br></div>
-<div class="row" id="circle" style="width: 300px; height: 300px; overflow: hidden; border:2px solid white; padding: 0; background-color: rgba(0,0,0,0);">
-<img src="images/CLT1.gi">
-</div></div></div></div></div>
+<div class="desc">
+<p7>Consider the Myth of Sisyphus: the existentialist philosopher Albert Camus used Sisyphus's damnation to meaningless labor as a metaphor for the absurdity and monotony of modern professions. Zeus condemned Sisyphus to shove a boulder up a hill, watch it roll down, push it back up, and so on for eternity. Coding to me is as the damnation is to Sisyphus, the difference being that if Zeus  absolved me of my punishment I would happily get right back to boulder-shoving. Through graduate school I learned the basics of R and Stata; my gluttony for punishment has led me to learn advanced statistical methods in R and Stata, webscraping in Python, web design (HTML, CSS, limited js), and interactive graphics with Shiny.</p7></div>
+<h8 style="color: none; border-bottom: 5px solid white;"><br><br>CODING</h8>
+<div class="row" id="crow" style="margin: 0; margin-top: 8vh; text-align: center; border: 5px none white">
+<div class="row" id="circle" style="width: 200px; height: 200px; overflow: hidden; border:5px solid #C89385; padding: 0; background-color: white; margin-left: calc(30vw - 100px);">
+<a href="https://josephbroad.shinyapps.io/stats/"><img class="static" style="padding: 10px 0 10px 0;" src="images/CLT_static.jpg">
+<img style="padding: 10px 0 10px 0;" src="images/CLT_gif.gif"></a>
+</div>
+<div class="desc" id="open" >
+<p7></p7></div></div>
+</div></div></div></div>
 <!-- Footer -->
 <div class="footer">
 <ulb>

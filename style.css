@@ -231,6 +231,24 @@ p8 {
   transition: .2s;
 }
 
+.row#circle:hover {
+  margin-left: calc(60vw - 100px);
+}
+#crow {
+  width: 60vw;
+  height: 200px;
+  overflow: hidden;
+}
+#crow:hover .desc {
+  width: calc(60vw - 100px);
+  margin-left: 100px;
+  transition: .4s;
+}
+#crow:hover .row {
+  margin-left: 100px;
+  transition: .4s;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -586,6 +604,26 @@ blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
 
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+
+#open{
+  width: 0;
+  margin: 0;
+  height: 200px;
+  padding: 0;
+}
+
+.row:hover #circle {
+  margin-left: 100px;
+  transition: .4s;
+}
 
 @media screen and (max-width: 1600px) {
   h4 {
