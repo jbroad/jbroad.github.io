@@ -174,7 +174,7 @@ p8 {
   margin: 0;
   height: 19vh;
   width: 100vw;
-  z-index:1;
+  z-index:2;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -216,7 +216,6 @@ p8 {
   padding: 0;
   margin: -20px;
   width: 20vw;
-  border: 1px none black;
   transition: .3s;
 }
 
@@ -231,6 +230,15 @@ p8 {
   transition: .2s;
 }
 
+.section {
+  margin-left: -1px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid rgba(0,0,0,0);
+  transition: .4s;
+}
+
 #crow {
   margin-left: calc(30vw - 100px);
   width: 200px;
@@ -238,7 +246,7 @@ p8 {
 }
 #crow:hover {
   width: 60vw;
-  margin-left: 0;
+  margin-left: -2px;
 }
 #crow:hover #ccircle {
   border: 5px solid #511A06;
@@ -249,6 +257,17 @@ p8 {
   margin-left: 100px;
   transition: .4s;
 }
+
+#desc {
+  opacity: 0;
+}
+
+#crow:hover #desc {
+  opacity: 1;
+  transition: .4s;
+  transition-delay: .4s;
+}
+
 #crow:hover + .row {
   margin-left: -100px;
   transition: .4s;
@@ -317,7 +336,7 @@ p8 {
   height: 15vh;
   text-align: center;
   background-color: #fff;
-  z-index:2;
+  z-index:3;
 }
 
 section { 
@@ -434,13 +453,13 @@ li a:hover {
   height: 50vh;
   width: 40px;
   z-index: 1;
-  background-color: #666666;
+  background-color: #000;
   mix-blend-mode: hard-light;
-  opacity: .5;
+  opacity: .2;
 }
 
 .sidebar:hover {
-  opacity: 1;
+  opacity: .5;
   transition: .2s;
 }
 
@@ -534,7 +553,7 @@ h7:hover {
   border-radius: 50%; 
   padding: 3vw; 
   margin: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 #smcircle {
@@ -545,13 +564,13 @@ h7:hover {
 }
 
 #ccircle {
-  border:5px solid #C89385; 
+  border:5px solid #511A06; 
   background-color: white;
   transition: 0.2s;
   border-radius: 50%; 
   padding: 0; 
   margin: 0;
-  z-index: 2;
+  z-index: 1;
   width: 200px; 
   height: 200px; 
   overflow: hidden; 
