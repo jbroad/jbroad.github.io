@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>25 Years of Shortcuts</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>header_blog.utf8.md</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<!-- style -->
+<link rel="stylesheet" href="style.css" type="text/css"> <link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0"> <link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0"> <!-- Load an icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"> <!-- header -->
+<div class="topnav">
+<div class="landing">
+<a href="index.html"><img class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a>
+</div>
+<ul style="margin-left: -1.5vw">
+<li>
+<a href="index.html"><h7 class="active">HOME</h7></a>
+</li>
+<li>
+<a href="blog.html"><h7>BLOG</h7></a>
+</li>
+<li>
+<a href="about.html"><h7>ABOUT</h7></a>
+</li>
+</ul>
+</div>
+<script>
+$(window).scroll(function() {
+    if ( $(window).scrollTop() >= 0 ) {
+        $('.logo').css('opacity', '0');
+        $('.logo').css('transition', '.3s');
+        $('.topnav, .footer').css('height', '8vh');
+        $('.topnav, .footer').css('transition-timing-function', 'ease');
+        $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
+        $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
+        $('.sidebar').css('right', '0');
+    } else {
+        $('.logo, .topnav, .footer, .sidebar').attr('style', '');
+
+    }
+});
+</script>
+<!-- Footer -->
+<div class="footer">
+<ulb> <lib style="padding-left: 15px; padding-right: 15px;"> <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib> <lib><a href="https://github.com/jbroad"><i class="fab fa-lg fa-github"></i></a></lib> <lib><a href="https://twitter.com/therealjoebroad"><i class="fab fa-lg fa-twitter"></i></a></lib> <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib> </lib> </ulb>
+<hr style="position: absolute; bottom: 30%; left: 25vw; width: 50%; border-color: #A3350D;">
+</hr>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">25 Years of Shortcuts</h1>
+<h3 class="subtitle">Examining Lupia’s Shortcuts Versus Encyclopedias 25 Year Later</h3>
+
+</div>
+
+
+<p>Abstract: returning to one of the most cited articles relating to civic competence. Optimistic suggestion that voters with low knowledge behave similarly to voters with high knowledge when they have shortcuts. Two problems: 1) imperfect survey items to measure knowledge; 2) imperfect scale construction of knowledge. While the second problem can be addressed, the first cannot. That said, the major points holds - electors with knowledge shortcuts vote similarly as groups, though not to such an extreme as presented by Lupia in his original 1994 article. As I discuss in the final section here, this all begs the question about the types of information that important in making decisions at the ballot box.</p>
+<p>Intro: Question always returns to: can the educated elite trust the masses to make good decisions? Thucydides: Mitilinean debate Plato: This question has presented itself under the guise of voter competence. Quite a bit of academic attention has been aimed at measuring competence. Half-serious treatment of how to improve the quality of democracy. Ironic that Lupia recommends system of signals - today is only signals and here we are.</p>
+<p>Here I return to one of the most often cited: Lupia’s Shortcuts. Major finding suggests that, when it comes to propositions that have not aligned with the two major political parties, electors with low ``encyclopedic’’ knowledge behave incredibly similar to those with high encyclopedic knowledge. The results of Lupia’s original work hold, though not to the extreme degree as he presents them. That is only on the condition that we accept the definition of encyclopedic knowledge as the ability to recall a proposition’s intended effect.</p>
+<p>So why am I doing this? A warning to readers to be wary of scales.</p>
+<p>Background: Review Lupia</p>
+<p>1988, CA, referendum 5 propositions to consider, 4 basic policies 2 major political parties had not align around these effects</p>
+<p>Background: Lupia Survey and Measurements</p>
+<p>Knowledge: Which proposition(s) established policy X? Shortcuts: Political figure or group Y favored which policy?</p>
+<p>As mentioned above, the second problem addressed here is how the knowledge scale is constructed in the original study.</p>
+<p>Knowledge point granted for correct affirmative answer. No point for leaving correct answer blank, and no point for answering in the affirmative for the wrong choice selection.</p>
+<p>An illustration: Among the following, select those who are currently (2019) serving as United States Senators from Nevada: A. Dean Heller B. Jacky Rosen C. Catherine Cortez-Masto D. Harry Reid E. Dina Titus F. Don’t know</p>
+<p>A respondent who chose responses “B” and “C” would be granted five knowledge points: two for correctly identifying Nevada’s current senators, and three for correctly NOT selecting any of the other three.</p>
+<p>A respondent who selected “A” would be granted two knowledge points, both for correctly NOT selecting “D” and “E”.</p>
+<p>A respondent who selected “F” would receive no knowledge points for this survey item, while a respondent who selected “F” and “B” would receive just one knowledge point.</p>
+<div id="knowledge-distribution" class="section level2">
+<h2>Knowledge Distribution</h2>
+<p><img src="blog_000_lupia25_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Observational equivalence between unknown and dumb luck.</p>
+<p>TO FULLY ILLUSTRATE: roughly 3% of respondents in the final analysis gave no response to this battery of knowledge items but were mistakenly assigned knowledge scores rather than considering them missing. This battery, which has 7 correct selections out of 20, ——- SO THESE RESPONDENTS WERE GIVEN A SCORE 13 - WHICH IS IN THE HIGH KNOWLEDGE CATEGORY.</p>
+<p>Granted 3% of the final analysis is likely negligible, but it begs the question: how many respondents in the “high knowledge” category (10 or higher) actually belong there?</p>
+</div>
+<div id="knowledge-over-number-of-responses" class="section level2">
+<h2>Knowledge Over Number of Responses</h2>
+<p><img src="blog_000_lupia25_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<!-- Notes:
+Roughly 1/3 of original respondents gave 4 responses - supporting pseudo random guessing, given structure of knowledge scores (this is nearly 1/2 of respones in the final analysis) - when we compare the responses to random guessing, it should be with pseudo random guessing rather than naive random guessing
+The average number of guesses was 3.38
+-->
+<p>The structure of this knowledge scale rewards random guessing with high knowledge scores. There was no test in the original study that compared observed responses against random guessing.</p>
+<p>Figure X shows the average number of correct responses, conditional on the number of responses given, across three groups: observed responses (color), simulated random guessing (color), and simulated psuedo-random guessing (color).</p>
+<p>The pseudo-random guessing simulation trims a number of unreasonable random responses: no respondents will genuinely believe that a single proposition aims to DO ALL THE POLICY ALTERNATIVES. Reasonable assumption: if guessing randomly, guessing will be one per policy outcome. This is supported considering that a third of respondents gave 4 responses.</p>
+</div>
+<div id="knowledge-compared-to-random-guessing" class="section level2">
+<h2>Knowledge Compared to Random Guessing</h2>
+<p><img src="blog_000_lupia25_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="new-knowledge-setup" class="section level2">
+<h2>New Knowledge Setup</h2>
+<p>Simple adjustment: Assign points on affirmative answers only and remain agnostic to the rest. Treat non-responses as affirmative “don’t know” and vice versa.</p>
+<p>This trivial alteration to the construction of the knowledge scale better comports with normatively desirable epistemological traits: ignorance is preferrable to false belief. Under the original construction, respondents who admitted ignorance were given lower knowledge score than those who guess randomly or reported holding false beliefs. Respondents can be more appropriately assigned to knowledge categories by researchers remaining agnostic about whether a blank response is a “no” or an “I don’t know” and by measuring knowledge strictly by affirmative responses instead (moreover, researchers can improve their survey design by asking respondents for affirmative responses: e.g. “Did Nader support Proposition 103, yes or no?”). Lupia’s construction conflated true belief, false belief, and ignorance to different degrees.</p>
+<p><img src="blog_000_lupia25_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="distribution-of-new-knowledge-score" class="section level2">
+<h2>Distribution of New Knowledge Score</h2>
+<p><img src="blog_000_lupia25_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="replication-and-extension-of-table-4" class="section level2">
+<h2>Replication and Extension of Table 4</h2>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Replication of Table 4
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+group
+</th>
+<th style="text-align:right;">
+prop100
+</th>
+<th style="text-align:right;">
+prop101
+</th>
+<th style="text-align:right;">
+prop103
+</th>
+<th style="text-align:right;">
+prop104
+</th>
+<th style="text-align:right;">
+prop106
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="4">
+<td colspan="6" style="border-bottom: 1px solid;">
+<strong>Replication</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+HK/S
+</td>
+<td style="text-align:right;">
+52.8
+</td>
+<td style="text-align:right;">
+7.7
+</td>
+<td style="text-align:right;">
+72.5
+</td>
+<td style="text-align:right;">
+16.7
+</td>
+<td style="text-align:right;">
+10.5
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+LK/S
+</td>
+<td style="text-align:right;">
+53.3
+</td>
+<td style="text-align:right;">
+5.3
+</td>
+<td style="text-align:right;">
+73.1
+</td>
+<td style="text-align:right;">
+16.7
+</td>
+<td style="text-align:right;">
+12.5
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+HK/N
+</td>
+<td style="text-align:right;">
+32.9
+</td>
+<td style="text-align:right;">
+13.3
+</td>
+<td style="text-align:right;">
+59.6
+</td>
+<td style="text-align:right;">
+25.3
+</td>
+<td style="text-align:right;">
+37.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+LK/N
+</td>
+<td style="text-align:right;">
+25.0
+</td>
+<td style="text-align:right;">
+15.4
+</td>
+<td style="text-align:right;">
+23.1
+</td>
+<td style="text-align:right;">
+34.5
+</td>
+<td style="text-align:right;">
+45.3
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="6" style="border-bottom: 1px solid;">
+<strong>Extension</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+HK/S
+</td>
+<td style="text-align:right;">
+58.4
+</td>
+<td style="text-align:right;">
+4.6
+</td>
+<td style="text-align:right;">
+72.7
+</td>
+<td style="text-align:right;">
+13.1
+</td>
+<td style="text-align:right;">
+6.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+LK/S
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+<td style="text-align:right;">
+7.8
+</td>
+<td style="text-align:right;">
+76.1
+</td>
+<td style="text-align:right;">
+19.5
+</td>
+<td style="text-align:right;">
+14.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+HK/N
+</td>
+<td style="text-align:right;">
+36.4
+</td>
+<td style="text-align:right;">
+12.7
+</td>
+<td style="text-align:right;">
+63.0
+</td>
+<td style="text-align:right;">
+23.3
+</td>
+<td style="text-align:right;">
+35.4
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+LK/N
+</td>
+<td style="text-align:right;">
+27.0
+</td>
+<td style="text-align:right;">
+15.7
+</td>
+<td style="text-align:right;">
+37.0
+</td>
+<td style="text-align:right;">
+30.9
+</td>
+<td style="text-align:right;">
+41.5
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="clusters" class="section level2">
+<h2>Clusters</h2>
+<p>This alteration to the construction of the knowledge scale is supported by a cluster analysis. Given that we are interested in similarities and dissimilarities between groups, it initially seems cluster analysis would be highly suitable here. However, won’t get into it here for a number of reasons: 1) clustering is not entirely suitable for this data, as it clusters about as well as random data (Index 0.5); thus, k-means clustering as an alternative to arbitrary cutpoints is only a slight improvement on the theoretical justification for group formation, with a slight loss of interpretability. Second, a motivation for this piece has been to improve Lupia’s analysis using the same tools available to him at the time. While cluster analysis was developed 1994, there have been significant improvements in ease of application that were not available to Lupia at the time (such as through R packages cluster, factoextra, and dbscan, which were used in the preparation of this article). To expand further on my second point: there were alternative approaches to constructing a knowledge scale that were no more sophisticated than the approach used in the original analysis - approaches that, I believe, give more honest results.</p>
+</div>
+<div id="cluster-plot" class="section level2">
+<h2>Cluster Plot</h2>
+<p><img class="logo" style="object-fit: cover;" src="blog_000_lupia25_files/clusplot1.jpeg"></p>
+</div>
+<div id="discussion" class="section level2">
+<h2>Discussion</h2>
+<p>In researching voter competence, scholars sometimes forget that they too use information shortcuts and that they too can be low-information voters. I had colleagues admit as much after the 2016. We are not experts on every political issue; very few of us can claim to be experts on more than one political issue (if that). A good starting point may be to ask ourselves how we come to ballot-box decisions despite relative lack of information.</p>
+<p>Significant improvements have been made in the field of information shortcuts: At minimum: What is important to the voter? What are voter values? Who does the voter trust when it comes to making shortcuts? Who benefits most from policy x?</p>
+<p>Finally, there is the matter of Table 2 - logistic model coefficients. (first, the models are hardly more predictive than random guessing - take with a grain of salt). Interesting that the shortcuts that really seem to matter are the positions of insurance industry and trial lawyers. In each case, the coefficient is in the opposite direction of the interest group’s preference.</p>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+group
+</th>
+<th style="text-align:center;">
+prop100
+</th>
+<th style="text-align:center;">
+prop101
+</th>
+<th style="text-align:center;">
+prop103
+</th>
+<th style="text-align:center;">
+prop104
+</th>
+<th style="text-align:center;">
+prop106
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+LK/S/BL
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(66, 10, 104, 1) !important;">1.6</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(66, 10, 104, 1) !important;">5.05</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(66, 10, 104, 1) !important;">4.86</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(66, 10, 104, 1) !important;">1.18</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(66, 10, 104, 1) !important;">12.03</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+LK/N/BL
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(221, 81, 58, 1) !important;">3.51</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(221, 81, 58, 1) !important;">13.46</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(221, 81, 58, 1) !important;">21.44</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(221, 81, 58, 1) !important;">11.97</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(221, 81, 58, 1) !important;">23.67</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+HK/N/GL
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(140, 35, 105, 1) !important;">2.47</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(135, 33, 107, 1) !important;">8.61</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(76, 12, 107, 1) !important;">5.83</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(218, 78, 60, 1) !important;">11.74</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(146, 37, 104, 1) !important;">17.8</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Chat on this for a while.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

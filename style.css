@@ -250,7 +250,7 @@ p8 {
 }
 #crow:hover #ccircle {
   border: 5px solid #511A06;
-  transition: .2s;
+  transition: .4s;
 }
 #crow:hover .desc {
   width: calc(60vw - 100px);

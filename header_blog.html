@@ -11,7 +11,7 @@
 
 
 
-<title>Formatting</title>
+<title>header_blog.utf8.md</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -188,53 +188,49 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Formatting</h1>
 
 </div>
 
 
 <!-- style -->
-<link rel="stylesheet" href="style.css" type="text/css"> <!-- Load an icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- header -->
-<div class="topnav" style="width: 100vw; 
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2)">
-<div class="wrapper">
-<p><a href="#">Left</a> <a style = "float:right" href="#">Right</a></p>
+<link rel="stylesheet" href="style.css" type="text/css"> <link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0"> <link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0"> <!-- Load an icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"> <!-- header -->
+<div class="topnav">
+<div class="landing">
+<a href="index.html"><img class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a>
 </div>
+<ul style="margin-left: -1.5vw">
+<li>
+<a href="index.html"><h7 class="active">HOME</h7></a>
+</li>
+<li>
+<a href="blog.html"><h7>BLOG</h7></a>
+</li>
+<li>
+<a href="about.html"><h7>ABOUT</h7></a>
+</li>
+</ul>
 </div>
-<div class="wideboi" style="z-index: -1; margin-top:100px; border:2px solid blue; background:#aaa">
-<div class="wrapper" style="border:2px solid red;">
-<div class="column side" style="border:2px solid yellow;">
-<h2>
-Col Small
-</h2>
-</div>
-<div class="column middle" style="border:2px solid white;">
-<h2>
-Col Big
-</h2>
-</div>
-</div>
-<div class="wrapper" style="border:2px solid black;">
-<h2>
-Row
-</h2>
-</div>
-</div>
-<div class="wideboi" style="z-index: 1; border:2px solid blue; background:#aaa">
-<div class="wrapper" style="border:2px solid red;">
-<h2>
-Row
-</h2>
-</div>
-<div class="wrapper" style="border:2px solid black;">
-<h2>
-Row
-</h2>
-</div>
+<script>
+$(window).scroll(function() {
+    if ( $(window).scrollTop() >= 0 ) {
+        $('.logo').css('opacity', '0');
+        $('.logo').css('transition', '.3s');
+        $('.topnav, .footer').css('height', '8vh');
+        $('.topnav, .footer').css('transition-timing-function', 'ease');
+        $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
+        $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
+        $('.sidebar').css('right', '0');
+    } else {
+        $('.logo, .topnav, .footer, .sidebar').attr('style', '');
+
+    }
+});
+</script>
+<!-- Footer -->
+<div class="footer">
+<ulb> <lib style="padding-left: 15px; padding-right: 15px;"> <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib> <lib><a href="https://github.com/jbroad"><i class="fab fa-lg fa-github"></i></a></lib> <lib><a href="https://twitter.com/therealjoebroad"><i class="fab fa-lg fa-twitter"></i></a></lib> <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib> </lib> </ulb>
+<hr style="position: absolute; bottom: 30%; left: 25vw; width: 50%; border-color: #A3350D;">
+</hr>
 </div>
 
 
