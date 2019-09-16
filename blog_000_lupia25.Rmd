@@ -8,7 +8,7 @@ output:
     toc: true
     toc_float: true
     includes:
-      before_body: ../header_blog.html
+      before_body: header_blog.html
 mainfont: Verdana
 ---
 Abstract: 
@@ -63,9 +63,9 @@ library(knitr)
 library(dplyr)
 library(kableExtra)
 library(factoextra)
-guess <- read.csv("blog_000_lupia25_files/lupia_guess.csv")
-newk <- read.csv("blog_000_lupia25_files/lupia_guess_kn.csv")
-tables <- read.csv("blog_000_lupia25_files/lupia_tables.csv")
+guess <- read.csv("blog/blog_000_lupia25_files/lupia_guess.csv")
+newk <- read.csv("blog/blog_000_lupia25_files/lupia_guess_kn.csv")
+tables <- read.csv("blog/blog_000_lupia25_files/lupia_tables.csv")
 knitr::opts_chunk$set(echo = TRUE)
 fn14 <- data.frame(
   "k" = c(seq(0:19)),
@@ -177,7 +177,7 @@ Finally, there is the matter of Table 2 - logistic model coefficients. (first, t
 
 
 ```{r, echo=F}
-table4 <- read.csv("blog_000_lupia25_files/lupia_extable4.csv")
+table4 <- read.csv("blog/blog_000_lupia25_files/lupia_extable4.csv")
 table4[,1] <- c("HK/S/GL", "LK/N/BL", "LK/S/BL", "HK/N/GL")
 table4 <- table4[c(1,3,2,4),]
 names(table4) <- c("group", "cat", "kn", "sn", "sq", "prop100o", "prop100", "prop101o", "prop101", "prop103o", "prop103", "prop104o", "prop104", "prop106o", "prop106")

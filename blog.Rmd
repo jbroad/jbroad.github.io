@@ -2,7 +2,7 @@
 output: 
   html_document:
     includes:
-      before_body: header.html
+      before_body: header_blog.html
 params: 
     set_title: "Joseph Broad: Blog"
 title: "`r params$set_title`"
@@ -12,7 +12,7 @@ mainfont: Verdana
 <div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
 <div class="leftcolumn">
 <div class="card">
-<a href="blog/index.html"><h2>Test</h2></a>
+<a href="blog_000_lupia25.html"><h2>Test</h2></a>
 <h5>Title description, Sep 2, 2017</h5>
 <div class="fakeimg" style="height:200px;">Image</div>
 <p>Some text..</p></div>

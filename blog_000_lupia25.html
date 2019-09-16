@@ -495,7 +495,7 @@ $(document).ready(function () {
 </div>
 <script>
 $(window).scroll(function() {
-    if ( $(window).scrollTop() >= 0 ) {
+    if ( $(window).scrollTop() > -1 ) {
         $('.logo').css('opacity', '0');
         $('.logo').css('transition', '.3s');
         $('.topnav, .footer').css('height', '8vh');

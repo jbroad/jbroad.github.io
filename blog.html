@@ -196,7 +196,7 @@ $(document).ready(function () {
 
 
 
-<title>header.utf8.md</title>
+<title>header_blog.utf8.md</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -396,8 +396,7 @@ $(document).ready(function () {
 </ul>
 </div>
 <script>
-$(window).scroll(function() {
-    if ( $(window).scrollTop() >= 100 ) {
+$topnav.onload = function() {
         $('.logo').css('opacity', '0');
         $('.logo').css('transition', '.3s');
         $('.topnav, .footer').css('height', '8vh');
@@ -405,11 +404,7 @@ $(window).scroll(function() {
         $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
         $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
         $('.sidebar').css('right', '0');
-    } else {
-        $('.logo, .topnav, .footer, .sidebar').attr('style', '');
-
-    }
-});
+}
 </script>
 <!-- Footer -->
 <div class="footer">
@@ -464,7 +459,7 @@ $(document).ready(function () {
 <div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: -2vh; border: 1px none red; background-color: none;">
 <div class="leftcolumn">
 <div class="card">
-<a href="blog/index.html">
+<a href="blog_000_lupia25.html">
 <h2>
 Test
 </h2>

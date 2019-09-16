@@ -19,10 +19,8 @@ mainfont: Verdana
 </ul>
 </div>
 
-
 <script>
-$(window).scroll(function() {
-    if ( $(window).scrollTop() >= 0 ) {
+$topnav.onload = function() {
         $('.logo').css('opacity', '0');
         $('.logo').css('transition', '.3s');
         $('.topnav, .footer').css('height', '8vh');
@@ -30,11 +28,7 @@ $(window).scroll(function() {
         $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
         $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
         $('.sidebar').css('right', '0');
-    } else {
-        $('.logo, .topnav, .footer, .sidebar').attr('style', '');
-
-    }
-});
+}
 </script>
 
 
