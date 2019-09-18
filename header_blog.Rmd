@@ -9,31 +9,16 @@ mainfont: Verdana
 <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 <!-- header -->
-<div class="topnav">
-<div class="landing">
-<a href="index.html"><img class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a></div>
+<div class="topnav" style="height: 8vh">
 <ul style="margin-left: -1.5vw">
-<li><a href="index.html"><h7 class="active">HOME</h7></a></li>
+<li><a href="index.html"><h7>HOME</h7></a></li>
 <li><a href="blog.html"><h7>BLOG</h7></a></li>
 <li><a href="about.html"><h7>ABOUT</h7></a></li>
 </ul>
 </div>
 
-<script>
-$topnav.onload = function() {
-        $('.logo').css('opacity', '0');
-        $('.logo').css('transition', '.3s');
-        $('.topnav, .footer').css('height', '8vh');
-        $('.topnav, .footer').css('transition-timing-function', 'ease');
-        $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
-        $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
-        $('.sidebar').css('right', '0');
-}
-</script>
-
-
 <!-- Footer -->
-<div class="footer">
+<div class="footer" style="height: 8vh">
 <ulb>
 <lib style="padding-left: 15px; padding-right: 15px;">
 <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib>

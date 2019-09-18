@@ -1,4 +1,6 @@
 /* Colors
+# Based on tertiatic color palettes
+Green:  #0DA373
 Orange: #C76322
 Red:    #A3350D
 Blue:   #3C5A8F */
@@ -27,6 +29,14 @@ body {
   text-align: left;
 }
 
+#abstract {
+  color: white;
+  font-family: times;
+  font-weight: 100;
+  text-align: center;
+  font-style: italic;
+}
+
 h1 {
   text-align: center;
   color: white;
@@ -46,11 +56,10 @@ h2 {
 }
 
 h3 {
-  color:gray;
+  color: #A3350D;
   font-family: verdana;
   font-size: 120%;
   font-weight: 100;
-  line-height: 26px;
 }
 
 h4 {
@@ -105,9 +114,8 @@ h7 {
 }
 
 h7:hover {
-  border-bottom: 5px solid #3C5A8F;
-  color: #A3350D;
-  transition: 0.4s;
+  border-bottom: 5px solid #A3350D;
+  transition: 0.3s;
 }
 
 h8 {
@@ -117,6 +125,39 @@ h8 {
   letter-spacing: 0.2em;
   font-size: 18px;
   font-weight: 100;
+}
+
+h9 {
+  text-align: center;
+  color: white;
+  font-family: verdana;
+  margin-top: 2vh;
+  z-index: 1; 
+  font-size: 48px; 
+  font-weight: 600;
+  top: 0;
+}
+
+p5 {
+  color: gray;
+  font-size: 14px;
+  padding: 20px 0 20px 0;
+}
+
+#caption {
+  font-size: 10px;
+}
+
+p6 {
+  margin-left: 20px;
+  font-family: times;
+  color: gray;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 100;
+  font-style: oblique;
+  padding: 20px 0 20px 0;
+  letter-spacing: -0.01em;
 }
 
 p7 {
@@ -391,7 +432,7 @@ section {
   padding-left: 20px;
 }
 
-
+.tab { margin-left: 5px; }
 
 
 
@@ -432,18 +473,6 @@ li a:hover {
   font-weight: 100;
   color: #A3350D;
   text-decoration: none;
-}
-
-.active {
-  border-bottom: 5px solid #A3350D;
-  color: #A3350D;
-  transition: .2s;
-}
-
-.active:hover {
-  border-bottom: 5px solid #3C5A8F;
-  color: #3C5A8F;
-  transition: .2s;
 }
 
 .sidebar {
@@ -541,9 +570,30 @@ lib a:hover {
     transition: .8s;
 }
 
-h7:hover {
-  transition: 0.2s;
-  color: #3C5A8F;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 3;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 #circle {

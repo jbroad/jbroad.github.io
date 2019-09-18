@@ -2,6 +2,16 @@
 output: html_document
 mainfont: Verdana
 ---
+<script>
+function loadImage() {
+  $('.logo').css('opacity', '0');
+  $('.logo').css('transition', '.3s');
+  $('.topnav, .footer').css('height', '8vh');
+  $('.topnav, .footer').css('transition-delay', '.1s');
+  $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
+  $('.topnav, .footer').css('transition-timing-function', 'ease');
+}
+</script>
 <!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css">
 <link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
@@ -11,31 +21,13 @@ mainfont: Verdana
 <!-- header -->
 <div class="topnav">
 <div class="landing">
-<a href="index.html"><img class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a></div>
+<a href="index.html"><img onload="loadImage()" class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a></div>
 <ul style="margin-left: -1.5vw">
-<li><a href="index.html"><h7>HOME</h7></a></li>
+<li><a href="index.html"><h7 class="active">HOME</h7></a></li>
 <li><a href="blog.html"><h7>BLOG</h7></a></li>
 <li><a href="about.html"><h7>ABOUT</h7></a></li>
 </ul>
 </div>
-
-
-<script>
-$(window).scroll(function() {
-    if ( $(window).scrollTop() >= 100 ) {
-        $('.logo').css('opacity', '0');
-        $('.logo').css('transition', '.3s');
-        $('.topnav, .footer').css('height', '8vh');
-        $('.topnav, .footer').css('transition-timing-function', 'ease');
-        $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
-        $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
-        $('.sidebar').css('right', '0');
-    } else {
-        $('.logo, .topnav, .footer, .sidebar').attr('style', '');
-
-    }
-});
-</script>
 
 
 <!-- Footer -->

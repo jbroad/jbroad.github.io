@@ -5,67 +5,128 @@ params:
     set_title: "Joseph Broad"
 output: 
   html_document:
-    toc: true
-    toc_float: true
     includes:
       before_body: header_blog.html
 mainfont: Verdana
 ---
-Abstract: 
-returning to one of the most cited articles relating to civic competence. Optimistic suggestion that voters with low knowledge behave similarly to voters with high knowledge when they have shortcuts. Two problems: 1) imperfect survey items to measure knowledge; 2) imperfect scale construction of knowledge. While the second problem can be addressed, the first cannot. That said, the major points holds - electors with knowledge shortcuts vote similarly as groups, though not to such an extreme as presented by Lupia in his original 1994 article. As I discuss in the final section here, this all begs the question about the types of information that important in making decisions at the ballot box. 
+<div class="wideboi" style="text-align: center; top: 0;">
+<div class="section" style="margin-top: 8vh; padding-top: 10vh; width: 100vw; left: 0; border: 2px none black; background-color: #911;">
+<div class="section">
+<h9>The Corners We Cut:</h9><br>
+<h9 style="font-size: 24px">25 Years After Shortcuts Versus Encyclopedias</h9>
+</div>
+<div class="desc" style="margin: 2vw; border: 2px none black;">
+<p id="abstract" style="font-weight: 600">Abstract:</p>
+<p id="abstract">
+Arthur Lupia's 1994 "Shortcuts Versus Encyclopedias" presents optimistic results suggesting that low-information electors behave remarkably similar to high-information electors at the ballot box. Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using Lupia's original data. Below I identify and discuss two issues with the original article: 1) the survey's knowledge battery does not measure the type of knowledge that should be established as the normative standard for informed voting; 2) the knowledge scale construction rewards nonresponses with higher scores, despite their observation equivalence to uncertainty and, are a result, distorts respondents' true knowledge score. Correcting for the second issue, the general patterns Lupia's central findings hold, though not nearly to such an extreme degree as presented in the original article.</p> 
+</div></div>
 
-Intro: 
-Question always returns to: can the educated elite trust the masses to make good decisions? 
-Thucydides: Mitilinean debate
-Plato: 
-This question has presented itself under the guise of voter competence. Quite a bit of academic attention has been aimed at measuring competence. Half-serious treatment of how to improve the quality of democracy. Ironic that Lupia recommends system of signals - today is only signals and here we are.
+<div style="width: 100vw; text-align: center; border: 2px none black; margin-top: 8vh;">
+<div class="section" style="width: 60vw; margin-left: 20vw; border: 1px none #A3350D; background-color: none; text-align: left; padding: 5px;">
+<!-- Civic Competence -->
+<h3>Introduction</h3>
+<p>
+Arthur Lupia's 1994 "Shortcuts Versus Encyclopedias" came in response to the resurgence of an inherently elitist question: "Can the ignorant, passionate masses be trusted with a thing as precious as Democracy?" This question is as old as Democracy itself (see e.g. Thucydides's History of the Peloponnesian Wars 3.11-3.50) and its motivating fear was integral to the construction of American political institutions (e.g. Federalist Paper 49). This question has persisted, in part, due to lexically diverging priorities of scholars on either side of the issue. For some, Democracy cannot function without a fully informed public; for others, information is a secondary consideration to the respect for an individual's right of self-determination. The genius of Lupia's article is its appeal to both rationalists and idealists: uninformed electors can behave as if they were fully informed so long as they hold accurate information shortcuts. Namely, knowledge of which propositions political figures and interest groups support.
 
-Here I return to one of the most often cited: Lupia's Shortcuts. Major finding suggests that, when it comes to propositions that have not aligned with the two major political parties, electors with low ``encyclopedic'' knowledge behave incredibly similar to those with high encyclopedic knowledge. 
-The results of Lupia's original work hold, though not to the extreme degree as he presents them. That is only on the condition that we accept the definition of encyclopedic knowledge as the ability to recall a proposition's intended effect.
+Despite the merits of its aim toward overlapping consensus on this pervasive question, the original study is not without faults. First, its survey construction was imperfect: the knowledge battery tapped into merely superficial knowledge, which does little to inform researchers of electors' beliefs regarding the implications of various policy alternatives. Lupia compares the voting behaviors of electors belonging to three arbitrarily constructed groups (high knowledge with information shortcuts, low information with information shortcuts, and low information with no information shortcuts) and finds the first two groups' voting behavior to be remarkably similar. Given that the knowledge categories are (a) arbitrary and (b) measuring superficial knowledge, I would be reluctant to make between-group comparisons as if they were analogous to comparisons between the rationalists' ideal and the uninformed.
 
-So why am I doing this? A warning to readers to be wary of scales.
+Second, and relatedly, the construction of the knowledge scale gives a dishonest representation of respondents' true (albeit superficial) knowledge. The scale mistakenly conflates non-responses (i.e. no answer) with affirmative responses in the negative (i.e. an explicit "no") and thereby introduces uncertainty into the scale. A non-response, which is observationally equivalent to an explicit "no" in the survey construction, is rewarded with higher knowledge scores; this effectively makes electors who gave unclear responses appear more similar to respondents with high knowledge scores. Lupia thereby put his thumb on the scale in favor of making low- and high-knowledge respondents appear more similar than they are in reality.
 
-Background: Review Lupia
+All said, the general patterns in the findings of the original article hold, though not to such an extreme degree as Lupia presented them. By making slight modifications to the construction of the knowledge scale, I find that those who have relatively low knowledge but accurate information shortcuts behave more similarly to the high knowledge group than other groups. These patterns hold across multiple arbitrary cutpoints of the new knowledge scale. While the effect of information shortcuts has been taken up by many other scholars since 1994, I return to Lupia's original article to celebrate its 25th year anniversary; I plan to celebrate this seminal piece by dissecting it ruthlessly and reexamine is persuasive merits. This post also serves as a warning to fledgling political scientists to be wary of the construction of scales, both in your own work and in the articles you are assigned to read in every course about public opinion (e.g. Lupia 1994).</p>
 
-1988, CA, referendum
-5 propositions to consider, 4 basic policies
-2 major political parties had not align around these effects
+<h3>Political Context of Lupia (1994)</h3>
 
-Background: Lupia Survey and Measurements
+<p>
+In 1988, California electors were presented with five propositions establishing policies related to their automobile insurance rates. No proposition was aligned with the two major political parties at the time, making it an ideal opportunity to study the effect of knowledge and shortcuts on direct-election outcomes without the interfering influence of partisan tribalism. Table 1 below illustrates the four major intended policy outcomes for each of the five propositions:
+</p>
 
-Knowledge: Which proposition(s) established policy X?
-Shortcuts: Political figure or group Y favored which policy?
-
-As mentioned above, the second problem addressed here is how the knowledge scale is constructed in the original study.
-
-Knowledge point granted for correct affirmative answer. No point for leaving correct answer blank, and no point for answering in the affirmative for the wrong choice selection.
-
-An illustration:
-Among the following, select those who are currently (2019) serving as United States Senators from Nevada:
-A. Dean Heller
-B. Jacky Rosen 
-C. Catherine Cortez-Masto
-D. Harry Reid
-E. Dina Titus
-F. Don't know
-
-A respondent who chose responses "B" and "C" would be granted five knowledge points: two for correctly identifying Nevada's current senators, and three for correctly NOT selecting any of the other three.
-
-A respondent who selected "A" would be granted two knowledge points, both for correctly NOT selecting "D" and "E". 
-
-A respondent who selected "F" would receive no knowledge points for this survey item, while a respondent who selected "F" and "B" would receive just one knowledge point.
-
-## Knowledge Distribution
-
-```{r setup, include=FALSE}
+```{r setup, include = F, echo=F}
 library(ggplot2)
 library(knitr)
 library(dplyr)
 library(kableExtra)
 library(factoextra)
+library(formattable)
+library(gridExtra)
+p1 <- c("No", "No", "No", "Yes", "No", "Yes", "No", "Yes", "No", "No", "No", "Yes", "No", "Yes", "Yes", "No", "No", "Yes", "No", "No")
+m1 <- as.data.frame(matrix(p1, ncol=5, byrow = T), stringsAsFactors = F)
+names(m1) <- c("prop100", "prop101", "prop103", "prop104", "prop106")
+rownames(m1) <- c("No Fault Auto Insurance", "Discounts for Good Drivers", "Limits Attorney Contingency Fees", "Prohibits Red Lining")
+wrapper <- function(x, ...) 
+{
+  paste(strwrap(x, ...), collapse = "\n")
+}
+```
+
+``` {r, echo = F}
+m1 %>%
+  mutate(
+  policy = row.names(.),
+  prop100 = cell_spec(
+    prop100, color = "white", bold = T,
+    background = spec_color(c(1,2,1,1), begin = 0.2, end = 0.53, option = "B", direction = 1)
+  ),
+  prop101 = cell_spec(
+    prop101, color = "white", bold = T,
+    background = spec_color(c(1,1,2,1), begin = 0.2, end = 0.53, option = "B", direction = 1)
+  ),
+  prop103 = cell_spec(
+    prop103, color = "white", bold = T,
+    background = spec_color(c(1,2,1,2), begin = 0.2, end = 0.53, option = "B", direction = 1)
+  ),
+  prop104 = cell_spec(
+    prop104, color = "white", bold = T,
+    background = spec_color(c(2,1,2,1), begin = 0.2, end = 0.53, option = "B", direction = 1)
+  ),
+  prop106 = cell_spec(
+    prop106, color = "white", bold = T,
+    background = spec_color(c(1,1,2,1), begin = 0.2, end = 0.53, option = "B", direction = 1)
+  )
+    ) %>%
+  select(policy, prop100, prop101, prop103, prop104, prop106) %>%
+  kable(escape = F,align = "c", caption = "Table 1: Intended Policy Outcomes by 1988 CA Referenda") %>%
+  kable_styling("hover", full_width=F)
+```
+
+<p>
+Interest groups, policy stakeholders, and some political figures had an interest in the outcome of these propositions. No interest group spent more campaign dollars to inflence outcome of the referenda than the insurance industry, which spent more than $65 million, followed by trial lawyers ($15 million), and consumer activists ($2 million). As Lupia (1994) highlights, the insurance industry funneled campaign dollars to political organizations that appeared on the surface to be pro-consumer (66); as a result, the political information context was one of complexity and obfuscation. Do keep this point in mind, as it is integral to correctly understanding Lupia's results.</p>
+
+<h3>Survey and Measurements</h3>
+
+<p>
+Lupia constructed the knowledge scale from four survey items following the general pattern:</p>
+
+<div style="text-align: center;"><p6>Which of the following proposition(s) would enact policy X?</p6></div>
+
+<p>
+As mentioned above, one of my primary motivations here is to present the data more honestly by addressing an issue of problematic scale construction. The knowledge scale is constructed in the following way: respondents are awarded knowledge points for answering survey items correctly in the affirmative; additionally, a respondent who gives no response (and does not indicate that she does not know) receives knowledge points for each "No" in Table 1. Respondents who incorrectly answer in the affirmative or give no response to correct answers are awarded no knowledge points for those cells. A respondent who admits ignorance by selecting "Don't Know" is awarded no points for that row.
+
+To fully illustrate how this scale is constructed, consider the following illustration:
+</p>
+
+<p6 style="margin-left: 0;">
+Item 1: Among the following, please select those who are currently (2019) serving as United States Senators from Nevada. You may choose as many or as few response options as you please: <br></p6>
+<p6>a. Dean Heller<br></p6>
+<p6>b. Jacky Rosen <br></p6>
+<p6>c. Brian Sandoval<br></p6>
+<p6>d. Harry Reid<br></p6>
+<p6>e. Dina Titus<br></p6>
+<p6>f. Don't know</p6>
+
+<p>
+If you selected response "b", you would be awarded five knowledge points under Lupia's construction: one for correctly identifying Nevada's current senator and four for correctly NOT selecting any of the other response options. Great work. You would belong in the "high knowledge" category if the study were related Nevada politics.
+
+If you selected one of the incorrect options ("a", "c", "d", or "e") and no other choice, you would be awarded three knowledge points: each for correctly NOT selecting one of the other incorrect options. Keep this up and you will be safely in the "high knowledge" category with all the other experts of Nevada politics.
+
+Imagine you selected "b" but you were uncertain about the other US Senator from Nevada: in one scenario, you might leave the remainder of the options blank and be awarded five knowledge points and assigned to the "high knowledge" category. In an alternative scenario, you might have acknowledged your uncertainty and supplemented your "b" response by selecting "f": in this case, you would be assigned only one knowledge point and relegated to the low information category.
+
+In following these rules, we have constructed our knowledge score distribution. Keep in mind that the cut point of knowledge = 10 was arbitrarily assigned, though the final results are somewhat resilient to changes in the arbitrary cutoff point. This point will be discussed in greater detail below.</p>
+
+```{r, include=FALSE}
 guess <- read.csv("blog/blog_000_lupia25_files/lupia_guess.csv")
 newk <- read.csv("blog/blog_000_lupia25_files/lupia_guess_kn.csv")
 tables <- read.csv("blog/blog_000_lupia25_files/lupia_tables.csv")
+l.clust <- read.csv("blog/blog_000_lupia25_files/lupia_clust.csv")
 knitr::opts_chunk$set(echo = TRUE)
 fn14 <- data.frame(
   "k" = c(seq(0:19)),
@@ -77,118 +138,320 @@ nkfn14 <- data.frame(
   "high" = as.factor(c(rep(0,7), rep(1,5))))
 ```
 
-```{r, echo=F}
-ggplot(fn14, aes(k, count)) + 
-  geom_bar(aes(fill=high), stat="identity") +
-  theme_minimal()
+<p5>Fig. 1: Distribution of Original Knowledge Score</p5>
+```{r, echo=F, fig.height=4}
+cols <- c("#A3350D", "#3C5A8F")
+fn14$k <- fn14$k - 1
+fn14$high <- as.factor(as.integer(fn14$k > 9))
+plot0 <- ggplot(fn14, aes(k, count)) + 
+  geom_bar(aes(fill=high), stat="identity", position = position_dodge2()) +
+  theme_minimal() +
+  labs(x = "Knowledge Score",
+       y = "Count") + 
+  scale_fill_manual(values = cols) +
+  theme(legend.position = "none")
+plot0
 ```
+<div class="section" style="text-align: right; padding: 0 20px 20px 20px; line-height: .8;">
+<p5 id="caption">The color of the bars in the distribution above highlight the knowledge category to which respondents were placed for the final analysis. Blue indicates the high knowledge group while red indicates the low knowledge group.</p5></div>
 
-Observational equivalence between unknown and dumb luck.
+<p>
+As a final consideration, imagine you regret ever agreeing to participate in this survey. Imagine that you decide to give no response at all. Imagine that the unfortunate graduate student entering data accidentally glazed over your response and did not mark that row of your survey as incomplete. If this were to happen, you would be awarded four knowledge points and placed into the high knowledge bin.
 
-TO FULLY ILLUSTRATE: roughly 3% of respondents in the final analysis gave no response to this battery of knowledge items but were mistakenly assigned knowledge scores rather than considering them missing. This battery, which has 7 correct selections out of 20, ------- SO THESE RESPONDENTS WERE GIVEN A SCORE 13 - WHICH IS IN THE HIGH KNOWLEDGE CATEGORY.
+That's a lot to imagine, and it's a little far-fetched, isn't it? Well, roughly 3% of respondents in the final analysis match this description: no response was given on one or more rows and the respondent was given knowledge points for nonresponses to the incorrect selections. As a result, these respondents were assigned to the incorrect knowledge category. In the most extreme (and most unlikely) hypothetical case, a respondent might have answered no questions at all and been awarded 13 knowledge points. Granted, 3% of the final analysis is likely negligible, and this clerical error that can be easily remedied However, it begs the question: how many respondents in the "high knowledge" category (10 or higher) actually belong there?
 
-Granted 3% of the final analysis is likely negligible, but it begs the question: how many respondents in the "high knowledge" category (10 or higher) actually belong there?
+Here we have come face-to-face with the problem of observational equivalence between a non-response and an affirmative response in the negative, which is a byproduct of Lupia's survey and scale construction. This problem can be mitigated by remaining agnostic toward nonresponses and punishing incorrect belief with negative knowledge points, as I will discuss in greater detail below. First, however, I must address a second issue that was overlooked in the original analysis: random guessing.</p>
 
-## Knowledge Over Number of Responses
+<h3>Guess Away</h3>
 
-```{r, echo=F, message=F, warning=F}
-ggplot(guess[guess$category=="observed", ], aes(numresponse, avg)) + 
+<p>
+Given the structure of the survey battery (four rows, five options each), the total number of correct responses (7 affirmative, 13 non-response), and the rules governing the construction of the scale, respondents could perform quite well by guessing randomly. In Figure 1, we see one standard deviation above and below the mean knowledge score aggregated at the number of affirmative responses given. Figure 1-A (left) compares the observed knowledge scores* (red) against simulated random guessing (blue) while Figure 1-B (right) compares the observed knowledge scores against simulated pseudo-random guessing (blue). 
+
+The pseudo-random guessing simulation trims a number of random responses under an assumption of reasonableness: no reasonable respondent will genuinely believe that a single proposition aims to enact all four policy preferences. This would be similar to a series of four questions like Item 1 above on the Senators representing California, Nevada, Washington, and Oregon. No reasonable respondent will observe the survey structure and decide to respond in the affirmative to all of the response options for the Nevada survey item. Further, if a human were to guess randomly to the knowledge battery, that human would most likely make one guess per survey item. This is supported by the data, considering that the plurality of respondents made four responses in the affirmative (one per survey item).</p>
+
+<p5>Fig. 2: Observed Knowledge and Random Guessing </p5>
+
+```{r, echo=F, message=F, warning=F, cache=T}
+plot1 <- ggplot(guess[c(1:9,23:31),], aes(numresponse, avg)) + 
   geom_line(aes(colour = category)) +
   geom_point(aes(colour = category)) +
   geom_errorbar(aes(ymin=avg-std, ymax=avg+std, width = 0.3, colour = category)) + 
-  theme_minimal()
-```
-
-
-<!-- Notes:
-Roughly 1/3 of original respondents gave 4 responses - supporting pseudo random guessing, given structure of knowledge scores (this is nearly 1/2 of respones in the final analysis) - when we compare the responses to random guessing, it should be with pseudo random guessing rather than naive random guessing
-The average number of guesses was 3.38
---> 
-
-The structure of this knowledge scale rewards random guessing with high knowledge scores. There was no test in the original study that compared observed responses against random guessing.
-
-Figure X shows the average number of correct responses, conditional on the number of responses given, across three groups: observed responses (color), simulated random guessing (color), and simulated psuedo-random guessing (color).
-
-The pseudo-random guessing simulation trims a number of unreasonable random responses: no respondents will genuinely believe that a single proposition aims to DO ALL THE POLICY ALTERNATIVES. Reasonable assumption: if guessing randomly, guessing will be one per policy outcome. This is supported considering that a third of respondents gave 4 responses.
-
-## Knowledge Compared to Random Guessing
-
-```{r, echo=F, message=F, warning=F}
-ggplot(guess, aes(numresponse, avg)) + 
+  theme_minimal() +
+  scale_color_manual(values = cols) +
+  labs(x = "Number of Responses",
+       y = "Knowledge Score") + 
+  theme(legend.position = "none")
+plot2 <- ggplot(guess[c(1:9,12:20),], aes(numresponse, avg)) + 
   geom_line(aes(colour = category)) +
   geom_point(aes(colour = category)) +
   geom_errorbar(aes(ymin=avg-std, ymax=avg+std, width = 0.3, colour = category)) + 
-  theme_minimal()
+  theme_minimal() +
+  scale_color_manual(values = cols,
+                     labels=c("Observed", "Simulated")) +
+  labs(x = "Number of Responses",
+       y = "") + 
+  theme(legend.position = c(0.8, 0.2), 
+        legend.title=element_blank(),
+        legend.text = element_text(size = 11))
+grid.arrange(plot1, plot2, ncol=2)
 ```
+<div class="section" style="text-align: right; padding: 0 20px 20px 20px; line-height: .8;">
+<p5 id="caption">Figure 2 compares observed knowledge scores against simulated knowledge scores with random guessing (left) and psuedo-random guessing (right). The pseudo-random data is the randomly simulated data, trimmed of absurd and unrealistic response combinations (e.g. believing that one policy establishes all of the policy alternatives while the rest do establish none of them).</p5></div>
 
-## New Knowledge Setup
+<p>
+As the Figure 2-A (left) illustrates, the observed knowledge score is only slightly distinct from random guessing and hardly distinct at all from pseudo-random guessing. More importantly, nearly half of the random observations would be classified as "high knowledge" (48.4%), as well as a majority of pseudo-random observations (55.7%), compared to the observed (70.6%). In short, the vast majority of the "high knowledge" respondents performed about as well as random and pseudo-random guessers. I return to this point after first introducing the adjustment to knowledge scale construction.
 
-Simple adjustment:
-Assign points on affirmative answers only and remain agnostic to the rest. Treat non-responses as affirmative "don't know" and vice versa.
+<h3>New Knowledge Construction</h3>
 
-This trivial alteration to the construction of the knowledge scale better comports with normatively desirable epistemological traits: ignorance is preferrable to false belief. Under the original construction, respondents who admitted ignorance were given lower knowledge score than those who guess randomly or reported holding false beliefs. Respondents can be more appropriately assigned to knowledge categories by researchers remaining agnostic about whether a blank response is a "no" or an "I don't know" and by measuring knowledge strictly by affirmative responses instead (moreover, researchers can improve their survey design by asking respondents for affirmative responses: e.g. "Did Nader support Proposition 103, yes or no?"). Lupia's construction conflated true belief, false belief, and ignorance to different degrees.
+The problem of observational equivalence can be addressed (i.e. ignored) here by remaining agnostic as to how to interpret non-responses. That is, assign points only to affirmative answers and do nothing with the rest. In the construction below, correct responses are awarded 1 knowledge point while incorrect responses are deducted 1 knowledge point.
 
+This alteration to the construction of the knowledge scale may seem trivial; on the contrary, the results of the final analysis differ quite drastically (upwards of an 8% difference) and the new scale construction comes with a number of additional benefits (e.g. distinction from random guessing, resilence to arbitrary bin selection cutoff). Not least among the benefits is how the scale better-comports with normatively desirable epistemological traits: i.e., true belief is preferable to ignorance, which is preferrable to false belief. Under the original construction, respondents who admitted ignorance were given lower knowledge scores than those who guessed randomly or held incorrect beliefs. Respondents can be more appropriately assigned to knowledge categories by researchers remaining agnostic about whether a blank response is a "no" or an "I don't know" and by measuring knowledge strictly by affirmative responses instead (moreover, researchers can improve their survey design by asking respondents for affirmative responses: e.g. "Did Nader support Proposition 103, yes or no?").
 
-```{r, echo=F, message=F, warning=F}
-ggplot(newk, aes(numresponse, avg)) + 
+<h3>Scale Performance Comparison</h3>
+ 
+Figure 3 below illustrates various differences between the original and new knowledge scale construction. The first row of plots indicates that, a small number of outliers aside, the new scale has an approximately normal distribution. The relationship between pseudo-random guessing and the number of knowledge points awarded has drastically shifted under the new construction: on the left, the observed original knowledge scores are largely indistinct from pseudo-random guessing; on the right, in contrast, pseudo-random guessing is penalized under the new knowledge scale construction, and random guessers will most likely have a negative knowledge score. 
+
+<p5>Fig. 3: Original Compared New Construction</p5>
+
+```{r, echo=F, cache=T, fig.height=6}
+cutpoint.ok <- read.csv("blog/blog_000_lupia25_files/cutpoint_ok.csv")
+cutpoint.nk <- read.csv("blog/blog_000_lupia25_files/cutpoint_nk.csv")
+cutpoint.nk$cut <- cutpoint.nk$cut - 13
+fn14$i <- as.factor(1)
+nkfn14$i <- as.factor(1)
+plot0 <- ggplot(fn14, aes(k, count)) + 
+  geom_bar(aes(fill=i), stat="identity", position = position_dodge2()) +
+  theme_minimal() +
+  ylim(0,80) +
+  labs(x = "Knowledge Score",
+       y = "Count") + 
+  scale_fill_manual(values = cols) +
+  geom_vline(xintercept=9.5, color = "gray", linetype = "dashed") +
+  theme(legend.position = "none")
+plot2 <- ggplot(guess[c(1:9,12:20),], aes(numresponse, avg)) + 
   geom_line(aes(colour = category)) +
   geom_point(aes(colour = category)) +
   geom_errorbar(aes(ymin=avg-std, ymax=avg+std, width = 0.3, colour = category)) + 
-  theme_minimal()
+  theme_minimal() +
+  scale_color_manual(values = cols) +
+  labs(x = "Number of Responses",
+       y = "Knowledge Score") + 
+  theme(legend.position = "none")
+plot3 <- ggplot(newk[c(1:9, 12:20),], aes(numresponse, avg)) + 
+  geom_line(aes(colour = category)) +
+  geom_point(aes(colour = category)) +
+  geom_errorbar(aes(ymin=avg-std, ymax=avg+std, width = 0.3, colour = category)) + 
+  theme_minimal() + 
+  labs(x = "Number of Responses",
+       y = "") + 
+  scale_color_manual(values = cols) +
+  theme(legend.position = "none")
+plot4 <- ggplot(nkfn14, aes(k, count)) + 
+  geom_bar(aes(fill=i), stat="identity") +
+  theme_minimal() +
+  labs(x = "Knowledge Score",
+       y = "") + 
+  scale_fill_manual(values = cols) +
+  geom_vline(xintercept=1.5, color = "gray", linetype = "dashed") +
+  theme(legend.position = "none")
+plot5 <- ggplot(cutpoint.ok[c(1:20, 41:60),], aes(x = cut, y = prob, colour = source)) +
+  geom_line() + 
+  theme_minimal() + 
+  labs(x = "Knowledge Category Cutpoint",
+       y = "% Assigned to High Know") + 
+  scale_color_manual(values = cols) +
+  geom_vline(xintercept=10, color = "gray", linetype = "dashed") +
+  theme(legend.position = "none")
+plot6 <- ggplot(cutpoint.nk[c(1:20, 41:60),], aes(x = cut, y = prob, colour = source)) +
+  geom_line() + 
+  theme_minimal() + 
+  labs(x = "Knowledge Category Cutpoint",
+       y = "") + 
+  scale_color_manual(values = cols) +
+  geom_vline(xintercept=1, color = "gray", linetype = "dashed") +
+  theme(legend.position = "none")
+grid.arrange(plot0, plot4, plot2, plot3, plot5, plot6, ncol=2)
 ```
 
-## Distribution of New Knowledge Score
 
-```{r, echo=F}
-ggplot(nkfn14, aes(k, count)) + 
-  geom_bar(aes(fill=high), stat="identity") +
-  theme_minimal()
+The last row shows the proportion of observed (red) and simulated (blue) respondents who would been assigned to the "high knowledge" category over different possible bin cutpoints. The left plot shows there is little difference between the proportion of observed and simulated data at and below the cutpoint used in the 1994 article (10). At this cutoff point, more than 50% of pseudo-random guessers would have been assigned to the high knowledge bin. The final analysis in the 1994 study may therefore have compared the voting behaviors of lucky pseudo-random guessers against unlucky pseudo-random guessers. On the right, there is a clear and wide gap between observed and simulated data at all cutoff values. Table 4 below gives results based on a cutpoint equal to 2: at this cutpoint, half of the observed data is in the high knowledge category while there is only a 5% chance that a pseudo-random guesser would erroneously be assigned to this bin.
+
+<h3>Direct Scale Agreement</h3>
+
+Figure 4-A (left) shows the bivariate relationship between the original and proposed knowledge scales. A small jitter was applied to the plot to illustrate the density of the red "true positives": observations that were assigned to the high knowledge category under both knowledge scale constructions. Black observations indicate "true negatives": observations that are binned as low knowledge in either case. Blue observations are observations that were binned as high knowledge in the original construction and low in the new (~20% of observations) while orange indicates the converse (< 10% of observations). </p>
+
+<p5>Fig. 4: Scatter Plot and "Confusion Matrix"</p5>
+
+```{r, echo=F, cache=T}
+l.twoway <- read.csv("blog/blog_000_lupia25_files/lupia_twoway.csv")
+l.twoway <- data.frame(l.twoway[,-1])
+x <- seq(-8, 6, by=1)
+y <- seq(0, 19, by=1)
+l.twoway2 <- matrix(rep(NA, 15*20), ncol = length(y))
+for (col in y) {
+        for (row in x) {
+                l.twoway2[row==x,col==y] <- sum((l.twoway[,2] > row) == (l.twoway[,1] > col))/nrow(l.twoway)
+        }
+}
+df <- expand.grid(x, y)
+u.twoway2 <- unlist(data.frame(l.twoway2))
+u.twoway2 <- cbind(df, u.twoway2)
+names(u.twoway2) <- c("x", "y", "z")
+l.twoway$a <- NA
+l.twoway$a[l.twoway$ok < 10 & l.twoway$kn < 2] <- 0
+l.twoway$a[l.twoway$ok >= 10 & l.twoway$kn < 2] <- 1
+l.twoway$a[l.twoway$ok < 10 & l.twoway$kn >= 2] <- 2
+l.twoway$a[l.twoway$ok >= 10 & l.twoway$kn >= 2] <- 3
+plot7 <- ggplot(l.twoway, aes(x = kn, y = ok)) + 
+        geom_jitter(aes(color = factor(a))) +
+        theme_minimal() + 
+        scale_color_manual(values = c("black", "#3C5A8F", "#C76322", "#A3350D"),
+                     labels=c("True Negatives", "False Positives", "False Negatives", "True Positives")) +
+  theme(legend.position = "bottom", 
+        legend.title=element_blank(),
+        legend.text = element_text(size = 11)) + 
+  guides(color = guide_legend(nrow=2,byrow=TRUE))
+plot8 <- ggplot(u.twoway2, aes(x, y)) +
+        geom_raster(aes(fill = z)) + 
+        geom_hline(yintercept=c(9.5, 10.5), color="white") +
+        geom_vline(xintercept=c(0.5,1.5), color="white") +
+  theme_minimal() +
+  scale_fill_gradient2(low = "#3C5A8F", mid = "white", high = "#A3350D", midpoint = 0.5) +
+  theme(legend.position = "bottom", 
+        legend.title=element_blank(),
+        legend.text = element_text(size = 11)) + 
+  guides(fill = guide_colourbar(ticks = F, barwidth = 12, barheight = 1))
+grid.arrange(plot7, plot8, ncol=2)
 ```
+<div class="section" style="text-align: right; padding: 0 20px 20px 20px; line-height: .8;">
+<p5 id="caption">Figure 4-A (left) plots the bivariate relationship between the new knowledge score (x-axis) and the original (y-axis). Figure 4-B (right) is a heatmap illustrating the proportion of true positive and true negative agreement across all possible cutpoint values in both scales; blue colors indicate lower agreement (min 0%) and red values indicate higher agreement (max 100%). The white lines in Figure 4-B highlight the cell used in creating the extension of Table 4 below: this cell contains the maximum proportion of binning agreement between the two scales while keeping the original cutpoint constant.</p5></div>
 
-## Replication and Extension of Table 4
+<p>
+This figure illustrates the level of agreement between the two scales regarding which respondent belongs in which knowledge bin (70%). Figure 4-B explores this relationship at all possible combinations of cutpoints for both the original and new knowledge scales and plots the proportion of true negatives and positives across these combinations. The white lines show the cutpoints used to create the arbitrary knowledge bins, and construct Table 4 below. For the initial analysis in Table 4, a cutpoint of 2 was selected in the new knowledge setup as it has the greatest level of agreement with the original knowledge score when holding the original cutpoint constant (and thereby presumably present the results most similar to the original as possible while also correcting for the problematic knowledge scale). Table 5 explores how the results might have been presented had a higher cutpoint been used; namely, the cutpoints at which the level of agreement (original knowledge cutpoint = 16 and the new knowledge cutpoint = 3).</p>
 
-```{r, echo=F}
-kable(tables[1:8, 2:7],caption="Replication of Table 4") %>%
-  kable_styling("striped", full_width = F) %>%
-  pack_rows("Replication", 1, 4) %>%
-  pack_rows("Extension", 5, 8)
-```
+<h3>Replication and Extension of Lupia's Table 4</h3>
 
-## Clusters
+Lupia relies heavily on Table 4 of the original article to illustrate his central point: low-information electors behave similarly to high-information voters when they hold accurate information shortcuts (in this case, knowledge of the insurance industry's position on each proposition). This table has been replicated and modified in order to present its information more effiicently. The modification simply presents the differential between a group's mean voting behavior and the high-knowledge group's mean voting behavior. This way, patterns of similarity and dissimilarity are more readily accessible. The table is extended to include information omitted from the original analysis, namely the voting behavior of the high-information/poor-shortcut group. It is also extended to illustrate what the results would have been had Lupia used the knowledge scale as it was constructed here.
 
-This alteration to the construction of the knowledge scale is supported by a cluster analysis. Given that we are interested in similarities and dissimilarities between groups, it initially seems cluster analysis would be highly suitable here.
-However, won't get into it here for a number of reasons: 1) clustering is not entirely suitable for this data, as it clusters about as well as random data (Index 0.5); thus, k-means clustering as an alternative to arbitrary cutpoints is only a slight improvement on the theoretical justification for group formation, with a slight loss of interpretability. Second, a motivation for this piece has been to improve Lupia's analysis using the same tools available to him at the time. While cluster analysis was developed 1994, there have been significant improvements in ease of application that were not available to Lupia at the time (such as through R packages cluster, factoextra, and dbscan, which were used in the preparation of this article). To expand further on my second point: there were alternative approaches to constructing a knowledge scale that were no more sophisticated than the approach used in the original analysis - approaches that, I believe, give more honest results.
-
-## Cluster Plot
-
-<img class="logo" style="object-fit: cover;" src="blog_000_lupia25_files/clusplot1.jpeg">
-
-## Discussion
-
-In researching voter competence, scholars sometimes forget that they too use information shortcuts and that they too can be low-information voters. I had colleagues admit as much after the 2016. We are not experts on every political issue; very few of us can claim to be experts on more than one political issue (if that). A good starting point may be to ask ourselves how we come to ballot-box decisions despite relative lack of information. 
-
-Significant improvements have been made in the field of information shortcuts: 
-At minimum:
-What is important to the voter? What are voter values?
-Who does the voter trust when it comes to making shortcuts?
-Who benefits most from policy x?
-
-Finally, there is the matter of Table 2 - logistic model coefficients. (first, the models are hardly more predictive than random guessing - take with a grain of salt). Interesting that the shortcuts that really seem to matter are the positions of insurance industry and trial lawyers. In each case, the coefficient is in the opposite direction of the interest group's preference. 
-
-
-```{r, echo=F}
-table4 <- read.csv("blog/blog_000_lupia25_files/lupia_extable4.csv")
-table4[,1] <- c("HK/S/GL", "LK/N/BL", "LK/S/BL", "HK/N/GL")
-table4 <- table4[c(1,3,2,4),]
-names(table4) <- c("group", "cat", "kn", "sn", "sq", "prop100o", "prop100", "prop101o", "prop101", "prop103o", "prop103", "prop104o", "prop104", "prop106o", "prop106")
-table4[-1,-c(2:6, 8, 10, 12, 14)] %>%
+```{r, echo=F, cache=T}
+#tables[,-7] <- round(tables[,-7], 2)
+tables[-c(7:9),-1] %>%
   mutate_if(is.numeric, function(x) {
     cell_spec(x, bold = T, 
               color = spec_color(x, begin = .2, end = .6, option = "B"))
   }) %>%
-  kable(escape = F, align = "c") %>%
-  kable_styling(c("striped", "condensed", full_width = F))
+  select(group, prop100, prop101, prop103, prop104, prop106) %>%
+  kable(escape = F, align = "c", caption="Table 4: Replication and Extension of Table 4") %>%
+  kable_styling(c("striped", "condensed", full_width = F)) %>%
+  pack_rows("Replication", 1, 3) %>%
+  pack_rows("Extension: Cutpoint = 2", 4, 6)
+```
+<div class="section" style="text-align: right; padding: 0 20px 20px 20px; line-height: .8;">
+<p5 id="caption">The astute reader has likely noticed that Table 4 is only the second table in this article. Since it was a replication of Table 4 in Lupia (1994), I did not want to be the cause of any (additional) undue confusion by referring to this as Table 2, which is itself referring to Table 4.</p5></div>
+
+<p>
+Lupia's central argument is that voters in the "Low-Knowledge w/ Shortcut" group behave as if they were fully-informed by voting similarly to voters assigned to the group with high knowledge and accurate shortcuts. The first two rows in the replication table show support for the central argument in a dramatic fashion. The differential in the first row is near zero, while being consistently and significantly smaller than the other rows. 
+
+It should be readily apparent that the general pattern of findings in the original study hold when using the new knowldge score. However, the differentials in the first row are quite a bit larger in the extension than in the replication, and not as dramatically distinct from the differentials in other rows. By constructing a knowledge scale that is agnostic toward the observational equivalence problem and punishes respondents for random guessing, Table 4 presents a more honest interpretation of Lupia's original data. Luckily for the more idealistic Democratic Theorists, the patterns in the data tell much the same story as the original presentation: low-knowledge electors behave like high-knowledge electors when they have accurate information shortcuts, the only difference being that the patterns are not quite so dramatic as originally presented.</p>
+
+```{r, echo=F, cache=T}
+tables[c(7:9),-1] %>%
+  mutate_if(is.numeric, function(x) {
+    cell_spec(x, bold = T, 
+              color = spec_color(x, begin = .2, end = .6, option = "B"))
+  }) %>%
+  select(group, prop100, prop101, prop103, prop104, prop106) %>%
+  kable(escape = F, align = "c", caption="Table 5: Extension of Table 4 at Higher Knowledge Standard") %>%
+  kable_styling(c("striped", "condensed", full_width = F)) %>%
+  pack_rows("Extension: Cutpoint = 3", 1, 3)
 ```
 
-Chat on this for a while.
+<p>
+It should also be mentioned here that these results are only somewhat resilient to alternative group cutpoints. On average, the general pattern holds for all group cutpoints; however, the pattern becomes more variable as the information cutpoint is increased. For example, there are instances under high knowledge cutpoints (e.g. new knowledge of 3 or higher, as in Table 5) in which the high-information groups begin to look most like one another regardless of information shortcuts, and likewise for low-information groups. That said, I am reluctant to give any weight to differential patterns at cutpoints of four or higher, as the number of observations decreases dramatically after a cutpoint at three. If one of Lupia's primary motivations was to save the Democracy from realists and rationalists, it is important that we take our thumb off the scale and present the data as honestly as possible; by presenting all of the data, the reader can decide for herself the appropriate cutpoint to compare high and low knowledge groups. Otherwise, the presentation of the results may appear to be an attempt at manipulation.</p>
 
+<!-- <h3>Alternative Approach: Cluster Analysis</h3> -->
+
+<!-- The altered construction of the knowledge scale is supported by a cluster analysis. Given that we are interested in similarities and dissimilarities between groups across multiple dimensions, it initially seems cluster analysis would be highly suitable here. However, I will not delve too deeply into the weeds of cluster analysis for two reasons: first, clustering is not entirely suitable for this data, as it clusters about as well as random data (Hopkins Statistic 0.51); thus, k-means clustering as an alternative to arbitrary cutpoints is only a slight improvement on the theoretical justification for group formation, with a slight loss of interpretability. -->
+
+<!-- Second, an auxiliary motivation for this piece has been to improve upon Lupia's interpretation and presentation of the data using the same tools available to him at the time of its original publishing. In this section, however, I will tentatively and briefly expand into the world of cluster analysis. While cluster analysis was developed and popularized well before 1994, there have been significant improvements in the ease of its application that were not available to Lupia at the time (such as through R packages cluster, factoextra, and dbscan, which were used in the preparation of this article). -->
+
+<!-- I conduct k-means clustering on three variables: the newly-constructed knowledge variable, a summation of shortcut accuracy, and a third variable given no attention in Lupia's 1994 article, which I will refer to as the shortcut link. The first variable asks survey respondents which proposition establishes policy X; the second variable asks respondents which proposition was supported by interest group or political figure Y; the third variable asks respondents to indicate which policy outcome is supported by interest group or political figure Y. Respondents with genuinely high knowledge scores and accurate information shortcuts should be able to link their superficial knowledge about propositions' intended policy outcomes and the propositions supported by political figures to policy outcomes supported by political figures. -->
+
+<!-- In spite of the mere marginal-superiority of this data's clusterability over random data, I include these results for the fascinating contradictory cluster identified by the k-means (k = 4) process. The clustering algorithm identified four clusters with the following characteristics: 1) high knowledge, shortcut awareness, good shortcut link; 2) low knowledge, shortcut awareness, bad shortcut link; 3) low knowledge, no shortcut awareness, bad shortcut link; and finally, 4) high knowledge, no shortcut awareness, and good shortcut link. -->
+
+<!-- <p5>Fig. 5: Cluster Plot</p5> -->
+
+<!-- ``` {r, echo = F} -->
+<!-- l.clust <- l.clust[,-1] -->
+<!-- km.res <- kmeans(l.clust[,-1], 4, nstart=25) -->
+<!-- fviz_cluster(km.res, data=l.clust, -->
+<!--              palette = c("#C76322", "#3C5A8F", "#0DA373", "#A3350D"), -->
+<!--              ellipse.type = "euclid", -->
+<!--              star.plot = T, -->
+<!--              show_labels = F, -->
+<!--              labelsize = 0, -->
+<!--              repel = F, -->
+<!--              main = NULL, -->
+<!--              xlab = "Dimension 1 (49.4% of Variance)", -->
+<!--              ylab = "Dimension 2 (29.4% of Variance)", -->
+<!--              ) + -->
+<!--   theme_minimal() +  -->
+<!--   theme(legend.position = c(0.8, 0.2),  -->
+<!--         legend.title=element_blank(), -->
+<!--         legend.text = element_text(size = 11)) -->
+<!-- ``` -->
+<!-- <div class="section" style="text-align: right; padding: 0 20px 20px 20px; line-height: .8;"> -->
+<!-- <p5 id="caption">Figure 5 illustrates the clusters identified in a kmeans cluster analysis (k=4). The red cluster (group 4) is composed of respondents - on average - with high knowledge, shortcut awareness, and good links; hose 4 clusters - performs about as well as 5 or 6, RE: WSS. 4 categories are easier to compare than 5 or 6. </p5></div> -->
+
+<!-- This fourth cluster (color) is fascinating given its contradiction: these respondents, on average, are highly knowledgable regarding policy outcomes and they know which political groups and figures support which policy outcomes. Regardless, they are unable to link their knowledge about the propositions' intended effects and political groups' favored policy outcomes to political groups' favored propositions. I interpret this cluster as a group that, on average, guessed randomly and by chance happened to be correct in knowledge and link items but not the shortcut items. -->
+
+<!-- ```{r, echo=F, cache=T} -->
+<!-- table4 <- read.csv("blog/blog_000_lupia25_files/lupia_extable4.csv") -->
+<!-- table4[,1] <- c("HK/S/GL", "LK/N/BL", "LK/S/BL", "HK/N/GL") -->
+<!-- table4 <- table4[c(1,3,2,4),] -->
+<!-- names(table4) <- c("group", "cat", "kn", "sn", "sq", "prop100o", "prop100", "prop101o", "prop101", "prop103o", "prop103", "prop104o", "prop104", "prop106o", "prop106") -->
+<!-- table4[-1,-c(2:6, 8, 10, 12, 14)] %>% -->
+<!--   mutate_if(is.numeric, function(x) { -->
+<!--     cell_spec(x, bold = T,  -->
+<!--               color = spec_color(x, begin = .2, end = .6, option = "B")) -->
+<!--   }) %>% -->
+<!--   kable(escape = F, align = "c") %>% -->
+<!--   kable_styling(c("striped", "condensed", full_width = F)) -->
+<!-- ``` -->
+
+<!-- As mentioned above, this data clusters only marginally better than random data, so the clusters themselves are quite noisy and show considerable overlap. Regardless, the results - even if taken with a grain of salt - lend some additional support to Lupia's central argument about the effect of accurate information shortcuts. Here, the cluster with low knowledge, shortcut awareness, and bad shortcut link behave more similarly to the cluster approximating fully informed than the other clusters. -->
+
+<h3>Discussion</h3>
+
+<p>
+Here I have taken Lupia's original data and made slight modifications to the construction of a key variable in order to present a more honest - and hopefully persuadable - story. This short article addresses the problem of observational equivalence plaguing the original knowledge construction to create a more valid and stable measure of knowledge. Correcting for this issue, the findings are consistent with the 1994 article, though not to such an extreme degree as originally presented. Low information electors do behave similarly to high-information electors when they hold accurate information shortcuts.
+
+However, this post addresses only one of two major issues with the original article: the issue left undiscussed is whether the knowledge scale can be argued to measure the kind of knowledge that is important to electors and Democratic Theorists. In researching voter competence, scholars sometimes forget that they too use information shortcuts and that they are likely low-information voters. I had colleagues admit as much after the 2016 election, when they voted on various California referenda but were not sure what they were (and these were political scientists, mind you). We political scientists are not experts on every political issue; very few of us can claim to be experts on more than one issue (if that). As a result, we often fool ourselves into believing that some types of information <i>should</i> matter to electors or to our ideological opponents.
+
+Given our own limitations, a good starting point for researchers may be to ask ourselves how we come to ballot-box decisions despite our relative lack of information. Is it sufficient to know which proposition establishes a certain policy? Shouldn't we have some idea of the implications of those policies? Who benefits from the policies? What are the immediate and person policy implications? What about community-wide, or statewide implications to the quality of life of the state's residents or the economic performance of its industries? By measuring merely superficial knowledge of each proposition, Lupia's 1994 article may be doing nothing more than comparing low-knowledge electors with accurate shortcuts to even less-knowledgable electors with accurate shortcuts. In which case, the similarities between these groups should not be at all surprising.
+
+On the subject of the sort of knowledge that matters, consider Table 2 in the 1994 article, which presents the logistic regression coefficients predicting vote choice over levels of knowledge and shorcut awareness:</p>
+
+``` {r, echo = F}
+t1 <- c("0.05", "-0.09*", "0.22**", "-0.06", "-0.07", 
+        "2.57**", "-1.89", "3.35**", "-1.15", "-2.28**", 
+        "-0.10", "0.41", "-0.20**", "0.04", "0.02", 
+        "-2.42**", "", "", "", "-1.25",
+        "0.15*", "", "", "", "0.04")
+m2 <- as.data.frame(matrix(t1, ncol=5, byrow = T), stringsAsFactors = F)
+names(m2) <- c("prop100", "prop101", "prop103", "prop104", "prop106")
+rownames(m2) <- c("Knowledge", "Insurance Sh.", "Insurance Sh. X Knowledge", "Lawyer Sh.", "Lawyer Sh. X Knowledge")
+kable(m2,align = "c",caption="Table 6: Truncated Logistic Coefficients") %>%
+  kable_styling("hover", full_width = F)
+```
+
+First, these logistic models are hardly any more predictive than random guessing, so the models clearly suffer from some unmeasured determinant of voting behavior. That said, take the results with a grain of salt. Second, notice the direction of the coefficients: the variables that do all of the predictive legwork in these models are the positions of the insurance industry and trial lawyers. Notice though that in each case the coefficient is in the opposite direction of the interest group's preference. This suggests that while these propositions did not clearly align with the two major political parties, there appeared to be a populist, anti-insurance industry sentiment driving voting behaviors. 
+
+Might the high-knowledge electors and low-knowledge electors have been united in their animosity toward the insurance industry? If yes, then results work in opposition to Lupia's interpretation of the data. To lean in fully on playing the devil's advocate: let's take the knowledge scale to be an appropriate measure of the rationalists' ideal. We see that the interaction between shortcuts and knowledge tempers the effects of the shortcuts (or the passions) as the interaction coefficients work in the opposite direction of shortcut coefficients. Returning to the fears described in Federalist 49, this interpretation suggests that information shortcuts have not enabled low-knowledge electors to behave as if they were fully-informed, rather they have led high-knowledge electors to vote according to their passions, like low-information voters. Do information shortcuts actually interfere with logical decision-making?
+
+No. Instead, the point above speaks volumes to the public's ability to overcome a complex political environment of misinformation. The insurance industry dominated campaign spending in this election with ads strategically dissembling the source of their spending. The insurance industry funneled campaign spending through political organizations that appeared to be pro-consumer (Lupia 1994:66). That electors were able to identify the propositions favored by the insurance industry in spite of the insurance industry's efforts at obfuscation is a feat in itself. <b>In this light, it is more appropriate to view the shortcut variable as the standard of informed voting in elections</b>; it concerns who gets what, and it identifies the voters who are not susceptible to nefarious practices of deception. This point undermines Lupia's central argument, however. If we return to Tables 4 and 5 and treat "knowledge" as superficial information and "shortcuts" as the standard of informed voting, we see that the low-informed (those without shortcuts) vote in a drastically dissimilar fashion to the highly-informed.
+
+In futures posts, I will expand on how other scholars since 1994 have attempted to address this question, and explain how it is relevant to modern Amerian Politics. For now, I will let this issue stand, as this post is merely an investigation into the findings of this seminal article on the 25th year anniversary since its publishing limited to the data and techniques available to the author at that time. I hope to have shown the importance of honest story-telling with data: seemingly trivial choices regarding the construction of scales can have meaningful impacts on how data is presented, and the interpretation of those scales can have drastic impacts on schools of political thought. This post is also a warning to graduate students and scholars everywhere: be wary of scales and the thumbs they may be under.</p>
+
+</div>
+<div class="section" style="height: 10vh"></div>

@@ -2,20 +2,47 @@
 output: 
   html_document:
     includes:
-      before_body: header_blog.html
+      before_body: header_blogpage.html
 params: 
-    set_title: "Joseph Broad: Blog"
+    set_title: "Joseph Broad: Test"
 title: "`r params$set_title`"
 mainfont: Verdana
 ---
-<div class="wideboi" style="height: 25vh; background-color: #f1f1f1;"></div>
-<div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
+<script>
+function loadImage() {
+  $('.logo').css('opacity', '0');
+  $('.logo').css('transition', '.3s');
+  $('.topnav, .footer').css('height', '8vh');
+  $('.topnav, .footer').css('transition-delay', '.1s');
+  $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
+  $('.topnav, .footer').css('transition-timing-function', 'ease');
+}
+</script>
+<!-- style -->
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
+<link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+<!-- header -->
+<div class="topnav">
+<div class="landing">
+<a href="index.html"><img onload="loadImage()" class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a></div>
+<ul style="margin-left: -1.5vw">
+<li><a href="index.html"><h7 class="active">HOME</h7></a></li>
+<li><a href="blog.html"><h7>BLOG</h7></a></li>
+<li><a href="about.html"><h7>ABOUT</h7></a></li>
+</ul>
+</div>
+
+<div class="wideboi" style="position: fixed; top: 8vh; height: 40vh; background-color: #f1f1f1;"></div>
+<div class="wideboi" style="top: 8vh; width: 70vw; margin-left: 15vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
 <div class="leftcolumn">
 <div class="card">
-<a href="blog_000_lupia25.html"><h2>Test</h2></a>
-<h5>Title description, Sep 2, 2017</h5>
-<div class="fakeimg" style="height:200px;">Image</div>
-<p>Some text..</p></div>
+<a href="blog_000_lupia25.html"><h3>The Corners We Cut</h3></a>
+<p5>25 Years After Shortcuts Versus Encyclopedias</p5>
+<div onload="loadImage()" class="fakeimg" style="height:200px;">Image</div>
+<p>Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using Lupia's original data.</p></div>
 <div class="card">
 <h2>TITLE HEADING</h2>
 <h5>Title description, Sep 2, 2017</h5>
@@ -27,15 +54,6 @@ mainfont: Verdana
 <div class="tcard" style="height: 84vh">
 <a class="twitter-timeline"
   href="https://twitter.com/therealjoebroad"></a>
-<!-- <script> -->
-<!-- twttr.widgets.createTimeline( -->
-<!--   { -->
-<!--     sourceType: "profile", -->
-<!--     screenName: "TwitterDev" -->
-<!--   }, -->
-<!--   document.getElementById("container") -->
-<!-- ); -->
-<!-- </script> -->
 </div>
 
 <script src="https://platform.twitter.com/widgets.js" async></script>
@@ -52,25 +70,6 @@ mainfont: Verdana
 <!--   </div> -->
 <!--   </div> -->
 <!--   </div> -->
-
-
-
-
-
-
-
-<!-- Footer -->
-<div class="footer">
-<ulb>
-  <lib style="padding-left: 15px; padding-right: 15px;">
-  <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib>
-  <lib><a href="https://github.com/jbroad"><i class="fab fa-lg fa-github"></i></a></lib>
-  <lib><a href="https://twitter.com/therealjoebroad"><i class="fab fa-lg fa-twitter"></i></a></lib>
-  <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib>
-  </lib>
-</ulb>
-<hr style="position: absolute; bottom: 30%; left: 25vw; width: 50%; border-color: #C76322;"></hr>
-</div>
 
 
 

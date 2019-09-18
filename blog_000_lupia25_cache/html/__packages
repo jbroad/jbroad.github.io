@@ -1,0 +1,8 @@
+base
+ggplot2
+knitr
+dplyr
+kableExtra
+factoextra
+formattable
+gridExtra
