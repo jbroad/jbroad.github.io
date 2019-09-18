@@ -44,7 +44,7 @@ function loadImage() {
 <div onload="loadImage()" class="fakeimg" style="height:200px;">Image</div>
 <p>Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using Lupia's original data.</p></div>
 <div class="card">
-<h3>More to Come</h3>
+<h3>More to Come</h3>4
 <p5>Follow me on Twitter for blog updates</p5>
 <div class="fakeimg" style="height:200px;">Image</div>
 <p>That's right, you have reached the bottom already. I'm working on it. Give me a break.</p>

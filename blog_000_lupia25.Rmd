@@ -9,18 +9,24 @@ output:
       before_body: header_blog.html
 mainfont: Verdana
 ---
-<div class="wideboi" style="text-align: center; top: 0;">
-<div class="section" style="margin-top: 8vh; padding-top: 10vh; width: 100vw; left: 0; border: 2px none black; background-color: #911;">
-<div class="section">
-<h9>The Corners We Cut:</h9><br>
-<h9 style="font-size: 24px">25 Years After Shortcuts Versus Encyclopedias</h9>
-</div>
-<div class="desc" style="margin: 2vw; border: 2px none black;">
-<p id="abstract" style="font-weight: 600">Abstract:</p>
-<p id="abstract">
-Arthur Lupia's 1994 "Shortcuts Versus Encyclopedias" presents optimistic results suggesting that low-information electors behave remarkably similar to high-information electors at the ballot box. Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using Lupia's original data. Below I identify and discuss two issues with the original article: 1) the survey's knowledge battery does not measure the type of knowledge that should be established as the normative standard for informed voting; 2) the knowledge scale construction rewards nonresponses with higher scores, despite their observation equivalence to uncertainty and, are a result, distorts respondents' true knowledge score. Correcting for the second issue, the general patterns Lupia's central findings hold, though not nearly to such an extreme degree as presented in the original article.</p> 
-</div></div>
+<div class="wideboi" style="width: 80vw; text-align: center; top: 0; z-index: 0; 
+background-image: url("blog/blog_000_lupia25_files/shortcuts.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;">
+<style>
+body{
+ background-image: url("blog/blog_000_lupia25_files/shortcuts.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+}
+</style>
+<div class="section" style="position: fixed; top: 0; width: 80vw; height: auto; margin-left: 10vw; border: 2px none blue; z-index: 0">
+<div class="desc" style="position: relative; margin-top: 40vh; height: 20vh; overflow: scroll; z-index: 0; ">
+<p id="abstract"><b>Abstract:</b><br>Arthur Lupia's 1994 "Shortcuts Versus Encyclopedias" presents optimistic results suggesting that low-information electors behave remarkably similar to high-information electors at the ballot box. Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using Lupia's original data. Below I identify and discuss two issues with the original article: 1) the survey's knowledge battery does not measure the type of knowledge that should be established as the normative standard for informed voting; 2) the knowledge scale construction rewards nonresponses with higher scores, despite their observation equivalence to uncertainty and, are a result, distorts respondents' true knowledge score. Correcting for the second issue, the general patterns Lupia's central findings hold, though not nearly to such an extreme degree as presented in the original article.</p></div></div></div></div>
 
+<div class="section" style="width: 100vw; left: 0; margin-top: 80vh; border: 2px none red; text-align: center; background-color: white; z-index: 3">
 <div style="width: 100vw; text-align: center; border: 2px none black; margin-top: 8vh;">
 <div class="section" style="width: 60vw; margin-left: 20vw; border: 1px none #A3350D; background-color: none; text-align: left; padding: 5px;">
 <!-- Civic Competence -->
