@@ -304,7 +304,7 @@ p8 {
 }
 
 .desc:hover {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.9);
   transition: .3s;
 }
 
@@ -579,7 +579,7 @@ lib a:hover {
   padding: 3vh;
   width: 60vw;
   margin-left: -1px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .readmore:hover {
