@@ -18,7 +18,7 @@ mainfont: Verdana
 <p>Here I celebrate the 25th anniversary of Arthur Lupia's 1994 seminal article, Shorctus Versus Encyclopedias, by revisiting its central themes. Using the author's original data, I identify and explore two complications in the validity of his "knowledge" variable. These complications have major implications on how we interpret Lupia's findings.</p>
 </div>
 <div class="thumbcolumn" style="border: 2px none blue;">
-<a href="blog_000_lupia25.html"><img src="blog/blog_000_lupia25_files/lupia_thumb.jpg"></a>
+<a href="blog_000_lupia25.html"><img src="blog/blog_000_lupia25_files/lupia_thumb.jpg" style="height: 180px;"></a>
 </div>
 </div>
 
