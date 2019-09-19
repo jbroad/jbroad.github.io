@@ -3,14 +3,17 @@ output: html_document
 mainfont: Verdana
 ---
 <script>
-function loadImage() {
-  $('.logo').css('opacity', '0');
-  $('.logo').css('transition', '.3s');
+$(document).ready(function () {
+  $('#logo').css('opacity', '0');
+  $('#logo').css('transition', '.3s');
+  $('hr').css('width', '100%');
+  $('hr').css('left', '0');
+  $('hr').css('transition-delay', '.3s');
   $('.topnav, .footer').css('height', '8vh');
   $('.topnav, .footer').css('transition-delay', '.1s');
-  $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
-  $('.topnav, .footer').css('transition-timing-function', 'ease');
-}
+  $('.topnav, .footer, .sidebar, hr').css('transition-duration', '.4s');
+  $('.topnav, .footer, hr').css('transition-timing-function', 'ease');
+});
 </script>
 <!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css">
@@ -19,9 +22,11 @@ function loadImage() {
 <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 <!-- header -->
+<hr style="z-index: 3"></hr>
 <div class="topnav">
 <div class="landing">
-<a href="index.html"><img onload="loadImage()" class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a></div>
+<a href="index.html"><h8 id="logo">JOSEPH BROAD</h8></a></div>
+
 <ul style="margin-left: -1.5vw">
 <li><a href="index.html"><h7 class="active">HOME</h7></a></li>
 <li><a href="blog.html"><h7>BLOG</h7></a></li>

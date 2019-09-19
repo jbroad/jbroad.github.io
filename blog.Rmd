@@ -8,53 +8,36 @@ params:
 title: "`r params$set_title`"
 mainfont: Verdana
 ---
-<script>
-function loadImage() {
-  $('.logo').css('opacity', '0');
-  $('.logo').css('transition', '.3s');
-  $('.topnav, .footer').css('height', '8vh');
-  $('.topnav, .footer').css('transition-delay', '.1s');
-  $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
-  $('.topnav, .footer').css('transition-timing-function', 'ease');
-}
-</script>
-<!-- style -->
-<link rel="stylesheet" href="style.css" type="text/css">
-<link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
-<link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
-<!-- Load an icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-<!-- header -->
-<div class="topnav">
-<div class="landing">
-<a href="index.html"><img onload="loadImage()" class="logo" style="object-fit: cover;" src="images/NSU_logorgb.jpg"></a></div>
-<ul style="margin-left: -1.5vw">
-<li><a href="index.html"><h7 class="active">HOME</h7></a></li>
-<li><a href="blog.html"><h7>BLOG</h7></a></li>
-<li><a href="about.html"><h7>ABOUT</h7></a></li>
-</ul>
+<div class="wideboi" style="position: fixed; top: 8vh; height: 40vh;"></div>
+<div class="wideboi" style="top: 8vh; width: 80vw; margin-left: 10vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
+<div class="leftcolumn">
+
+<div class="card" style="height: auto; margin-top: 40px;">
+<div class="leftcolumn" style="border: 2px none red">
+<a href="blog_000_lupia25.html"><h3>Cutting Corners?</h3></a>
+<p>Here I celebrate the 25th anniversary of Arthur Lupia's 1994 seminal article, Shorctus Versus Encyclopedias, by revisiting its central themes. Using the author's original data, I identify and explore two complications in the validity of his "knowledge" variable. These complications have major implications on how we interpret Lupia's findings.</p>
+</div>
+<div class="thumbcolumn" style="border: 2px none blue;">
+<a href="blog_000_lupia25.html"><img src="blog/blog_000_lupia25_files/lupia_thumb.jpg"></a>
+</div>
 </div>
 
-<div class="wideboi" style="position: fixed; top: 8vh; height: 40vh; background-color: #f1f1f1;"></div>
-<div class="wideboi" style="top: 8vh; width: 70vw; margin-left: 15vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
-<div class="leftcolumn">
 <div class="card">
-<a href="blog_000_lupia25.html"><h3>Corners Cut?</h3></a>
-<p5>25 Years After Shortcuts Versus Encyclopedias</p5>
-<div onload="loadImage()" class="fakeimg" style="height:200px;">Image</div>
-<p>Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using the author's original data.</p></div>
-<div class="card">
-<h3>More to Come</h3>4
-<p5>Follow me on Twitter for blog updates</p5>
-<div class="fakeimg" style="height:200px;">Image</div>
-<p>That's right, you have reached the bottom already. I'm working on it. Give me a break.</p>
-<div class="section" style="bottom: 0; height: 8vh;"></div>
-</div></div>
+<div class="leftcolumn" style="border: 2px none red">
+<a href="blog_000_lupia25.html"><h3>More to come</h3></a>
+That is all I have for now but you can follow me on twitter for updates on new content. Plus, I occassionally share photos of my dog, Bear. He is a labradoodle, about two years old now. There he is on the right when he was just a baby. He enjoys cuddling, showing off his paws, and pretending to pee so we can go back inside already.</p>
+</div>
+<div class="thumbcolumn" style="border: 2px none blue; overflow: hidden;">
+<a href="blog_000_lupia25.html"><img src="images/bear_sm.jpg" style="height: 180px;"></a>
+</div>
+</div>
 
 <div class="rightcolumn">
 <div class="tcard" style="height: 84vh">
 <a class="twitter-timeline"
   href="https://twitter.com/therealjoebroad"></a>
+</div>
+</div>
 </div>
 
 <script src="https://platform.twitter.com/widgets.js" async></script>

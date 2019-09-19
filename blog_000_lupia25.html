@@ -380,6 +380,8 @@ $(document).ready(function () {
 
 <!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css"> <link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0"> <link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0"> <!-- Load an icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"> <!-- header -->
+<hr style="z-index: 3; width: 100%; left: 0;">
+</hr>
 <div class="topnav" style="height: 8vh">
 <ul style="margin-left: -1.5vw">
 <li>
@@ -446,7 +448,7 @@ $(document).ready(function () {
 <img
     style="object-fit: contain; margin: auto; padding-top: 8vh; height: 80vh; mix-blend-mode: multiply"
     src="blog/blog_000_lupia25_files/shortcuts.jpg">
-<div class="desc" style="position: absolute; bottom: 10vh; width: 60vw; height: 20vh; margin-left: 20vw; border: 2px none blue; overflow: scroll;">
+<div class="desc" style="position: absolute; bottom: 10vh; width: 60vw; height: 25vh; margin-left: 20vw; border: 2px none blue; overflow: scroll;">
 <p id="abstract">
 <b>Abstract:</b><br>Arthur Lupia’s 1994 “Shortcuts Versus Encyclopedias” presents optimistic results suggesting that low-information electors behave remarkably similar to high-information electors at the ballot box. Here I celebrate the 25th anniversary of this seminal article’s publishing by revisiting its central themes using Lupia’s original data. Below I identify and discuss two issues with the original article: 1) the survey’s knowledge battery does not measure the type of knowledge that should be established as the normative standard for informed voting; 2) the knowledge scale construction rewards nonresponses with higher scores, despite their observation equivalence to uncertainty and, are a result, distorts respondents’ true knowledge score. Correcting for the second issue, the general patterns Lupia’s central findings hold, though not nearly to such an extreme degree as presented in the original article.
 </p>
@@ -601,7 +603,7 @@ To fully illustrate how this scale is constructed, consider the following illust
 <p>Imagine you selected “b” but you were uncertain about the other US Senator from Nevada: in one scenario, you might leave the remainder of the options blank and be awarded five knowledge points and assigned to the “high knowledge” category. In an alternative scenario, you might have acknowledged your uncertainty and supplemented your “b” response by selecting “f”: in this case, you would be assigned only one knowledge point and relegated to the low information category.</p>
 In following these rules, we have constructed our knowledge score distribution. Keep in mind that the cut point of knowledge = 10 was arbitrarily assigned, though the final results are somewhat resilient to changes in the arbitrary cutoff point. This point will be discussed in greater detail below.
 </p>
-<p5>Fig. 1: Distribution of Original Knowledge Score</p5> <img src="blog_000_lupia25_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<p5>Fig. 1: Distribution of Original Knowledge Score</p5> <img src="blog_000_lupia25_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" />
 <div class="section" style="text-align: right; padding: 0 20px 20px 20px; line-height: .8;">
 <p5 id="caption">The color of the bars in the distribution above highlight the knowledge category to which respondents were placed for the final analysis. Blue indicates the high knowledge group while red indicates the low knowledge group.</p5>
 </div>
@@ -618,7 +620,7 @@ Guess Away
 The pseudo-random guessing simulation trims a number of random responses under an assumption of reasonableness: no reasonable respondent will genuinely believe that a single proposition aims to enact all four policy preferences. This would be similar to a series of four questions like Item 1 above on the Senators representing California, Nevada, Washington, and Oregon. No reasonable respondent will observe the survey structure and decide to respond in the affirmative to all of the response options for the Nevada survey item. Further, if a human were to guess randomly to the knowledge battery, that human would most likely make one guess per survey item. This is supported by the data, considering that the plurality of respondents made four responses in the affirmative (one per survey item).
 </p>
 <p><p5>Fig. 2: Observed Knowledge and Random Guessing </p5></p>
-<img src="blog_000_lupia25_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<img src="blog_000_lupia25_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" />
 <div class="section" style="text-align: right; padding: 0 20px 20px 20px; line-height: .8;">
 <p5 id="caption">Figure 2 compares observed knowledge scores against simulated knowledge scores with random guessing (left) and psuedo-random guessing (right). The pseudo-random data is the randomly simulated data, trimmed of absurd and unrealistic response combinations (e.g. believing that one policy establishes all of the policy alternatives while the rest do establish none of them).</p5>
 </div>
@@ -634,7 +636,7 @@ Scale Performance Comparison
 </h3>
 <p>Figure 3 below illustrates various differences between the original and new knowledge scale construction. The first row of plots indicates that, a small number of outliers aside, the new scale has an approximately normal distribution. The relationship between pseudo-random guessing and the number of knowledge points awarded has drastically shifted under the new construction: on the left, the observed original knowledge scores are largely indistinct from pseudo-random guessing; on the right, in contrast, pseudo-random guessing is penalized under the new knowledge scale construction, and random guessers will most likely have a negative knowledge score.</p>
 <p><p5>Fig. 3: Original Compared New Construction</p5></p>
-<p><img src="blog_000_lupia25_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="blog_000_lupia25_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>The last row shows the proportion of observed (red) and simulated (blue) respondents who would been assigned to the “high knowledge” category over different possible bin cutpoints. The left plot shows there is little difference between the proportion of observed and simulated data at and below the cutpoint used in the 1994 article (10). At this cutoff point, more than 50% of pseudo-random guessers would have been assigned to the high knowledge bin. The final analysis in the 1994 study may therefore have compared the voting behaviors of lucky pseudo-random guessers against unlucky pseudo-random guessers. On the right, there is a clear and wide gap between observed and simulated data at all cutoff values. Table 4 below gives results based on a cutpoint equal to 2: at this cutpoint, half of the observed data is in the high knowledge category while there is only a 5% chance that a pseudo-random guesser would erroneously be assigned to this bin.</p>
 <h3>
 Direct Scale Agreement
@@ -642,7 +644,7 @@ Direct Scale Agreement
 Figure 4-A (left) shows the bivariate relationship between the original and proposed knowledge scales. A small jitter was applied to the plot to illustrate the density of the red “true positives”: observations that were assigned to the high knowledge category under both knowledge scale constructions. Black observations indicate “true negatives”: observations that are binned as low knowledge in either case. Blue observations are observations that were binned as high knowledge in the original construction and low in the new (~20% of observations) while orange indicates the converse (&lt; 10% of observations).
 </p>
 <p><p5>Fig. 4: Scatter Plot and “Confusion Matrix”</p5></p>
-<img src="blog_000_lupia25_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+<img src="blog_000_lupia25_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" />
 <div class="section" style="text-align: right; padding: 0 20px 20px 20px; line-height: .8;">
 <p5 id="caption">Figure 4-A (left) plots the bivariate relationship between the new knowledge score (x-axis) and the original (y-axis). Figure 4-B (right) is a heatmap illustrating the proportion of true positive and true negative agreement across all possible cutpoint values in both scales; blue colors indicate lower agreement (min 0%) and red values indicate higher agreement (max 100%). The white lines in Figure 4-B highlight the cell used in creating the extension of Table 4 below: this cell contains the maximum proportion of binning agreement between the two scales while keeping the original cutpoint constant.</p5>
 </div>

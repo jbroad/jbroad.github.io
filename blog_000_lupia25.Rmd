@@ -14,7 +14,7 @@ mainfont: Verdana
   <img
     style="object-fit: contain; margin: auto; padding-top: 8vh; height: 80vh; mix-blend-mode: multiply"
     src="blog/blog_000_lupia25_files/shortcuts.jpg">
-<div class="desc" style="position: absolute; bottom: 10vh; width: 60vw; height: 20vh; margin-left: 20vw; border: 2px none blue; overflow: scroll;">
+<div class="desc" style="position: absolute; bottom: 10vh; width: 60vw; height: 25vh; margin-left: 20vw; border: 2px none blue; overflow: scroll;">
 <p id="abstract"><b>Abstract:</b><br>Arthur Lupia's 1994 "Shortcuts Versus Encyclopedias" presents optimistic results suggesting that low-information electors behave remarkably similar to high-information electors at the ballot box. Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using Lupia's original data. Below I identify and discuss two issues with the original article: 1) the survey's knowledge battery does not measure the type of knowledge that should be established as the normative standard for informed voting; 2) the knowledge scale construction rewards nonresponses with higher scores, despite their observation equivalence to uncertainty and, are a result, distorts respondents' true knowledge score. Correcting for the second issue, the general patterns Lupia's central findings hold, though not nearly to such an extreme degree as presented in the original article.</p>
 </div></div>
 <div class="section" style="text-align: left; margin-top: 80vh; margin-left: 20vw; width: 60vw; border: 2px none red;">
@@ -35,7 +35,7 @@ All said, the general patterns in the findings of the original article hold, tho
 In 1988, California electors were presented with five propositions establishing policies related to their automobile insurance rates. No proposition was aligned with the two major political parties at the time, making it an ideal opportunity to study the effect of knowledge and shortcuts on direct-election outcomes without the interfering influence of partisan tribalism. Table 1 below illustrates the four major intended policy outcomes for each of the five propositions:
 </p>
 
-```{r setup, include = F, echo=F}
+```{r setup, include = F, echo=F, fig.align='center'}
 library(ggplot2)
 library(knitr)
 library(dplyr)
@@ -134,7 +134,7 @@ nkfn14 <- data.frame(
 ```
 
 <p5>Fig. 1: Distribution of Original Knowledge Score</p5>
-```{r, echo=F, fig.height=4}
+```{r, echo=F, fig.height=4, fig.align='center'}
 cols <- c("#A3350D", "#3C5A8F")
 fn14$k <- fn14$k - 1
 fn14$high <- as.factor(as.integer(fn14$k > 9))
@@ -166,7 +166,7 @@ The pseudo-random guessing simulation trims a number of random responses under a
 
 <p5>Fig. 2: Observed Knowledge and Random Guessing </p5>
 
-```{r, echo=F, message=F, warning=F, cache=T}
+```{r, echo=F, message=F, warning=F, cache=T, fig.align='center'}
 plot1 <- ggplot(guess[c(1:9,23:31),], aes(numresponse, avg)) + 
   geom_line(aes(colour = category)) +
   geom_point(aes(colour = category)) +
@@ -208,7 +208,7 @@ Figure 3 below illustrates various differences between the original and new know
 
 <p5>Fig. 3: Original Compared New Construction</p5>
 
-```{r, echo=F, cache=T, fig.height=6}
+```{r, echo=F, cache=T, fig.height=6, fig.align='center'}
 cutpoint.ok <- read.csv("blog/blog_000_lupia25_files/cutpoint_ok.csv")
 cutpoint.nk <- read.csv("blog/blog_000_lupia25_files/cutpoint_nk.csv")
 cutpoint.nk$cut <- cutpoint.nk$cut - 13
@@ -277,7 +277,7 @@ Figure 4-A (left) shows the bivariate relationship between the original and prop
 
 <p5>Fig. 4: Scatter Plot and "Confusion Matrix"</p5>
 
-```{r, echo=F, cache=T}
+```{r, echo=F, cache=T, fig.align='center'}
 l.twoway <- read.csv("blog/blog_000_lupia25_files/lupia_twoway.csv")
 l.twoway <- data.frame(l.twoway[,-1])
 x <- seq(-8, 6, by=1)
@@ -300,6 +300,8 @@ l.twoway$a[l.twoway$ok >= 10 & l.twoway$kn >= 2] <- 3
 plot7 <- ggplot(l.twoway, aes(x = kn, y = ok)) + 
         geom_jitter(aes(color = factor(a))) +
         theme_minimal() + 
+        labs(x = "New Knowledge Score",
+             y = "Original Knowledge Score") + 
         scale_color_manual(values = c("black", "#3C5A8F", "#C76322", "#A3350D"),
                      labels=c("True Negatives", "False Positives", "False Negatives", "True Positives")) +
   theme(legend.position = "bottom", 
@@ -311,6 +313,8 @@ plot8 <- ggplot(u.twoway2, aes(x, y)) +
         geom_hline(yintercept=c(9.5, 10.5), color="white") +
         geom_vline(xintercept=c(0.5,1.5), color="white") +
   theme_minimal() +
+  labs(x = "New Knowledge Cutpoint",
+       y = "Original Knowledge Cutpoint") + 
   scale_fill_gradient2(low = "#3C5A8F", mid = "white", high = "#A3350D", midpoint = 0.5) +
   theme(legend.position = "bottom", 
         legend.title=element_blank(),
