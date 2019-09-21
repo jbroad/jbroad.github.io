@@ -13,12 +13,13 @@ mainfont: Verdana
   <img
     style="object-fit: cover; width: 100%; height: 65vh;"
     src="images/desertarata_blur.jpg">
-<div class="title" style="border: 1px none red; margin-top: 6vh; height: 20vh;">
-<h4>DESERTARATA</h4></div>
-<div class="caption" style="border: 1px none red; margin-top: 20vh;">
-<h5>western politics &middot; tax policy &middot; public opinion</h5></div>
-<a href="blog.html" class="readmore" id="a" style="border: 1px none red; margin-top: 30vh;"><h6>READ MORE HERE</h6></a>
-<div class="blackbox" style="border: 1px none red;"></div>
+<div class="title" style="border: 1px none red; height: 20vh;">
+<!-- <h4>DESERTARATA</h4> -->
+</div>
+<div class="caption" style="border: 1px none red; margin-top: 10vh;">
+<h5>Political Science PhD Candidate</h5><br><h6> Public Opinion &middot; Environmental Politics and Policy &middot; Rhetoric & Framing &middot; Data Hound</h5></div>
+<a href="blog_000_lupia25.html" class="readmore" id="a" style="border: 1px none red; margin-top: 30vh;"><h6>FEATURED BLOG</h6></a>
+<div class="blackbox" style="border: 1px none red;"><p style="color: white; text-align: center; padding: 20px;"><b>Cutting Corners?</b><br>Here I celebrate the 25th anniversary of Arthur Lupia's 1994 seminal article, Shorctus Versus Encyclopedias, by revisiting its central themes. Using the author's original data, I identify and explore two complications in the validity of his "knowledge" variable. These complications have major implications on how we interpret Lupia's findings.</p></div>
 </div>
 </div>
 

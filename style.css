@@ -91,7 +91,7 @@ h6 {
   z-index: 1; 
   color: white; 
   font-size: 14px; 
-  font-weight: 600;
+  font-weight: 100;
   letter-spacing: 0.2em;
   margin-top: 12px;
 }
@@ -561,8 +561,7 @@ lib a:hover {
   margin-left: 25vw;
   height: 1px;
   width: 50vw;
-  background-color: #000;
-  mix-blend-mode: multiply;
+  background-color: rgba(0,0,0,0.5);
   opacity: 0;
   z-index: 3;
 }
@@ -609,7 +608,7 @@ lib a:hover {
 .readmore:hover + .blackbox {
     background: #000;
     height: calc(30vh - 40px);
-    opacity: .5;
+    opacity: .8;
     transition: .8s;
 }
 
