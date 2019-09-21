@@ -48,5 +48,4 @@ $(window).scroll(function() {
 <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib>
 </lib>
 </ulb>
-<hr style="position: absolute; bottom: 30%; left: 25vw; width: 50%; border-color: #A3350D;"></hr>
 </div>
