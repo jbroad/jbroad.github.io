@@ -1,0 +1,31 @@
+---
+title: "Elections 2020: Arizona State Legislature"
+params: 
+    set_title: "Joseph Broad"
+output: 
+  html_document:
+    includes:
+      before_body: header_blog.html
+mainfont: Verdana
+---
+<div class="wideboi" style="text-align: center; position: absolute; top: 0; z-index:0;">
+<div class="wideboi" style="text-align: center; position: absolute; top: 10vh; z-index:0; border: 2px solid blue;">
+<div class="section" style="border: 2px solid red">
+<h3>Elections 2020: Arizona State Senate</h3>
+<p></p>
+</div>
+<div class="section" style="top: 0; text-align: left; margin-left: 20vw; width: 60vw; height: 40vw; border: 2px solid red;">
+<iframe src="https://josephbroad.shinyapps.io/shiny/" style="border: 1px solid #AAA; width: 100%; height: 100%"></iframe>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
