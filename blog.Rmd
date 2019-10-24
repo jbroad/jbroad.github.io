@@ -14,6 +14,16 @@ mainfont: Verdana
 
 <div class="card" style="height: auto; margin-top: 40px;">
 <div class="leftcolumn" style="border: 2px none red">
+<a href="blog_001_azele2020.html"><h3>Elections 2020: Arizona State Legislature</h3></a>
+<p>A brief look into the state legislature 2018 elections, and an even briefer look into the 2020 elections.</p>
+</div>
+<div class="thumbcolumn" style="border: 2px none blue;">
+<a href="blog_000_lupia25.html"><img src="azele_thumb.jpg" style="height: 180px;"></a>
+</div>
+</div>
+
+<div class="card" style="height: auto; margin-top: 40px;">
+<div class="leftcolumn" style="border: 2px none red">
 <a href="blog_000_lupia25.html"><h3>Cutting Corners?</h3></a>
 <p>Here I celebrate the 25th anniversary of Arthur Lupia's 1994 seminal article, Shorctus Versus Encyclopedias, by revisiting its central themes. Using the author's original data, I identify and explore two complications in the validity of his "knowledge" variable. These complications have major implications on how we interpret Lupia's findings.</p>
 </div>
