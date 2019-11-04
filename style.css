@@ -58,9 +58,15 @@ h2 {
 h3 {
   color: #A3350D;
   font-family: verdana;
-  font-size: 120%;
+  font-size: 20px;
   font-weight: 100;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+
 
 h4 {
   text-align: center;
@@ -136,6 +142,11 @@ h9 {
   font-size: 48px; 
   font-weight: 600;
   top: 0;
+}
+
+p3 {
+  color: gray;
+  font-size: 16px;
 }
 
 p5 {
@@ -416,7 +427,6 @@ section {
   float: left;
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
   align-content: stretch;
   background-color: white;
   height: auto;
@@ -428,30 +438,37 @@ section {
 
 .tcard {
   background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 0;
   overflow: auto;
 }
 
 .leftcolumn { 
   float: left;
-  width: 65%;
-  padding-bottom: 20px;
+  width: 60%;
+  top: 0;
+  padding: 0 20px 20px 20px;
+}
+
+.leftcard { 
+  float: left;
+  width: 70%;
+  top: 0;
+  padding: 0 20px 20px 20px;
 }
 
 /* Right column */
 .rightcolumn {
   position: fixed;
-  right: 0;
-  top: 5vh;
-  width: 35%;
-  padding: 40px 0 0 10px;
+  right: 15vw;
+  top: 8vh;
+  width: 27%;
+  padding: 0;
 }
 
 .thumbcolumn {
   float: right;
-  width: 35%;
-  padding: 0 0 20px 20px;
+  width: 30%;
+  padding: 0 20px 20px 20px;
   margin-top: 20px;
   overflow: hidden;
 }
