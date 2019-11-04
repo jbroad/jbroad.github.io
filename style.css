@@ -805,6 +805,9 @@ blockquote.twitter-tweet a:focus {
   h5 {
     font-size: 24px;
   }
+  leftcolumn {
+    display: none;
+  }
   rightcolumn {
     display: none;
   }
@@ -871,9 +874,6 @@ blockquote.twitter-tweet a:focus {
   global {
     float: none;
     width: 100 !important;
-  }
-  leftcolumn {
-    width: 100%;
   }
 }
 

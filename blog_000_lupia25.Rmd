@@ -1,12 +1,12 @@
 ---
+output: 
+  html_document:
+    includes:
+      before_body: header_blogpage.html
 title: "25 Years of Shortcuts"
 subtitle: "Examining Lupia's Shortcuts Versus Encyclopedias 25 Year Later"
 params: 
     set_title: "Joseph Broad"
-output: 
-  html_document:
-    includes:
-      before_body: header_blog.html
 mainfont: Verdana
 ---
 <div class="mainbody" style="text-align: center; position: absolute; top: 0; z-index:0;">
