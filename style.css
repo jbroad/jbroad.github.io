@@ -805,6 +805,15 @@ blockquote.twitter-tweet a:focus {
   h5 {
     font-size: 24px;
   }
+  rightcolumn {
+    display: none;
+  }
+  tcard {
+    display: none;
+  }
+  .twitter-timeline {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .logo {
@@ -862,6 +871,9 @@ blockquote.twitter-tweet a:focus {
   global {
     float: none;
     width: 100 !important;
+  }
+  leftcolumn {
+    width: 100%;
   }
 }
 

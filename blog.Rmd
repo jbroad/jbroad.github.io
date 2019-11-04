@@ -42,8 +42,13 @@ mainfont: Verdana
 </div>
 </div>
 
-<div class="rightcolumn" style = "border: 2px none red">
-<div class="tcard" style="height: 81vh">
+<div class="card">
+<div class="leftcard" style="border: 2px none red">
+</div>
+</div>
+
+<div class="rightcolumn" style = "border: 2px solid red">
+<div class="tcard" style="height: 83.5vh">
 <a class="twitter-timeline"
   href="https://twitter.com/therealjoebroad"></a>
 </div>
