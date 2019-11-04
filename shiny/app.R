@@ -29,9 +29,18 @@ server <- function(input, output, session) {
   legreg2 <- subset(legreg2, year > 2012.5)
   legreg2$p_diff <- legreg2$prod - legreg2$pror
   legreg2$click <- 0
+  fc <- read.csv("az_reg_forecast.csv")
+  fc$click <- 0
   # Pad the GEOID to match the polygon data
   legreg2018$GEOID <- str_pad(as.character(legreg2018$GEOID), 5, side="left", pad="0")
-  leg_merged<- geo_join(leg, legreg2018, "GEOID", "GEOID")
+  leg_merged <- geo_join(leg, legreg2018, "GEOID", "GEOID")
+  leg_merged$p_diff <- leg_merged$perdem - leg_merged$pergop
+  leg_merged$p_cat <- "Competitive"
+  leg_merged$p_cat[leg_merged$p_diff > 5] <- "Leaning Democratic"
+  leg_merged$p_cat[leg_merged$p_diff > 10] <- "Solid Democratic"
+  leg_merged$p_cat[leg_merged$p_diff < -5] <- "Leaning Republican"
+  leg_merged$p_cat[leg_merged$p_diff < -10] <- "Solid Republican"
+  leg_merged$p_cat <- as.factor(leg_merged$p_cat)
   sendf <- legreg2018[c(25,37,36,35)]
   sendf <- melt(sendf, id.vars="district")
   houdf <- legreg2018[c(25,46,45,47,44,43)]
@@ -42,27 +51,30 @@ server <- function(input, output, session) {
   # Color info
   # E7E7E7 - dark gray under selected tab
   # F8F8F8 - light gray under unselected tab
-  bico <- c("#919191", "#3C5A8F")
-  colors <- c("#919191", "#A3350D", "#3C5A8F") # Gray, red, blue
-  colors2 <- c("#A3350D", "#919191", "#3C5A8F") #
-  colors5 <- c("#A3350D", "#A3350D", "#919191", "#3C5A8F", "#3C5A8F")
+  bico <- c("#919191", "#134D8E") # Gray, blue
+  colors <- c("#fff", "#A3350D", "#134D8E") # White, red, blue
+  colors2 <- c("#A3350D", "#919191", "#134D8E") #
+  barcos <- c("#A3350D", "#A3350D", "#919191", "#134D8E", "#134D8E")
+  colors5 <- c("#F6E5FF", "#A9A8DB", "#D88698", "#134D8E", "#A3350D") # tossup, lean D, lean R, solid D, solid R
   
   pal <- colorNumeric(
-    palette = c("#A3350D", "#f1f1f1", "#3C5A8F"), # light red, red
+    palette = c("#A3350D", "#f1f1f1", "#134D8E"), # light red, red
     domain = leg_merged$twopar
   )
+  
+  pal5 <- colorFactor(colors5, leg_merged$p_cat)
   
   # Map
   map <- leaflet(options = leafletOptions(zoomControl = FALSE,
                                           minZoom = 6, maxZoom = 10)) %>%
     addPolygons(data = leg_merged, 
-                fillColor = ~pal(twopar), 
+                fillColor = ~pal5(p_cat), 
                 color = "#FFFFFF", 
-                fillOpacity = .8, 
+                fillOpacity = 1, 
                 opacity = 1,
-                weight = 1.5, 
-                highlightOptions = highlightOptions(color = "#FFFFFF", 
-                                                    weight = 3,
+                weight = 1, 
+                highlightOptions = highlightOptions(color = "#000", 
+                                                    weight = 1.5,
                                                     opacity = 1,
                                                     fillOpacity = 1,
                                                     bringToFront = T),
@@ -242,7 +254,7 @@ server <- function(input, output, session) {
       ggplot() + 
         geom_bar(aes(y = value, x = district, fill = variable), data = tempdf2, color="white",
                  stat="identity") +
-        scale_fill_manual(values=colors5) +
+        scale_fill_manual(values=barcos) +
         coord_flip() + 
         theme_minimal() +
         theme(legend.position="none", 
@@ -258,7 +270,7 @@ server <- function(input, output, session) {
       ggplot() + 
         geom_bar(aes(y = value, x = district, fill = variable), data = tempdf2, color="white",
                  stat="identity") +
-        scale_fill_manual(values=colors5) +
+        scale_fill_manual(values=barcos) +
         coord_flip() + 
         theme_minimal() +
         theme(legend.position="none", 
@@ -272,30 +284,50 @@ server <- function(input, output, session) {
   })
   output$reg <- renderPlot({
     if (is.null(input$map_shape_click)) {
-      templeg <- subset(legreg2, district==27)
-      ggplot(legreg2, aes(x=year, y=p_diff, 
-                          color = as.factor(legreg2$district==27),
-                          linetype = as.factor(legreg2$district==27),
-                          size = as.factor(legreg2$district==27))) +
+      templeg <- subset(fc, district==27)
+      ggplot(fc, aes(x=as.POSIXct(ds), y=yhat, 
+                          color = as.factor(fc$district==27),
+                          #linetype = as.factor(fc$district==27),
+                          size = as.factor(fc$district==27))) +
+        annotate("rect",
+                  xmin=as.POSIXct(as.Date("2012-10-01")), 
+                  xmax=as.POSIXct(as.Date("2021-01-01")), 
+                  ymin=-5, 
+                  ymax=5,
+                  fill = "#F6E5FF",
+                  color = NA,
+                  alpha = 0.4) +
         geom_line(aes(group = district)) +
         scale_colour_manual(values = bico) + 
-        scale_size_manual(values = c(.5,1.5)) +
+        scale_size_manual(values = c(.1,1.5)) +
         scale_linetype_manual(values = c("dotted","solid")) +
+        geom_vline(xintercept = as.POSIXct(as.Date("2019-07-01")), size = .1, color = "red") + 
+        geom_point(aes(group = district, x = as.POSIXct(ds), y = y)) + 
         theme_minimal() +
         theme(legend.position="none",
               axis.title.y = element_blank(),
               axis.title.x = element_blank())
     }
     else {
-      legreg2$click[legreg2$distr==paste(input$map_shape_click$id)] <- 1
-      ggplot(legreg2, aes(x=year, y=p_diff, 
-                          color = as.factor(legreg2$click),
-                          linetype = as.factor(legreg2$click),
-                          size = as.factor(legreg2$click))) +
+      fc$click[fc$distr==paste(input$map_shape_click$id)] <- 1
+      ggplot(fc, aes(x=as.POSIXct(ds), y=yhat, 
+                          color = as.factor(fc$click),
+                          #linetype = as.factor(fc$click),
+                          size = as.factor(fc$click))) +
+        annotate("rect",
+                 xmin=as.POSIXct(as.Date("2012-10-01")), 
+                 xmax=as.POSIXct(as.Date("2021-01-01")), 
+                 ymin=-5, 
+                 ymax=5,
+                 fill = "#F6E5FF",
+                 color = NA,
+                 alpha = 0.4) +
         geom_line(aes(group = district)) +
         scale_colour_manual(values = bico) + 
-        scale_size_manual(values = c(.5,1.5)) +
+        scale_size_manual(values = c(.1,1.5)) +
         scale_linetype_manual(values = c("dotted","solid")) +
+        geom_vline(xintercept = as.POSIXct(as.Date("2019-07-01")), size = .1, color = "red") + 
+        geom_point(aes(group = district, x = as.POSIXct(ds), y = y)) + 
         theme_minimal() +
         theme(legend.position="none",
               axis.title.y = element_blank(),
@@ -311,6 +343,9 @@ ui <- fluidPage(
            fluidRow(
              leafletOutput("map", width="100%", height="100%"),
              style = "height:100vh; background-color: white;")),
+    tags$head(
+      tags$style(HTML(".leaflet-container { background: #fff; }"))
+    ),
     column(width=5,
            fluidRow(
              h3(textOutput("sld")),

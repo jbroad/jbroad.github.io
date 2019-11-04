@@ -8,8 +8,8 @@ params:
 title: "`r params$set_title`"
 mainfont: Verdana
 ---
-<div class="wideboi" style="position: fixed; top: 8vh; height: 40vh;"></div>
-<div class="wideboi" style="top: 8vh; width: 80vw; margin-left: 10vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
+<div class="mainbody" style="position: fixed; top: 8vh; height: 40vh; border: 2px none red"></div>
+<div class="mainbody" style="top: 8vh; width: 80vw; margin-left: 10vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
 <div class="leftcolumn">
 
 <div class="card" style="height: auto; margin-top: 40px;">

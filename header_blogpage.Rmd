@@ -22,8 +22,8 @@ $(document).ready(function () {
 <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 <!-- header -->
-<hr style="z-index: 3"></hr>
-<div class="topnav">
+<div class="topnav" style="border: 2px none red">
+<hr style="z-index: 3; margin: 0; padding: 0; top: calc(8vh - 1px);"></hr>
 <div class="landing">
 <a href="index.html"><h8 id="logo">JOSEPH BROAD</h8></a></div>
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
 <!-- Footer -->
-<div class="footer">
+<div class="footer" style = "border: 2px none red">
 <ulb>
 <lib style="padding-left: 15px; padding-right: 15px;">
 <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib>
@@ -45,5 +45,5 @@ $(document).ready(function () {
 <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib>
 </lib>
 </ulb>
-<hr style="position: absolute; bottom: 30%; left: 25vw; width: 50%; border-color: #A3350D;"></hr>
+<hr style="margin: 0; padding: 0; bottom: calc(8vh - 1px);"></hr>
 </div>

@@ -18,8 +18,8 @@ mainfont: Verdana
 <a href="#coding_anchor"><li><i class="fas fa-lg fa-laptop-code" id="smcircle"></i></li></a></div>
 </div>
 
-<div class="wideboi" style="height: 20vh; background-color: #f2f2f2;"></div>
-<div class="wideboi" style="width: 60vw; margin-left: 20vw; margin-top: 6vh; border: 1px none red; background-color: none;">
+<div class="mainbody" style="height: 20vh; background-color: #f2f2f2;"></div>
+<div class="mainbody" style="width: 60vw; margin-left: 20vw; margin-top: 6vh; border: 1px none red; background-color: none;">
 
 <div class="column" style="border: 2px none blue;">
 <a href="#background_anchor"><li><i id="circle" class="fas fa-5x fa-id-card"></i></li></a>

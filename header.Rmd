@@ -10,14 +10,15 @@ mainfont: Verdana
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 <!-- header -->
 <div class="topnav">
-<div class="landing">
+<div class="landing" style = "text-align: center">
+<div>
 <a href="index.html"><h8 id="logo">JOSEPH BROAD</h8></a></div>
 <ul style="margin-left: -1.5vw">
 <li><a href="index.html"><h7>HOME</h7></a></li>
 <li><a href="blog.html"><h7>BLOG</h7></a></li>
 <li><a href="about.html"><h7>ABOUT</h7></a></li>
 </ul>
-</div>
+</div></div>
 
 
 <script>
