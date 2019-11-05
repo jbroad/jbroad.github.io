@@ -48,11 +48,11 @@ h1 {
 }
 
 h2 {
-  color:black;
+  color: #A3350D;
   font-family: verdana;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
 }
 
 h3 {
@@ -72,13 +72,10 @@ h4 {
   text-align: center;
   color: white;
   font-family: verdana;
-  padding: 0;
-  margin: 0;
-  margin-top: 2vh;
   z-index: 1; 
-  font-size: 72px; 
-  font-weight: 600;
-  top: 0;
+  font-size: 32px; 
+  font-weight: 100;
+  letter-spacing: 0.2em;
 }
 
 h5 {
@@ -86,8 +83,9 @@ h5 {
   color: white;
   font-family: verdana;
   z-index: 1; 
-  font-size: 28px; 
+  font-size: 22px; 
   font-weight: 100;
+  line-height: 28px;
   letter-spacing: 0.2em;
 }
 
@@ -96,7 +94,7 @@ h6 {
   font-family: verdana;
   z-index: 1; 
   color: white; 
-  font-size: 16px; 
+  font-size: 18px; 
   font-weight: 100;
   letter-spacing: 0.2em;
   margin-top: 12px;
@@ -144,9 +142,14 @@ h9 {
   top: 0;
 }
 
+p2 {
+  color: black;
+  font-size: 20px;
+}
+
 p3 {
   color: gray;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 p5 {
@@ -164,11 +167,11 @@ p6 {
   font-family: times;
   color: gray;
   text-align: center;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 100;
   font-style: oblique;
-  padding: 20px 0 20px 0;
   letter-spacing: -0.01em;
+  padding: 20px;
 }
 
 p7 {
@@ -197,17 +200,46 @@ p8 {
 }
 
 .mainbody {
+  border: 2px solid red;
   position: absolute;
   left: 0;
   top: 19vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100vw; 
   margin: 0;
   padding: 0;
   z-index:0;
+}
+
+.wrapper {
+  border: 2px solid green;
+  position: absolute;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  top: 8vh;
+  left: 15vw;
+  width: 70vw;
+  height: 84vh;
+  justify-content: center;
+}
+
+.graphic {
+  width: 80%;
+  margin: 20px auto 20px auto;
+  border-bottom: 1px solid #A33E0D;
+  border-top: 1px solid #A33E0D;
+}
+
+.innertext {
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
 }
 
 #logo {
@@ -283,12 +315,13 @@ p8 {
 }
 
 .section {
-  margin-left: -1px;
-  text-align: center;
-  width: 100%;
-  background-color: rgba(0,0,0,0);
-  border: 1px solid rgba(0,0,0,0);
+  border: 1px none blue;
+  margin: auto;
+  text-align: left;
+  width: 600px;
   transition: .4s;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #crow {
@@ -346,17 +379,6 @@ p8 {
 	border: 1px none green;
 }
 
-.wrapper {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center;
-  margin-left: 25vw;
-  width: 50vw;
-  height: 65vh;
-}
-
 .title {
   position: fixed;
   display: inline-block;
@@ -366,9 +388,10 @@ p8 {
 }
 
 .caption {
+  border: 2px none red;
   position: fixed;
-  display: inline-block;
-  margin-left: 25vw;
+  top: 25vh;
+  margin: auto;
   width: 50vw;
 }
 
@@ -426,13 +449,12 @@ section {
 .card {
   float: left;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-content: stretch;
-  background-color: white;
   height: auto;
-  padding: 0;
+  width: 100%;
   margin: 0;
-  margin-top: 10px;
   border-bottom: 1px solid #A33E0D;
 }
 
@@ -443,10 +465,13 @@ section {
 }
 
 .leftcolumn { 
+  overflow: scroll;
   float: left;
-  width: 60%;
+  flex: 70%;
   top: 0;
+  height: 84vh;
   padding: 0 20px 20px 20px;
+  border: 2px none pink;
 }
 
 .leftcard { 
@@ -454,23 +479,20 @@ section {
   width: 70%;
   top: 0;
   padding: 0 20px 20px 20px;
+  border: 2px none purple;
 }
 
 /* Right column */
 .rightcolumn {
-  position: fixed;
-  right: 15vw;
-  top: 8vh;
-  width: 27%;
-  padding: 0;
+  flex: 30%;
 }
 
-.thumbcolumn {
+.rightcard {
   float: right;
-  width: 30%;
-  padding: 0 20px 20px 20px;
-  margin-top: 20px;
+  flex: 30%;
+  padding: 20px;
   overflow: hidden;
+  border: 2px none orange;
 }
 
 .tab { margin-left: 5px; }
@@ -563,8 +585,8 @@ lib a:hover {
 
 .readmore {
   position: fixed;
-  display: inline-block;
-  margin-left: 25vw;
+  margin: auto;
+  top: 50vh;
   height: 40px;
   width: 50vw;
   background-color: #A3350D;
@@ -572,9 +594,8 @@ lib a:hover {
 
 .blackbox {
   position: fixed;
-  display: inline-block;
-  margin-top: calc(30vh + 40px);
-  margin-left: 25vw;
+  overflow: scroll;
+  top: calc(50vh + 40px);
   height: 1px;
   width: 50vw;
   background-color: rgba(0,0,0,0.5);
@@ -605,11 +626,9 @@ lib a:hover {
 }
 
 .desc {
-  position: relative;
-  display: inline-block;
+  position: absolute;
   padding: 3vh;
   width: 60vw;
-  margin-left: -1px;
   background-color: rgba(0,0,0,0.7);
 }
 
@@ -618,7 +637,7 @@ lib a:hover {
   cursor: pointer;
   text-decoration: none;
   transition: .8s;
-  background-color: #3C5A8F;
+  background-color: #822300;
 }
 
 .readmore:hover + .blackbox {
@@ -805,13 +824,15 @@ blockquote.twitter-tweet a:focus {
   h5 {
     font-size: 24px;
   }
-  leftcolumn {
+  .wrapper, .leftcard {
+    width: 90vw;
+    left: 5vw;
+    flex-direction: column;
+  }
+  .rightcard {
     display: none;
   }
-  rightcolumn {
-    display: none;
-  }
-  tcard {
+  .rightcolumn {
     display: none;
   }
   .twitter-timeline {
@@ -821,9 +842,6 @@ blockquote.twitter-tweet a:focus {
 @media screen and (max-width: 480px) {
   .logo {
     width: 60vw;
-  }
-  .wideboi {
-    flex-direction: column;
   }
   .column {
     width: 100vw;

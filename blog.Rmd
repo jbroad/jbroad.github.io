@@ -8,42 +8,50 @@ params:
 title: "`r params$set_title`"
 mainfont: Verdana
 ---
-<div class="mainbody" style="position: fixed; top: 8vh; height: 40vh; border: 2px none red"></div>
-<div class="mainbody" style="top: 8vh; width: 80vw; margin-left: 10vw; margin-top: -2vh; border: 1px none red; background-color: none;">  
+<!-- <div class="mainbody" style="top: 8vh; height: 84vh; border: 2px solid red"></div> -->
+<!-- <div class="wrapper" style="border: 3px solid blue;">   -->
+<!-- <div class="leftcolumn" style="border: 2px solid green"> -->
+<!-- <div class="card" style="border: 2px dashed purple"> -->
+<!-- <div class="leftcard" style="border: 2px dotted pink; height: 100%"></div> -->
+<!-- <div class="rightcard" style="border: 2px solid orange; height: 100%"> -->
+<!-- </div></div></div> -->
+<!-- <div class="rightcolumn" style="border: 3px solid yellow; height: 100%"> -->
+<!-- </div> -->
+<!-- </div></div> -->
+
+
+<div class="mainbody" style="top: 8vh; height: 84vh;"></div>
+<div class="wrapper">
 <div class="leftcolumn">
 
-<div class="card" style="height: auto;">
-<div class="leftcard" style="border: 2px none red">
+<div class="card">
+<div class="leftcard">
 <a href="blog_001_azele2020.html"><h3>Elections 2020: Arizona State Legislature</h3></a>
 <p3>Here I take a brief look into the state legislature 2018 elections, and an even briefer look into the 2020 elections. Democrats in Arizona have not been this close to gaining a majority in the state senate since 2000, when they tied with Republicans and split control. If Arizona Democrats organize in 2020 as well as they did in 2016, they will have a small chance to gain a majority in that body for the first time in more than 40 years.</p3>
 </div>
-<div class="thumbcolumn">
-<a href="blog_000_lupia25.html"><img src="azele_thumb.jpg"></a>
+<div class="rightcard">
+<a href="blog_001_azele2020.html"><img src="azele_thumb.jpg"></a>
 </div>
 </div>
 
-<div class="card" style="height: auto;">
-<div class="leftcard" style="border: 2px none red">
+<div class="card">
+<div class="leftcard">
 <a href="blog_000_lupia25.html"><h3>Cutting Corners?</h3></a>
 <p3>Here I celebrate the 25th anniversary of Arthur Lupia's 1994 seminal article, Shorctus Versus Encyclopedias, by revisiting its central themes. Using the author's original data, I identify and explore two complications in the validity of his "knowledge" variable. These complications have major implications on how we interpret Lupia's findings.</p3>
-</div>`
-<div class="thumbcolumn" style="border: 2px none blue;">
+</div>
+<div class="rightcard">
 <a href="blog_000_lupia25.html"><img src="blog/blog_000_lupia25_files/lupia_thumb.jpg"></a>
 </div>
 </div>
 
 <div class="card">
-<div class="leftcard" style="border: 2px none red">
+<div class="leftcard">
 <a href="blog_000_lupia25.html"><h3>More to come!</h3></a>
 <p3>That is all I have for now but you can follow me on twitter for updates on new content. Plus, I occassionally share photos of my dog, Bear. He is a labradoodle, about two years old now. There he is on the right when he was just a baby. He enjoys cuddling, showing off his paws, and pretending to pee so we can go back inside already.</p3>
 </div>
-<div class="thumbcolumn" style="border: 2px none blue; overflow: hidden;">
+<div class="rightcard">
 <a href="blog_000_lupia25.html"><img src="images/bear_sm.jpg"></a>
 </div>
-</div>
-
-<div class="card">
-<div class="leftcard" style="border: 2px none red">
 </div>
 </div>
 
@@ -56,19 +64,7 @@ mainfont: Verdana
 </div>
 
 <script src="https://platform.twitter.com/widgets.js" async></script>
-<!--   </div> -->
-<!--   <div class="card"> -->
-<!--   <h3>Popular Post</h3> -->
-<!--   <div class="fakeimg">Image</div><br> -->
-<!--   <div class="fakeimg">Image</div><br> -->
-<!--   <div class="fakeimg">Image</div> -->
-<!--   </div> -->
-<!--   <div class="card"> -->
-<!--   <h3>Follow Me</h3> -->
-<!--   <p>Some text..</p> -->
-<!--   </div> -->
-<!--   </div> -->
-<!--   </div> -->
+
 
 
 
