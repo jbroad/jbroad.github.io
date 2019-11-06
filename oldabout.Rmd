@@ -1,0 +1,150 @@
+---
+output: 
+  html_document:
+    includes:
+      before_body: header.html
+params: 
+    set_title: "Joseph Broad: About"
+title: "`r params$set_title`"
+mainfont: Verdana
+---
+<!-- About -->
+<div class="sidebar">
+<div class="srow" style="margin-top: 12vh">
+<a href="#background_anchor"><li><i class="fas fa-lg fa-id-card" id="smcircle" style="opacity: 1"></i></li></a></div>
+<div class="srow">
+<a href="#teaching_anchor"><li><i class="fas fa-lg fa-hands-helping" id="smcircle"></i></li></a></div>
+<div class="srow">
+<a href="#coding_anchor"><li><i class="fas fa-lg fa-laptop-code" id="smcircle"></i></li></a></div>
+</div>
+
+<div class="mainbody">
+<div style="height: 20vh; width: 100%; background-color: #f2f2f2;"></div>
+<div class="mainbody" style="width: 60vw; margin-left: 20vw; margin-top: -12vh; background-color: none;">
+
+<div class="column" style="border: 2px none blue;">
+<a href="#background_anchor"><li><i id="circle" class="fas fa-5x fa-id-card"></i></li></a>
+<div class="row">
+<h8><br><br>BACKGROUND</h8><br><br>
+<p8>I am a PhD Candidate in political science, former senior staffer on the Hill, proud dog owner, technical death metal aficionado, and a DnD enthusiast. Click any of the icons above to read more about me.</p8></div>
+</div>
+
+<div class="column" style="border: 2px none blue;">
+<a href="#teaching_anchor"><li><i class="fas fa-5x fa-hands-helping" id="circle"></i></li></a>
+<div class="row">
+<h8><br><br>TEACHING</h8><br><br>
+<p8>I love teaching, and I think it shows through my student evaluations. I have led seminars and discussion sections for various topics in American politics, including political theory and statistics in the social sciences.</p8></div>
+</div>
+
+<div class="column" style="border: 2px none blue;">
+<a href="#coding_anchor"><li><i class="fas fa-5x fa-laptop-code" id="circle"></i></li></a>
+<div class="row">
+<h8><br><br>CODING</h8><br><br>
+<p8>Who needs hobbies when you have R? I'm always on the hunt for new statistical methods and otherwise cool things to do with coding: machine learning, interactive data visualization, and webdesign.</p8></div>
+</div>
+</div></div>
+<div class="section" style="height: 100vh"></div>
+
+<!-- Background -->
+<!-- <a id="background_anchor"><div class="section" style="background-color: #f2f2f2; margin-bottom: 10vh;"></a> -->
+<!-- <div style="width: 60vw; margin: -10vh 0 -10vh 20vw; border: 1px solid #A3350D; background-color: none; text-align: center;"> -->
+<!-- <div class="section" style="height: 18vh;"></div> -->
+<!-- <div class="section"> -->
+<!-- <img -->
+<!--     id="circle" -->
+<!--     style="object-fit: cover; width: 33vh; padding: 1px; background-color: white; border: 3vh solid #A3350D" -->
+<!--     src="images/cover.jpg"></div> -->
+<!-- <div class="section"> -->
+<!-- <h8 style="padding-bottom: 2.3vh; border-bottom: 5px solid #A3350D;"> <br><br>BACKGROUND</h8><br><br><br><br></div> -->
+<!-- <div class="section"> -->
+<!-- <div class="desc" style="margin-top: 2.3vh;"> -->
+<!-- <p7>I am a PhD candidate in the UC Davis political science graduate program. My research interests include politics of resource allotment, the role and influence of interest groups in policy outcomes, rhetoric and public opinion. When I'm not researching American Politics, I'm most likely studying statistics, political theory, or reading science fiction (Frank Herbert's Dune series at the moment).<br><br> -->
+<!-- Prior to graduate school, I was a senior staff member for Senator Harry Reid's Washington DC office. You may be wondering, "Who would give up a career in DC politics to go back to school?" Truth be told, owning a dog in DC is extremely difficult and expensive. Going to graduate school was all a front so I could afford a place with a yard for my dog without raising too many questions.</p7></div> -->
+<!-- <div class="section" style="height: 18vh"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="section" style=height:70vh></div> -->
+<!-- <!-- Teaching Anchor --> -->
+<!-- ``` {r setup, include=FALSE, echo=F, message=F} -->
+<!-- library(ggplot2) -->
+<!-- load(file = "cdat.Rda") -->
+<!-- options(warn=-1) -->
+<!-- cat <- ggplot(evalsbar, aes(id, avg)) + -->
+<!--     geom_errorbar(aes(ymin=avg-ci, ymax=avg+ci, colour=factor(evals)), -->
+<!--                   width=0.2, -->
+<!--                   size=.75) + -->
+<!--     ylim(3.75,4.75) +  -->
+<!--     geom_point(aes(colour=factor(evals)), size=2) + -->
+<!--     labs(y = "OVERALL EFFECTIVENESS", x=NULL) + -->
+<!--     scale_x_continuous(breaks=c(1,4,7,10,13), labels=c("2016Q1","2017Q1","2018Q1","2019Q1","AVG")) + -->
+<!--     theme_minimal() + -->
+<!--     scale_color_manual(labels = c("My Evals", "Dept. Evals"), values = c("#A3350D", "#3C5A8F")) + -->
+<!--     theme(legend.title=element_blank(), -->
+<!--           legend.justification=c(1,0), -->
+<!--           legend.position=c(.95,.05)) -->
+<!-- ``` -->
+<!-- <a id="teaching_anchor"><div class="section" style="background-color: #3C5A8F; margin-bottom: 10vh;"></a> -->
+<!-- <div class="section" style="width: 60vw; margin: -10vh 0 -10vh 20vw; border: 1px solid black;"> -->
+<!-- <div class="section" style="height: 18vh;"></div> -->
+<!-- <div class="section"> -->
+<!-- <h8 style="color: white; padding-bottom: 2.3vh; border-bottom: 5px solid white;">TEACHING</h8><br><br><br><br></div> -->
+<!-- <div class="desc"> -->
+<!-- <p7>I try to bring joy and empowerment to the front end of the classroom, while maintaining rigorous and thorough learning objectives behind the curtain. Every exercise in my classroom is aimed at a higher purpose, be it the attainment of knowledge, the expansion of critical thought, or the development of crucial quotidian professional skills like reading, writing, and public speaking. Students are responsive to my approach, as my teaching evaluations are consistently positive and above the department average (one notable exception is the student who left what is undoubtedly my favorite evaluation: "This man is a BS artist").</p7></div> -->
+<!-- <div style="width: 66vw; padding-left: 3vw; padding-right: 3vw; height: 400px; margin-top: 5vh; margin-bottom: 5vh; margin-left: -3vw; background-color: #f1f1f1"><br> -->
+<!-- <h8 style="color: #3C5A8F"> FIG1: STUDENT EVALUATIONS (2016-2019)</h8> -->
+<!-- <div class="section" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; width: 60vw; mix-blend-mode: multiply"> -->
+<!-- ``` {r echo=F, fig.align='center', fig.width = 8, fig.asp = .5, fig.fullwidth=TRUE} -->
+<!-- cat -->
+<!-- ``` -->
+<!-- </div></div> -->
+<!-- <div class="desc"> -->
+<!-- <p7>Below is a list of courses for which I have served as a Teaching Assistant. Those marked in -->
+<!--   <span style="font-weight: bold;"> bold </span> -->
+<!--   indicate courses I am able and prepared to lead as an instructor.<br><br> -->
+<!--   <span style="font-weight: bold;">Introduction to American Politics<br> -->
+<!--   The Scientific Study of Politics<br> -->
+<!--   Introduction to Political Theory</span><br> -->
+<!--   Local and State Politics<br> -->
+<!--   California Politics<br> -->
+<!--   Media and Politics<br> -->
+<!--   Policy and Agenda-Setting<br> -->
+<!--   Ethnic Conflict -->
+<!--   </p7></div> -->
+<!-- <div class="section" style="height: 18vh;"></div> -->
+<!-- </div></div> -->
+<!-- <div class="section" style=height:70vh></div> -->
+
+<!-- <!-- Coding Anchor --> -->
+<!-- <a id="coding_anchor"><div class="section" style="background-color: #A3350D; margin-bottom: 10vh;"></a> -->
+<!-- <div class="section" style="width: 60vw; margin: -10vh 0 -10vh 20vw; border: 1px solid black;"> -->
+<!-- <div class="section"> -->
+<!-- <div class="section" style="margin-top: 8vh; padding-bottom: 2.3vh;"> -->
+<!-- <h8 style="color: white; padding-bottom: 2.3vh; border-bottom: 5px solid white;"><br><br>CODING</h8><br><br><br></div> -->
+<!-- <div class="desc"> -->
+<!-- <p7>Consider the Myth of Sisyphus: the existentialist philosopher Albert Camus used Sisyphus's damnation to meaningless labor as a metaphor for the absurdity and monotony of modern professions. Zeus condemned Sisyphus to shove a boulder up a hill, watch it roll down, push it back up, and so on for eternity. Coding to me is as the damnation is to Sisyphus, the difference being that if Zeus  absolved me of my punishment I would happily get right back to boulder-shoving. Through graduate school I learned the basics of R and Stata; my gluttony for punishment has led me to learn advanced statistical methods in R and Stata, webscraping in Python, web design (HTML, CSS, limited js), and interactive graphics with Shiny.</p7></div> -->
+<!-- <div class="section"> -->
+<!-- <div class="section" id="crow" style="margin-top: 30px; text-align: center;"> -->
+<!-- <div class="row" id="ccircle"> -->
+<!-- <a href="https://josephbroad.shinyapps.io/stats/"><img class="static" style="padding: 10px 0 10px 0;" src="images/CLT_static.jpg"> -->
+<!-- <img style="padding: 10px 0 10px 0;" src="images/CLT_gif.gif"></a> -->
+<!-- </div> -->
+<!-- <div class="desc" id="open" style="overflow: scroll;"> -->
+<!-- <div class="section" style="padding: 25px 20px 20px 120px; text-align: left;"> -->
+<!-- <p7 id="desc">In order to help my students understand abstract statistical concepts like the Central Limit Theorem, I created this interactive Shiny graphic that students can access in class or in their spare time. The interface allows students to add concrete and intelligible data samples (20 rolls of a six-sided die) and directly observe how the distribution of means of additional samples begins to approach a normal distribution.</p7></div></div></div> -->
+<!-- </div> -->
+<!-- <div class="section"> -->
+<!-- <div class="section" id="crow" style="margin-top: 30px;"> -->
+<!-- <div class="row" id="ccircle"> -->
+<!-- <a href="https://josephbroad.shinyapps.io/shiny/"><img class="static" style="padding: 10px 0 10px 0;" src="images/AZmap_static.jpg"> -->
+<!-- <img style="padding: 10px 0 10px 0;" src="images/AZmap_gif.gif"></a> -->
+<!-- </div> -->
+<!-- <div class="desc" id="open" style="overflow: scroll;"> -->
+<!-- <div class="section" style="padding: 25px 20px 20px 120px; text-align: left;"> -->
+<!-- <p7 id="desc">I am currently developing interactive Shiny maps to view geographic data, such as election outcomes, registration numbers, and eventually post-stratification of public opinion data. The image featured on the left is a sample of app under development: it indicates registration numbers aggregated by State Senate district in the Arizona State Legislature. The app is still under development, but feel free to explore the beta version by clicking on the map to the left. </p7></div></div></div></div> -->
+<!-- <div class="section" style="height: 18vh;"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="section" style="height: 10vh;"> -->

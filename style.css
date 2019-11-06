@@ -200,7 +200,7 @@ p8 {
 }
 
 .mainbody {
-  border: 2px solid red;
+  border: 2px none red;
   position: absolute;
   left: 0;
   top: 19vh;
@@ -216,7 +216,7 @@ p8 {
 }
 
 .wrapper {
-  border: 2px solid green;
+  border: 2px none green;
   position: absolute;
   float: left;
   display: flex;
@@ -413,7 +413,7 @@ p8 {
   width: 100vw;
   bottom: 0;
   left: 0;
-  height: 15vh;
+  height: 13vh;
   text-align: center;
   background-color: #fff;
   z-index:3;
@@ -447,6 +447,7 @@ section {
 
 /* Add a card effect for articles */
 .card {
+  border: 2px none orange;
   float: left;
   display: flex;
   flex-direction: row;
@@ -465,13 +466,13 @@ section {
 }
 
 .leftcolumn { 
+  border: 2px none pink;
   overflow: scroll;
   float: left;
   flex: 70%;
   top: 0;
   height: 84vh;
   padding: 0 20px 20px 20px;
-  border: 2px none pink;
 }
 
 .leftcard { 
@@ -484,6 +485,7 @@ section {
 
 /* Right column */
 .rightcolumn {
+  border: 2px none purple;
   flex: 30%;
 }
 
@@ -786,10 +788,13 @@ blockquote.twitter-tweet a:focus {
 
 @media screen and (max-width: 1600px) {
   h4 {
-    font-size: 72px;
+    font-size: 30px;
   }
   h5 {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .caption {
+    width: 60vw;
   }
   #circle {
     font-size: 500%;
@@ -797,10 +802,13 @@ blockquote.twitter-tweet a:focus {
 }
 @media screen and (max-width: 1460px) {
   h4 {
-    font-size: 62px;
+    font-size: 28px;
   }
   h5 {
-    font-size: 21px;
+    font-size: 18px;
+  }
+  .caption {
+    width: 70vw;
   }
 }
 @media screen and (max-width: 992px) {
@@ -808,10 +816,13 @@ blockquote.twitter-tweet a:focus {
     width: 30vw;
   }
   h4 {
-    font-size: 48px;
+    font-size: 24px;
   }
   h5 {
-    font-size: 24px;
+    font-size: 16px;
+  }
+  .caption {
+    width: 80vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -819,10 +830,13 @@ blockquote.twitter-tweet a:focus {
     width: 40vw;
   }
   h4 {
-    font-size: 36px;
+    font-size: 20px;
   }
   h5 {
-    font-size: 24px;
+    font-size: 14px;
+  }
+  .caption {
+    width: 90vw;
   }
   .wrapper, .leftcard {
     width: 90vw;
@@ -866,11 +880,11 @@ blockquote.twitter-tweet a:focus {
     height: 35vh;
   }
   h4 {
-    font-size: 30px;
+    font-size: 18px;
   }
   h5 {
     margin-top: -3vh;
-    font-size: 24px;
+    font-size: 12px;
   }
   li {
     font-size: 10px;
