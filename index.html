@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -83,7 +83,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -145,6 +144,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -156,18 +156,6 @@ summary {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -185,18 +173,18 @@ $(document).ready(function () {
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>header.utf8.md</title>
+<title>header.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -268,7 +256,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -330,6 +317,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -341,18 +329,6 @@ summary {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -378,45 +354,22 @@ $(document).ready(function () {
 
 
 <!-- style -->
-<link rel="stylesheet" href="style.css" type="text/css"> <link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0"> <link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0"> <!-- Load an icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"> <!-- header -->
-<div class="topnav" style="border-bottom: 1px solid #A3350D">
-<div class="landing" style="text-align: center">
-<div>
-<a href="index.html"><h8 id="logo">JOSEPH BROAD</h8></a>
+<link rel="stylesheet" href="style.css" type="text/css"> <!-- Load an icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"> <!-- header -->
+<ul>
+<li style="float: left">
+<a href="index.html"> <img style="height: 24px; margin-top: -5px; border: 1px none red;"
+  src="images/code_logo.png"> </a>
+</li>
+<li class="dropdown">
+<div class="dropbtn">
+<i class="fas fa-lg fa-bars"></i>
 </div>
-<ul style="margin-left: -1.5vw">
-<li>
-<a href="index.html"><h7>HOME</h7></a>
-</li>
-<li>
-<a href="blog.html"><h7>BLOG</h7></a>
-</li>
-<li>
-<a href="about.html"><h7>ABOUT</h7></a>
+<div class="dropdown-content">
+<p><a href="index.html">HOME</a> <a href="blog.html">BLOG</a> <a href="about.html">ABOUT</a></p>
+</div>
+</div>
 </li>
 </ul>
-</div>
-</div>
-<script>
-$(window).scroll(function() {
-    if ( $(window).scrollTop() >= 100 ) {
-        $('#logo').css('opacity', '0');
-        $('#logo').css('transition', '.3s');
-        $('.topnav, .footer').css('height', '8vh');
-        $('.topnav, .footer').css('transition-timing-function', 'ease');
-        $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
-        $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
-        $('.sidebar').css('right', '0');
-    } else {
-        $('#logo, .topnav, .footer, .sidebar').attr('style', '');
-
-    }
-});
-</script>
-<!-- Footer -->
-<div class="footer">
-<p><ulb> <lib style="padding-left: 15px; padding-right: 15px;"> <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib> <lib><a href="https://github.com/jbroad"><i class="fab fa-lg fa-github"></i></a></lib> <lib><a href="https://twitter.com/therealjoebroad"><i class="fab fa-lg fa-twitter"></i></a></lib> <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib> </lib> </ulb></p>
-</div>
 
 
 
@@ -435,6 +388,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
@@ -459,31 +429,27 @@ $(document).ready(function () {
 
 
 <!-- Content -->
-<div class="mainbody" style="height: 66vh;">
+<div style="height: 66vh;">
 <img
     style="object-fit: cover; width: 100%; height: 66vh;"
     src="images/desertarata_blur.jpg">
-<div class="title" style="border: 1px none red; height: 20vh;">
+<div style="border: 1px none red;">
 <!-- <h4>DESERTARATA</h4> -->
-</div>
-<div class="caption">
 <h4>
 PhD Candidate, Political Science
 </h4>
 <h5>
 · Public Opinion · <br> · Environmental Politics &amp; Policy · <br> · Rhetoric &amp; Framing · <br> · Data Manipulation &amp; Visualization · <br>
 </h5>
-</div>
-<a href="blog_000_lupia25.html" class="readmore" id="a">
+<a href="blog_000_lupia25.html">
 <h6>
 FEATURED BLOG
 </h6>
-</a>
-<div class="blackbox">
-<p style="color: white; text-align: center; padding: 20px; font-size: 18px;">
-<b>Cutting Corners?</b><br>Here I celebrate the 25th anniversary of Arthur Lupia’s 1994 seminal article, Shorctus Versus Encyclopedias, by revisiting its central themes. Using the author’s original data, I identify and explore two complications in the validity of his “knowledge” variable. These complications have major implications on how we interpret Lupia’s findings.
-</p>
+<p></a> Test<br> Test<br> Test<br> Test<br> Test<br></p>
 </div>
+<!-- Footer -->
+<div class="footer">
+<p><ulb> <lib style="padding-left: 15px; padding-right: 15px;"> <lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib> <lib><a href="https://github.com/jbroad"><i class="fab fa-lg fa-github"></i></a></lib> <lib><a href="https://twitter.com/therealjoebroad"><i class="fab fa-lg fa-twitter"></i></a></lib> <lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib> </lib> </ulb></p>
 </div>
 </div>
 
@@ -504,6 +470,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

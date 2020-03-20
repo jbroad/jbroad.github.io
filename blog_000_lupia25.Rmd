@@ -9,15 +9,8 @@ params:
     set_title: "Joseph Broad"
 mainfont: Verdana
 ---
-<div class="mainbody" style="top: 0;">
-<div class="wrapper" style="height: auto">
-  <img
-    style="object-fit: contain; margin: auto; height: 80vh; mix-blend-mode: multiply"
-    src="blog/blog_000_lupia25_files/shortcuts.jpg">
-<div class="desc" style="top: 42vh; height: 28vh; width: 80%; overflow: scroll;">
-<p id="abstract"><b>Abstract:</b><br>Arthur Lupia's 1994 "Shortcuts Versus Encyclopedias" presents optimistic results suggesting that low-information electors behave remarkably similar to high-information electors at the ballot box. Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using Lupia's original data. Below I identify and discuss two issues with the original article: 1) the survey's knowledge battery does not measure the type of knowledge that should be established as the normative standard for informed voting; 2) the knowledge scale construction rewards nonresponses with higher scores, despite their observation equivalence to uncertainty and, are a result, distorts respondents' true knowledge score. Correcting for the second issue, the general patterns Lupia's central findings hold, though not nearly to such an extreme degree as presented in the original article.</p>
-</div>
-<div class="section">
+Abstract: Arthur Lupia's 1994 "Shortcuts Versus Encyclopedias" presents optimistic results suggesting that low-information electors behave remarkably similar to high-information electors at the ballot box. Here I celebrate the 25th anniversary of this seminal article's publishing by revisiting its central themes using Lupia's original data. Below I identify and discuss two issues with the original article: 1) the survey's knowledge battery does not measure the type of knowledge that should be established as the normative standard for informed voting; 2) the knowledge scale construction rewards nonresponses with higher scores, despite their observation equivalence to uncertainty and, are a result, distorts respondents' true knowledge score. Correcting for the second issue, the general patterns Lupia's central findings hold, though not nearly to such an extreme degree as presented in the original article.
+
 <!-- Civic Competence -->
 <h3>Introduction</h3>
 <p2>

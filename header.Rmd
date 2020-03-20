@@ -1,52 +1,26 @@
 ---
 output: html_document
-mainfont: Verdana
 ---
 <!-- style -->
 <link rel="stylesheet" href="style.css" type="text/css">
-<link rel="shortcut icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
-<link rel="icon" href="https://www.dropbox.com/s/8nglbmcubk7bl7y/favicon.png?dl=0">
 <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 <!-- header -->
-<div class="topnav" style="border-bottom: 1px solid #A3350D">
-<div class="landing" style = "text-align: center">
-<div>
-<a href="index.html"><h8 id="logo">JOSEPH BROAD</h8></a></div>
-<ul style="margin-left: -1.5vw">
-<li><a href="index.html"><h7>HOME</h7></a></li>
-<li><a href="blog.html"><h7>BLOG</h7></a></li>
-<li><a href="about.html"><h7>ABOUT</h7></a></li>
-</ul>
-</div></div>
-
-
-<script>
-$(window).scroll(function() {
-    if ( $(window).scrollTop() >= 100 ) {
-        $('#logo').css('opacity', '0');
-        $('#logo').css('transition', '.3s');
-        $('.topnav, .footer').css('height', '8vh');
-        $('.topnav, .footer').css('transition-timing-function', 'ease');
-        $('.topnav, .footer, .sidebar').css('transition-duration', '.4s');
-        $('.topnav, .footer, .sidebar').css('transition-delay', '.1s');
-        $('.sidebar').css('right', '0');
-    } else {
-        $('#logo, .topnav, .footer, .sidebar').attr('style', '');
-
-    }
-});
-</script>
-
-
-<!-- Footer -->
-<div class="footer">
-<ulb>
-<lib style="padding-left: 15px; padding-right: 15px;">
-<lib><a href="mailto:jbroad@ucdavis.edu"><i class="fas fa-lg fa-envelope"></i></a></lib>
-<lib><a href="https://github.com/jbroad"><i class="fab fa-lg fa-github"></i></a></lib>
-<lib><a href="https://twitter.com/therealjoebroad"><i class="fab fa-lg fa-twitter"></i></a></lib>
-<lib><a href="https://www.linkedin.com/in/joseph-broad-557071a9/"><i class="fab fa-lg fa-linkedin"></i></a></lib>
-</lib>
-</ulb>
+<ul>
+<li style="float: left">
+<a href="index.html">
+<img style="height: 24px; margin-top: -5px; border: 1px none red;"
+  src="images/code_logo.png">
+</a></li>
+<li class="dropdown">
+<div class="dropbtn"><i class="fas fa-lg fa-bars"></i></div>
+<div class="dropdown-content">
+<a href="index.html">HOME</a>
+<a href="blog.html">BLOG</a>
+<a href="about.html">ABOUT</a>
 </div>
+</div>
+</li>
+</ul>
+
+
